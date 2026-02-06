@@ -26,7 +26,7 @@ This site has four primary audiences, each with different needs:
 
 Agencies are the primary revenue driver. They need to understand:
 
-- **Wingle Pass for Agencies**: Automated service fulfillment — lounges, fast track, eSIM, insurance, baggage storage — ingested from booking emails and PDFs with near-zero friction.
+- **Wingle Pass for Agencies**: A curated, premium airport services platform purpose-built for travel agencies — especially luxury and high-end agencies. This is **not** the same as the B2C Wingle Pass. The agency product offers three tiers of service, from curated lounge access to full VVIP private terminal experiences (see "Service Tiers" below). Bookings are ingested from emails and PDFs with near-zero friction from the agency.
 - **Wingle Atlas**: A digital itinerary builder that replaces static PDF trip documents with rich, interactive, context-aware travel experiences delivered to travelers.
 - That these are two separate products that can work independently or together.
 - How to get started (contact form / demo request).
@@ -70,10 +70,22 @@ The site showcases the following products. These are the canonical names and des
 | **Wingle Atlas** | B2B | Web (`wingle-atlas-web`) | In development | High potential |
 | **Wingle Pass White Label** | B2B | Partner-embedded | Available, seeking first client | Volume potential |
 
+### Wingle Pass for Agencies — Service Tiers
+
+This is the company's highest-revenue product and its primary focus. Unlike the B2C Wingle Pass (which offers standard lounge access), the agency product is positioned as a **"one-stop shop for premium airport services"** with three distinct service tiers:
+
+| Tier | Description | Price Range | Availability |
+|---|---|---|---|
+| **Basic** | Curated lounge access from 700+ lounges worldwide. Wingle applies an internal quality filter based on flight number, airport, departure time, airline, and reviews (public + first-hand) to ensure only high-quality lounges are issued. If a lounge doesn't meet the bar, it is not offered — even if technically available. | Standard lounge pricing | Global (700+ lounges) |
+| **Meet & Assist** | A personal assistant meets passengers at the aircraft door, expedites security and passport control, provides buggy transport in some airports, and escorts to the VIP lounge. Available for departures, arrivals, and connections. | ~€250/person (varies by airport and group size, confirmed via email) | Madrid, Barcelona, Abu Dhabi, Dubai, Doha, Singapore, Cancún, Santiago de Chile, and others on request |
+| **VVIP** | Ultra-premium private terminal experience. Passengers arrive at a private airport zone (not the main terminal), receive private check-in and luggage handling, clear security and passport control in a private room, and are driven by car directly to the aircraft stairs. Zero contact with other passengers throughout. | ~€500–600/person (varies by airport and group size, confirmed via email) | Madrid, Barcelona, Abu Dhabi, Dubai, Manchester, London, and others on request |
+
+**Key differentiator from B2C:** The agency product adds a curation and quality layer that the B2C product does not have. Wingle reviews and filters available services so agencies can trust that anything offered to their clients meets a high quality bar. Additionally, Meet & Assist and VVIP tiers are exclusively available through the B2B channel.
+
 ### Internal vs. External Naming
 
 - **"Wingle Pass"** and **"Wingle Chat"** are internal product names. Externally, the B2C app is simply called **"Wingle"** — it combines both.
-- **"Wingle Pass for Agencies"** is the B2B service fulfillment product. It is distinct from the B2C Wingle Pass, though they share the same backend infrastructure.
+- **"Wingle Pass for Agencies"** is the B2B premium airport services product. It is fundamentally different from the B2C Wingle Pass — it includes curated quality filtering, Meet & Assist, and VVIP tiers that the B2C product does not offer.
 - **"Wingle Atlas"** is always referred to by its full name.
 - The company name **LETS WINGLE S.L.** is rarely used publicly. The brand is simply **"Wingle"**.
 
@@ -123,7 +135,7 @@ This site is the **top of the funnel**. It does not execute — it directs.
 | **Wingle Pass** | Internal name for the travel services product (lounges, fast track, eSIM, etc.). Used in both B2C and B2B contexts. |
 | **Wingle Chat** | Internal name for the in-flight offline social product. Part of the B2C app. |
 | **Wingle Atlas** | B2B itinerary builder for travel agencies. Separate product from Pass. |
-| **Wingle Pass for Agencies** | B2B automated service fulfillment for travel agencies. Separate product from Atlas. |
+| **Wingle Pass for Agencies** | B2B curated premium airport services for travel agencies. Three tiers: Basic (filtered lounge access), Meet & Assist (personal escort + VIP), VVIP (private terminal experience). Separate product from Atlas. |
 | **White Label** | Brandable version of Wingle Pass for enterprise partners. |
 | **WinglePass** | Domain name (`winglepass.com`). The B2C web product. |
 | **LETS WINGLE S.L.** | Legal company name. Rarely used publicly. |

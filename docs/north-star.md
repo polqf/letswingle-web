@@ -10,9 +10,15 @@ The site is not just informational. It is the top of the funnel for the company'
 
 ### For Travel Agencies
 
-A travel agency director lands on the site from a Google search, a LinkedIn post, or a sales email. Within 30 seconds, they understand that Wingle offers two products for agencies:
+A luxury travel agency director lands on the site from a Google search, a LinkedIn post, or a sales email. Within 30 seconds, they understand that Wingle offers two products for agencies:
 
-1. **Wingle Pass for Agencies** — Automated premium travel services (lounges, fast track, eSIM, insurance, baggage storage) fulfilled from booking data they already have, ingested from emails and PDFs.
+1. **Wingle Pass for Agencies** — A curated premium airport services platform that goes far beyond standard lounge access. They see the three service tiers:
+   - **Basic**: Curated access to 700+ lounges worldwide, quality-filtered by Wingle so agencies can trust that every lounge offered meets a high bar.
+   - **Meet & Assist**: Personal escort from aircraft door through security and passport control to the VIP lounge — the kind of VIP experience their high-end clients expect.
+   - **VVIP**: Private terminal, private check-in, private security, car to the aircraft stairs — zero contact with other passengers.
+   
+   They see that Wingle positions itself as the agency's "one-stop shop" for everything premium at the airport, that bookings are ingested seamlessly from their existing emails and PDFs, and that pricing for Meet & Assist and VVIP is confirmed per request.
+
 2. **Wingle Atlas** — A tool that transforms their static PDF itineraries into rich, interactive digital trip experiences their travelers actually enjoy using.
 
 They see that these are separate products that work independently, but that agencies using both get an integrated experience. They click through to a product page, see a clear value proposition with concrete examples, and fill out a contact or demo request form. The sales team receives a qualified lead with context.
@@ -56,7 +62,7 @@ A journalist or investor lands on the site and finds a professional, polished pr
 
 ### SEO
 
-- **Ranks for relevant terms**: "airport lounge booking for agencies", "travel agency digital itinerary", "white label airport services", "wingle app", "wingle pass".
+- **Ranks for relevant terms**: "VIP airport services for travel agencies", "meet and assist airport service", "VVIP airport experience", "airport lounge booking for agencies", "travel agency digital itinerary", "white label airport services", "wingle app", "wingle pass".
 - **Structured data** (JSON-LD) for Organization, Products, and BlogPostings.
 - **Sitemap and robots.txt** properly configured.
 - **Canonical URLs** established — no content duplication with `winglepass.com`.

@@ -486,12 +486,31 @@ export const es = {
       title: 'Historias de construir Wingle',
       subtitle: 'Actualizaciones, notas operativas y visión de viaje.',
     },
-    empty: {
-      eyebrow: 'Muy pronto',
-      title: 'Los próximos posts llegan aquí',
-      subtitle: 'El blog de Wingle se muda a letswingle.com.',
-      body: 'Vuelve pronto o contáctanos para prensa.',
+    links: {
+      diaries: 'Cockpit Diaries',
+      news: 'Noticias',
+      back: 'Volver al blog',
     },
+    diaries: {
+      eyebrow: 'Cockpit Diaries',
+      title: 'Detrás de escena en Wingle',
+      subtitle: 'Notas breves mientras construimos viajes premium.',
+      badge: 'Cockpit Diaries',
+      cta: 'Ver todos los diarios',
+    },
+    news: {
+      eyebrow: 'Noticias',
+      title: 'Anuncios y partnerships',
+      subtitle: 'Novedades de Wingle y del ecosistema de viajes.',
+      badge: 'Noticias',
+      cta: 'Ver todas las noticias',
+    },
+    latest: {
+      eyebrow: 'Último',
+      title: 'Reciente en Wingle',
+      subtitle: 'Las historias más nuevas de diarios y noticias.',
+    },
+    readingTime: 'min lectura',
   },
   legal: {
     terms: {

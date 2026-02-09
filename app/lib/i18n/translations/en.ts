@@ -487,12 +487,31 @@ export const en = {
       title: 'Stories from building Wingle',
       subtitle: 'Company updates, operator notes, and travel insights.',
     },
-    empty: {
-      eyebrow: 'Coming soon',
-      title: 'New posts land here',
-      subtitle: 'The Wingle blog is moving to letswingle.com.',
-      body: 'Check back soon or reach out for press inquiries.',
+    links: {
+      diaries: 'Cockpit Diaries',
+      news: 'News',
+      back: 'Back to blog',
     },
+    diaries: {
+      eyebrow: 'Cockpit Diaries',
+      title: 'Behind the scenes at Wingle',
+      subtitle: 'Short field notes as we build premium travel experiences.',
+      badge: 'Cockpit Diaries',
+      cta: 'View all diaries',
+    },
+    news: {
+      eyebrow: 'News',
+      title: 'Announcements and partnerships',
+      subtitle: 'Updates from Wingle and the travel ecosystem.',
+      badge: 'News',
+      cta: 'View all news',
+    },
+    latest: {
+      eyebrow: 'Latest',
+      title: 'Recent from Wingle',
+      subtitle: 'The newest stories across diaries and news.',
+    },
+    readingTime: 'min read',
   },
   legal: {
     terms: {

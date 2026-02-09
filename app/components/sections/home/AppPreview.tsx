@@ -21,10 +21,16 @@ export async function AppPreview() {
             <li>• {t('home.app.points.three')}</li>
           </ul>
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Button href="https://apps.apple.com" variant="primary">
+            <Button
+              href="https://apps.apple.com/es/app/wingle-vuela-mejor/id6479176150"
+              variant="primary"
+            >
               {t('home.app.primaryCta')}
             </Button>
-            <Button href="https://play.google.com/store" variant="outline">
+            <Button
+              href="https://play.google.com/store/apps/details?id=com.letswingle.android"
+              variant="outline"
+            >
               {t('home.app.secondaryCta')}
             </Button>
           </div>

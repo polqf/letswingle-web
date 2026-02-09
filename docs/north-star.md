@@ -8,6 +8,14 @@ The site is not just informational. It is the top of the funnel for the company'
 
 ## What Success Looks Like
 
+Marketing order prioritizes consumer visibility first, followed by B2B journeys.
+
+### For Consumers
+
+A traveler who heard about Wingle from a friend, an Instagram post, or a news article lands on the home page. They immediately see the app — the beautiful in-flight social experience combined with premium travel services. They tap through to the app page, see screenshots and feature highlights, and download from the App Store or Google Play. If they want to explore services on the web, they're directed to `winglepass.com`.
+
+The app page communicates that Wingle is alive, active, and worth downloading — even though the B2C product is in maintenance mode commercially.
+
 ### For Travel Agencies
 
 A luxury travel agency director lands on the site from a Google search, a LinkedIn post, or a sales email. Within 30 seconds, they understand that Wingle offers two products for agencies:
@@ -26,12 +34,6 @@ They see that these are separate products that work independently, but that agen
 ### For Enterprise Partners
 
 A product manager at a travel company or airline lands on the White Label page. They understand that Wingle's travel services infrastructure — the same one powering the B2C app used by thousands — can be embedded under their brand. They see the scope of services available, understand the integration model at a high level, and request a conversation.
-
-### For Consumers
-
-A traveler who heard about Wingle from a friend, an Instagram post, or a news article lands on the home page. They immediately see the app — the beautiful in-flight social experience combined with premium travel services. They tap through to the app page, see screenshots and feature highlights, and download from the App Store or Google Play. If they want to explore services on the web, they're directed to `winglepass.com`.
-
-The app page communicates that Wingle is alive, active, and worth downloading — even though the B2C product is in maintenance mode commercially.
 
 ### For Press and Investors
 

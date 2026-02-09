@@ -30,10 +30,10 @@ export async function Footer() {
           <p className="text-xs uppercase tracking-[0.2em] text-[color:var(--color-ink-muted)]">
             {t('footer.products')}
           </p>
+          <Link href="/products/wingle-app">{t('nav.app')}</Link>
           <Link href="/products/agencies">{t('nav.agencies')}</Link>
           <Link href="/products/atlas">{t('nav.atlas')}</Link>
           <Link href="/products/white-label">{t('nav.whiteLabel')}</Link>
-          <Link href="/products/wingle-app">{t('nav.app')}</Link>
         </div>
 
         <div className="space-y-3 text-sm font-semibold text-[color:var(--color-ink)]">

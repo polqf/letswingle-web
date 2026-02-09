@@ -23,10 +23,18 @@ export default async function WingleAppPage() {
               {t('app.hero.subtitle')}
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
-              <Button href="https://apps.apple.com" variant="primary" size="lg">
+              <Button
+                href="https://apps.apple.com/es/app/wingle-vuela-mejor/id6479176150"
+                variant="primary"
+                size="lg"
+              >
                 {t('app.hero.primaryCta')}
               </Button>
-              <Button href="https://play.google.com/store" variant="outline" size="lg">
+              <Button
+                href="https://play.google.com/store/apps/details?id=com.letswingle.android"
+                variant="outline"
+                size="lg"
+              >
                 {t('app.hero.secondaryCta')}
               </Button>
             </div>

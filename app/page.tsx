@@ -11,11 +11,11 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <AppPreview />
       <ProductPaths />
       <AgencyTiersPreview />
       <AtlasPreview />
       <WhiteLabelPreview />
-      <AppPreview />
       <TrustSignals />
       <HomeCTA />
     </>

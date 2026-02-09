@@ -20,26 +20,9 @@ The current `letswingle.com` is a legacy landing page focused exclusively on the
 
 ## Who It Serves
 
-This site has four primary audiences, each with different needs:
+This site has four primary audiences, each with different needs. **Marketing order prioritizes B2C visibility first**, followed by B2B pages. B2B remains the primary revenue driver, but the site experience is sequenced for consumer/press visibility.
 
-### 1. Travel Agencies (B2B — Highest Priority)
-
-Agencies are the primary revenue driver. They need to understand:
-
-- **Wingle Pass for Agencies**: A curated, premium airport services platform purpose-built for travel agencies — especially luxury and high-end agencies. This is **not** the same as the B2C Wingle Pass. The agency product offers three tiers of service, from curated lounge access to full VVIP private terminal experiences (see "Service Tiers" below). Bookings are ingested from emails and PDFs with near-zero friction from the agency.
-- **Wingle Atlas**: A digital itinerary builder that replaces static PDF trip documents with rich, interactive, context-aware travel experiences delivered to travelers.
-- That these are two separate products that can work independently or together.
-- How to get started (contact form / demo request).
-
-### 2. Enterprise Partners (B2B)
-
-Potential white-label integrators need to understand:
-
-- **Wingle Pass White Label**: A brandable travel services layer that partners can embed under their own identity.
-- Volume capabilities and integration model.
-- How to express interest (contact form).
-
-### 3. Consumers (B2C)
+### 1. Consumers (B2C — Marketing/Press Priority)
 
 Existing and potential app users need to understand:
 
@@ -48,6 +31,23 @@ Existing and potential app users need to understand:
 - What services are available via `winglepass.com`.
 
 B2C is in maintenance mode commercially, but it remains the public face of the brand — generating press, social proof, and organic visibility. It must remain prominently visible.
+
+### 2. Travel Agencies (B2B)
+
+Agencies are the primary revenue driver. They need to understand:
+
+- **Wingle Pass for Agencies**: A curated, premium airport services platform purpose-built for travel agencies — especially luxury and high-end agencies. This is **not** the same as the B2C Wingle Pass. The agency product offers three tiers of service, from curated lounge access to full VVIP private terminal experiences (see "Service Tiers" below). Bookings are ingested from emails and PDFs with near-zero friction from the agency.
+- **Wingle Atlas**: A digital itinerary builder that replaces static PDF trip documents with rich, interactive, context-aware travel experiences delivered to travelers.
+- That these are two separate products that can work independently or together.
+- How to get started (contact form / demo request).
+
+### 3. Enterprise Partners (B2B)
+
+Potential white-label integrators need to understand:
+
+- **Wingle Pass White Label**: A brandable travel services layer that partners can embed under their own identity.
+- Volume capabilities and integration model.
+- How to express interest (contact form).
 
 ### 4. Press and Investors
 
@@ -112,6 +112,7 @@ The site should follow this information architecture:
 - **Legal** — Terms, Privacy Policy, Cookie Policy (EN/ES)
 
 Products with a user-facing platform (B2C app, `winglepass.com`) get CTAs that link out. Products without a user-facing platform (Pass for Agencies, White Label) collect interest via embedded contact forms.
+Navigation and homepage sections list the **B2C app first**, followed by B2B products.
 
 ## Role Within the Ecosystem
 

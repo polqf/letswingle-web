@@ -40,7 +40,7 @@ This is the same stack used by `wingle-web` and `wingle-atlas-web`. Using identi
 | `lucide-react` | Icon library (consistent with sibling projects) |
 | `clsx` | Conditional CSS class composition |
 | `tailwind-merge` | Tailwind class deduplication |
-| `react-markdown` | Render blog content from Markdown |
+| `remark` + `remark-html` | Render blog content from Markdown |
 | `gray-matter` | Parse Markdown frontmatter for blog posts |
 
 ### Internationalization
@@ -87,7 +87,7 @@ The blog migrates from `winglepass.com/blog` (which itself consolidated the Jeky
 |---|---|
 | Storage | Markdown files in `content/blog/` |
 | Frontmatter | `gray-matter` for metadata parsing |
-| Rendering | `react-markdown` with custom components |
+| Rendering | `remark` + `remark-html` (server-side HTML rendering) |
 | Categories | Cockpit Diaries, News |
 | Routing | `/blog`, `/blog/[slug]` |
 

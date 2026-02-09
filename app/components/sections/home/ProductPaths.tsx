@@ -9,6 +9,14 @@ export async function ProductPaths() {
   const t = await getTranslations();
   const cards = [
     {
+      key: 'app',
+      href: '/products/wingle-app',
+      label: t('home.paths.cards.app.label'),
+      title: t('home.paths.cards.app.title'),
+      description: t('home.paths.cards.app.description'),
+      cta: t('home.paths.cards.app.cta'),
+    },
+    {
       key: 'agencies',
       href: '/products/agencies',
       label: t('home.paths.cards.agencies.label'),
@@ -31,14 +39,6 @@ export async function ProductPaths() {
       title: t('home.paths.cards.whiteLabel.title'),
       description: t('home.paths.cards.whiteLabel.description'),
       cta: t('home.paths.cards.whiteLabel.cta'),
-    },
-    {
-      key: 'app',
-      href: '/products/wingle-app',
-      label: t('home.paths.cards.app.label'),
-      title: t('home.paths.cards.app.title'),
-      description: t('home.paths.cards.app.description'),
-      cta: t('home.paths.cards.app.cta'),
     },
   ];
 

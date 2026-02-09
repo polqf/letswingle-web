@@ -6,14 +6,12 @@ import { Container } from '@/app/components/ui/Container';
 import { getTranslations } from '@/app/lib/i18n/getTranslations';
 
 const links = [
-  { href: '/', key: 'nav.home' },
+  { href: '/products/wingle-app', key: 'nav.app' },
   { href: '/products/agencies', key: 'nav.agencies' },
   { href: '/products/atlas', key: 'nav.atlas' },
   { href: '/products/white-label', key: 'nav.whiteLabel' },
-  { href: '/products/wingle-app', key: 'nav.app' },
   { href: '/blog', key: 'nav.blog' },
   { href: '/about', key: 'nav.about' },
-  { href: '/contact', key: 'nav.contact' },
 ];
 
 export async function Header() {
@@ -45,9 +43,6 @@ export async function Header() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <Button href="/contact" variant="outline" size="sm">
-            {t('nav.contact')}
-          </Button>
           <Button href="/contact" variant="primary" size="sm">
             {t('nav.cta')}
           </Button>

@@ -109,7 +109,7 @@ export function ContactForm({ product, locale = 'en' }: ContactFormProps) {
             {t('forms.contact.options.app')}
           </option>
           <option value="wingle-pass" className="text-[color:var(--color-text)]">
-            {t('forms.contact.options.pass')}
+            {t('forms.contact.options.web')}
           </option>
         </select>
       </label>

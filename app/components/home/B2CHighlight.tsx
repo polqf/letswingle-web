@@ -7,7 +7,7 @@ import { getTranslations } from '@/app/lib/i18n/getTranslations';
 const storeLinks = {
   apple: 'https://apps.apple.com',
   google: 'https://play.google.com/store',
-  pass: 'https://winglepass.com',
+  web: 'https://winglepass.com',
 };
 
 export async function B2CHighlight() {
@@ -43,12 +43,12 @@ export async function B2CHighlight() {
 
         <Card className="space-y-4">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[color:var(--color-text-muted)]">
-            {t('home.cards.pass.title')}
+            {t('home.cards.web.title')}
           </p>
           <p className="text-sm text-[color:var(--color-text-muted)]">
-            {t('home.cards.pass.description')}
+            {t('home.cards.web.description')}
           </p>
-          <Button href={storeLinks.pass}>{t('home.cards.pass.cta')}</Button>
+          <Button href={storeLinks.web}>{t('home.cards.web.cta')}</Button>
         </Card>
       </Container>
     </Section>

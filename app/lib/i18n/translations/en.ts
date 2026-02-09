@@ -2,7 +2,7 @@ export const en = {
   nav: {
     home: 'Home',
     products: 'Products',
-    agencies: 'For Agencies',
+    agencies: 'Wingle for Agencies',
     atlas: 'Wingle Atlas',
     whiteLabel: 'White Label',
     app: 'Wingle App',
@@ -26,9 +26,9 @@ export const en = {
     },
     cards: {
       agencies: {
-        title: 'Wingle Pass for Agencies',
+        title: 'Wingle for Agencies',
         description:
-          'A curated, premium airport services platform for high-end agencies. Three tiers from filtered lounge access to VVIP private terminals.',
+          'Curated premium airport services for high-end agencies. Three tiers from quality-filtered lounge access to private-terminal experiences (confirmed per request).',
         cta: 'Request a demo',
       },
       atlas: {
@@ -38,7 +38,7 @@ export const en = {
         cta: 'See the vision',
       },
       whiteLabel: {
-        title: 'Wingle Pass White Label',
+        title: 'Wingle White Label',
         description:
           'A brandable travel services layer that partners can embed under their own identity.',
         cta: 'Start a conversation',
@@ -49,10 +49,10 @@ export const en = {
           'The consumer app that combines in-flight social connection with premium travel services.',
         cta: 'Download the app',
       },
-      pass: {
-        title: 'Wingle Pass (Web)',
+      web: {
+        title: 'Wingle',
         description:
-          'The B2C web platform for travelers who want premium airport services.',
+          'Premium travel services for travelers.',
         cta: 'Visit winglepass.com',
       },
     },
@@ -93,7 +93,7 @@ export const en = {
       bullets: {
         one: 'Interactive trip storytelling, not flat documents',
         two: 'Designed for agency workflows and travelers on the move',
-        three: 'Works independently or alongside Wingle Pass for Agencies',
+        three: 'Works independently or alongside Wingle for Agencies',
       },
     },
     b2c: {
@@ -151,11 +151,11 @@ export const en = {
       error: 'Something went wrong. Please try again.',
       success: 'Thank you. We will reach out shortly.',
       options: {
-        agencies: 'Wingle Pass for Agencies',
+        agencies: 'Wingle for Agencies',
         atlas: 'Wingle Atlas',
-        whiteLabel: 'Wingle Pass White Label',
+        whiteLabel: 'Wingle White Label',
         app: 'Wingle App',
-        pass: 'Wingle Pass (Web)',
+        web: 'Wingle',
       },
     },
   },

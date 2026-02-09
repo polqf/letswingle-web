@@ -9,7 +9,7 @@ const productLinks = {
   atlas: '#atlas',
   whiteLabel: '#white-label',
   app: '#wingle-app',
-  pass: 'https://winglepass.com',
+  web: 'https://winglepass.com',
 };
 
 export async function ProductOverview() {
@@ -90,14 +90,14 @@ export async function ProductOverview() {
           <Card className="flex h-full flex-col gap-6">
             <div className="space-y-2">
               <h3 className="text-xl font-semibold">
-                {t('home.cards.pass.title')}
+                {t('home.cards.web.title')}
               </h3>
               <p className="text-sm text-[color:var(--color-text-muted)]">
-                {t('home.cards.pass.description')}
+                {t('home.cards.web.description')}
               </p>
             </div>
-            <Button href={productLinks.pass} variant="secondary">
-              {t('home.cards.pass.cta')}
+            <Button href={productLinks.web} variant="secondary">
+              {t('home.cards.web.cta')}
             </Button>
           </Card>
         </div>

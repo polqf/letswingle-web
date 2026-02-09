@@ -2,7 +2,7 @@ export const es = {
   nav: {
     home: 'Inicio',
     products: 'Productos',
-    agencies: 'Para agencias',
+    agencies: 'Wingle para agencias',
     atlas: 'Wingle Atlas',
     whiteLabel: 'White Label',
     app: 'App Wingle',
@@ -26,9 +26,9 @@ export const es = {
     },
     cards: {
       agencies: {
-        title: 'Wingle Pass para agencias',
+        title: 'Wingle para agencias',
         description:
-          'Plataforma premium de servicios en aeropuertos para agencias de alto nivel. Tres niveles, desde lounges filtrados hasta terminales VVIP.',
+          'Servicios premium en aeropuertos, curados para agencias de alto nivel. Tres niveles, desde lounges filtrados por calidad hasta experiencias en terminal privada (confirmado bajo solicitud).',
         cta: 'Solicitar demo',
       },
       atlas: {
@@ -38,7 +38,7 @@ export const es = {
         cta: 'Descubrir la visión',
       },
       whiteLabel: {
-        title: 'Wingle Pass White Label',
+        title: 'Wingle White Label',
         description:
           'Capa de servicios de viaje con marca blanca para integrarla bajo tu propia identidad.',
         cta: 'Iniciar conversación',
@@ -49,10 +49,10 @@ export const es = {
           'La app para consumidores que combina conexión social en vuelo con servicios de viaje premium.',
         cta: 'Descargar la app',
       },
-      pass: {
-        title: 'Wingle Pass (Web)',
+      web: {
+        title: 'Wingle',
         description:
-          'La plataforma web B2C para viajeros que buscan servicios premium en aeropuertos.',
+          'Servicios premium de viaje para viajeros.',
         cta: 'Visitar winglepass.com',
       },
     },
@@ -93,7 +93,7 @@ export const es = {
       bullets: {
         one: 'Narrativa interactiva de viaje, no documentos planos',
         two: 'Diseñado para flujos de trabajo de agencias y viajeros en movimiento',
-        three: 'Funciona por separado o junto a Wingle Pass para agencias',
+        three: 'Funciona por separado o junto a Wingle para agencias',
       },
     },
     b2c: {
@@ -151,11 +151,11 @@ export const es = {
       error: 'Algo salió mal. Inténtalo de nuevo.',
       success: 'Gracias. Nos pondremos en contacto pronto.',
       options: {
-        agencies: 'Wingle Pass para agencias',
+        agencies: 'Wingle para agencias',
         atlas: 'Wingle Atlas',
-        whiteLabel: 'Wingle Pass White Label',
+        whiteLabel: 'Wingle White Label',
         app: 'App Wingle',
-        pass: 'Wingle Pass (Web)',
+        web: 'Wingle',
       },
     },
   },

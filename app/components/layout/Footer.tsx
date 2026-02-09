@@ -1,46 +1,64 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
-import { getTranslations } from '@/app/lib/i18n/getTranslations';
 import { Container } from '@/app/components/ui/Container';
+import { getTranslations } from '@/app/lib/i18n/getTranslations';
 
 export async function Footer() {
   const t = await getTranslations();
+  const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-[color:var(--color-border)] bg-[color:var(--color-card)]">
-      <Container className="flex flex-col gap-8 py-10 md:flex-row md:items-center md:justify-between">
-        <div className="space-y-2">
-          <p className="text-lg font-semibold">Wingle</p>
-          <p className="text-sm text-[color:var(--color-text-muted)]">
+    <footer className="border-t border-[color:var(--color-stroke)]/60 bg-[color:var(--color-brand-offwhite)]">
+      <Container className="grid gap-10 py-12 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
+        <div className="space-y-4">
+          <Image
+            src="/brand/blue-logo.png"
+            alt="Wingle"
+            width={120}
+            height={32}
+          />
+          <p className="text-sm text-[color:var(--color-ink-muted)]">
             {t('footer.description')}
           </p>
-          <p className="text-xs text-[color:var(--color-text-muted)]">
+          <p className="text-xs text-[color:var(--color-ink-muted)]">
             {t('footer.legal')}
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-4 text-sm font-medium text-[color:var(--color-text-muted)]">
-          <Link className="hover:text-[color:var(--color-text)]" href="#products">
-            {t('nav.products')}
-          </Link>
-          <Link className="hover:text-[color:var(--color-text)]" href="#agencies">
-            {t('nav.agencies')}
-          </Link>
-          <Link className="hover:text-[color:var(--color-text)]" href="#atlas">
-            {t('nav.atlas')}
-          </Link>
-          <Link className="hover:text-[color:var(--color-text)]" href="#white-label">
-            {t('nav.whiteLabel')}
-          </Link>
-          <Link className="hover:text-[color:var(--color-text)]" href="#wingle-app">
-            {t('nav.app')}
-          </Link>
+        <div className="space-y-3 text-sm font-semibold text-[color:var(--color-ink)]">
+          <p className="text-xs uppercase tracking-[0.2em] text-[color:var(--color-ink-muted)]">
+            {t('footer.products')}
+          </p>
+          <Link href="/products/agencies">{t('nav.agencies')}</Link>
+          <Link href="/products/atlas">{t('nav.atlas')}</Link>
+          <Link href="/products/white-label">{t('nav.whiteLabel')}</Link>
+          <Link href="/products/wingle-app">{t('nav.app')}</Link>
         </div>
 
-        <p className="text-xs text-[color:var(--color-text-muted)]">
-          (c) {new Date().getFullYear()} {t('footer.legal')} - {t('footer.rights')}
-        </p>
+        <div className="space-y-3 text-sm font-semibold text-[color:var(--color-ink)]">
+          <p className="text-xs uppercase tracking-[0.2em] text-[color:var(--color-ink-muted)]">
+            {t('footer.company')}
+          </p>
+          <Link href="/about">{t('nav.about')}</Link>
+          <Link href="/blog">{t('nav.blog')}</Link>
+          <Link href="/contact">{t('nav.contact')}</Link>
+        </div>
+
+        <div className="space-y-3 text-sm font-semibold text-[color:var(--color-ink)]">
+          <p className="text-xs uppercase tracking-[0.2em] text-[color:var(--color-ink-muted)]">
+            {t('footer.legalLinks')}
+          </p>
+          <Link href="/legal/terms">{t('footer.terms')}</Link>
+          <Link href="/legal/privacy">{t('footer.privacy')}</Link>
+          <Link href="/legal/cookies">{t('footer.cookies')}</Link>
+        </div>
       </Container>
+      <div className="border-t border-[color:var(--color-stroke)]/60">
+        <Container className="py-4 text-xs text-[color:var(--color-ink-muted)]">
+          © {year} {t('footer.legal')} · {t('footer.rights')}
+        </Container>
+      </div>
     </footer>
   );
 }

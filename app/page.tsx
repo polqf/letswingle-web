@@ -1,23 +1,23 @@
-import { AgencyTiers } from '@/app/components/home/AgencyTiers';
-import { AtlasHighlight } from '@/app/components/home/AtlasHighlight';
-import { B2CHighlight } from '@/app/components/home/B2CHighlight';
-import { CTASection } from '@/app/components/home/CTASection';
-import { Hero } from '@/app/components/home/Hero';
-import { ProductOverview } from '@/app/components/home/ProductOverview';
-import { SocialProof } from '@/app/components/home/SocialProof';
-import { WhiteLabelHighlight } from '@/app/components/home/WhiteLabelHighlight';
+import { AgencyTiersPreview } from '@/app/components/sections/home/AgencyTiersPreview';
+import { AppPreview } from '@/app/components/sections/home/AppPreview';
+import { AtlasPreview } from '@/app/components/sections/home/AtlasPreview';
+import { Hero } from '@/app/components/sections/home/Hero';
+import { HomeCTA } from '@/app/components/sections/home/HomeCTA';
+import { ProductPaths } from '@/app/components/sections/home/ProductPaths';
+import { TrustSignals } from '@/app/components/sections/home/TrustSignals';
+import { WhiteLabelPreview } from '@/app/components/sections/home/WhiteLabelPreview';
 
 export default function HomePage() {
   return (
     <>
       <Hero />
-      <ProductOverview />
-      <AgencyTiers />
-      <AtlasHighlight />
-      <WhiteLabelHighlight />
-      <B2CHighlight />
-      <SocialProof />
-      <CTASection />
+      <ProductPaths />
+      <AgencyTiersPreview />
+      <AtlasPreview />
+      <WhiteLabelPreview />
+      <AppPreview />
+      <TrustSignals />
+      <HomeCTA />
     </>
   );
 }

@@ -2,8 +2,9 @@
 
 import { useState } from 'react';
 
-import { cn } from '@/app/lib/utils/cn';
+import { Button } from '@/app/components/ui/Button';
 import { useTranslations, type Locale } from '@/app/lib/i18n/useTranslations';
+import { cn } from '@/app/lib/utils/cn';
 
 interface ContactFormProps {
   product?: string;
@@ -48,11 +49,11 @@ export function ContactForm({ product, locale = 'en' }: ContactFormProps) {
     <form onSubmit={handleSubmit} className="space-y-4 text-sm">
       <div className="grid gap-4 md:grid-cols-2">
         <label className="flex flex-col gap-2">
-          <span className="font-medium text-[color:var(--color-on-primary)]">
+          <span className="font-semibold text-[color:var(--color-ink)]">
             {t('forms.contact.nameLabel')}
           </span>
           <input
-            className="rounded-2xl border border-[color:var(--color-on-primary)]/20 bg-[color:var(--color-on-primary)]/10 px-4 py-3 text-[color:var(--color-on-primary)] placeholder:text-[color:var(--color-on-primary)]/60"
+            className="rounded-[var(--radius-md)] border border-[color:var(--color-stroke)] bg-[color:var(--color-brand-offwhite)] px-4 py-3 text-[color:var(--color-ink)] placeholder:text-[color:var(--color-ink-muted)] focus:outline-none focus:ring-2 focus:ring-[color:var(--color-brand-blue)]/40"
             name="name"
             placeholder={t('forms.contact.namePlaceholder')}
             required
@@ -60,11 +61,11 @@ export function ContactForm({ product, locale = 'en' }: ContactFormProps) {
           />
         </label>
         <label className="flex flex-col gap-2">
-          <span className="font-medium text-[color:var(--color-on-primary)]">
+          <span className="font-semibold text-[color:var(--color-ink)]">
             {t('forms.contact.emailLabel')}
           </span>
           <input
-            className="rounded-2xl border border-[color:var(--color-on-primary)]/20 bg-[color:var(--color-on-primary)]/10 px-4 py-3 text-[color:var(--color-on-primary)] placeholder:text-[color:var(--color-on-primary)]/60"
+            className="rounded-[var(--radius-md)] border border-[color:var(--color-stroke)] bg-[color:var(--color-brand-offwhite)] px-4 py-3 text-[color:var(--color-ink)] placeholder:text-[color:var(--color-ink-muted)] focus:outline-none focus:ring-2 focus:ring-[color:var(--color-brand-blue)]/40"
             type="email"
             name="email"
             placeholder={t('forms.contact.emailPlaceholder')}
@@ -74,51 +75,39 @@ export function ContactForm({ product, locale = 'en' }: ContactFormProps) {
         </label>
       </div>
       <label className="flex flex-col gap-2">
-        <span className="font-medium text-[color:var(--color-on-primary)]">
+        <span className="font-semibold text-[color:var(--color-ink)]">
           {t('forms.contact.companyLabel')}
         </span>
         <input
-          className="rounded-2xl border border-[color:var(--color-on-primary)]/20 bg-[color:var(--color-on-primary)]/10 px-4 py-3 text-[color:var(--color-on-primary)] placeholder:text-[color:var(--color-on-primary)]/60"
+          className="rounded-[var(--radius-md)] border border-[color:var(--color-stroke)] bg-[color:var(--color-brand-offwhite)] px-4 py-3 text-[color:var(--color-ink)] placeholder:text-[color:var(--color-ink-muted)] focus:outline-none focus:ring-2 focus:ring-[color:var(--color-brand-blue)]/40"
           name="company"
           placeholder={t('forms.contact.companyPlaceholder')}
           autoComplete="organization"
         />
       </label>
       <label className="flex flex-col gap-2">
-        <span className="font-medium text-[color:var(--color-on-primary)]">
+        <span className="font-semibold text-[color:var(--color-ink)]">
           {t('forms.contact.productLabel')}
         </span>
         <select
-          className="rounded-2xl border border-[color:var(--color-on-primary)]/20 bg-[color:var(--color-on-primary)]/10 px-4 py-3 text-[color:var(--color-on-primary)]"
+          className="rounded-[var(--radius-md)] border border-[color:var(--color-stroke)] bg-[color:var(--color-brand-offwhite)] px-4 py-3 text-[color:var(--color-ink)] focus:outline-none focus:ring-2 focus:ring-[color:var(--color-brand-blue)]/40"
           name="product"
           defaultValue={product ?? ''}
         >
-          <option value="" className="text-[color:var(--color-text)]">
-            {t('forms.contact.productPlaceholder')}
-          </option>
-          <option value="agencies" className="text-[color:var(--color-text)]">
-            {t('forms.contact.options.agencies')}
-          </option>
-          <option value="atlas" className="text-[color:var(--color-text)]">
-            {t('forms.contact.options.atlas')}
-          </option>
-          <option value="white-label" className="text-[color:var(--color-text)]">
-            {t('forms.contact.options.whiteLabel')}
-          </option>
-          <option value="wingle-app" className="text-[color:var(--color-text)]">
-            {t('forms.contact.options.app')}
-          </option>
-          <option value="wingle-pass" className="text-[color:var(--color-text)]">
-            {t('forms.contact.options.web')}
-          </option>
+          <option value="">{t('forms.contact.productPlaceholder')}</option>
+          <option value="agencies">{t('forms.contact.options.agencies')}</option>
+          <option value="atlas">{t('forms.contact.options.atlas')}</option>
+          <option value="white-label">{t('forms.contact.options.whiteLabel')}</option>
+          <option value="wingle-app">{t('forms.contact.options.app')}</option>
+          <option value="wingle">{t('forms.contact.options.web')}</option>
         </select>
       </label>
       <label className="flex flex-col gap-2">
-        <span className="font-medium text-[color:var(--color-on-primary)]">
+        <span className="font-semibold text-[color:var(--color-ink)]">
           {t('forms.contact.messageLabel')}
         </span>
         <textarea
-          className="min-h-[120px] rounded-2xl border border-[color:var(--color-on-primary)]/20 bg-[color:var(--color-on-primary)]/10 px-4 py-3 text-[color:var(--color-on-primary)] placeholder:text-[color:var(--color-on-primary)]/60"
+          className="min-h-[120px] rounded-[var(--radius-md)] border border-[color:var(--color-stroke)] bg-[color:var(--color-brand-offwhite)] px-4 py-3 text-[color:var(--color-ink)] placeholder:text-[color:var(--color-ink-muted)] focus:outline-none focus:ring-2 focus:ring-[color:var(--color-brand-blue)]/40"
           name="message"
           placeholder={t('forms.contact.messagePlaceholder')}
           required
@@ -126,35 +115,31 @@ export function ContactForm({ product, locale = 'en' }: ContactFormProps) {
       </label>
       <label className="sr-only" aria-hidden="true">
         {t('forms.contact.websiteLabel')}
-        <input
-          className="hidden"
-          name="website"
-          tabIndex={-1}
-          autoComplete="off"
-        />
+        <input className="hidden" name="website" tabIndex={-1} autoComplete="off" />
       </label>
-      <button
-        className={cn(
-          'rounded-full bg-[color:var(--color-card)] px-6 py-3 font-semibold text-[color:var(--color-primary)] transition-opacity',
-          status === 'submitting' && 'opacity-60'
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <Button
+          className={cn(status === 'submitting' && 'opacity-60')}
+          variant="primary"
+          size="md"
+          type="submit"
+          disabled={status === 'submitting'}
+        >
+          {status === 'success'
+            ? t('forms.contact.submitSuccess')
+            : t('forms.contact.submitIdle')}
+        </Button>
+        {status === 'error' && (
+          <p className="text-sm text-[color:var(--color-ink-muted)]">
+            {t('forms.contact.error')}
+          </p>
         )}
-        disabled={status === 'submitting'}
-        type="submit"
-      >
-        {status === 'success'
-          ? t('forms.contact.submitSuccess')
-          : t('forms.contact.submitIdle')}
-      </button>
-      {status === 'error' && (
-        <p className="text-[color:var(--color-on-primary)]/80">
-          {t('forms.contact.error')}
-        </p>
-      )}
-      {status === 'success' && (
-        <p className="text-[color:var(--color-on-primary)]/80">
-          {t('forms.contact.success')}
-        </p>
-      )}
+        {status === 'success' && (
+          <p className="text-sm text-[color:var(--color-ink-muted)]">
+            {t('forms.contact.success')}
+          </p>
+        )}
+      </div>
     </form>
   );
 }

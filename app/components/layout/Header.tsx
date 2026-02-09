@@ -1,45 +1,75 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
-import { getTranslations } from '@/app/lib/i18n/getTranslations';
 import { Button } from '@/app/components/ui/Button';
 import { Container } from '@/app/components/ui/Container';
+import { getTranslations } from '@/app/lib/i18n/getTranslations';
+
+const links = [
+  { href: '/', key: 'nav.home' },
+  { href: '/products/agencies', key: 'nav.agencies' },
+  { href: '/products/atlas', key: 'nav.atlas' },
+  { href: '/products/white-label', key: 'nav.whiteLabel' },
+  { href: '/products/wingle-app', key: 'nav.app' },
+  { href: '/blog', key: 'nav.blog' },
+  { href: '/about', key: 'nav.about' },
+  { href: '/contact', key: 'nav.contact' },
+];
 
 export async function Header() {
   const t = await getTranslations();
 
   return (
-    <header className="border-b border-[color:var(--color-border)] bg-[color:var(--color-card)] backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-[color:var(--color-stroke)]/60 bg-[color:var(--color-brand-offwhite)]/90 backdrop-blur">
       <Container className="flex items-center justify-between py-4">
-        <Link href="/" className="text-lg font-semibold tracking-tight">
-          Wingle
+        <Link href="/" className="flex items-center gap-3">
+          <Image
+            src="/brand/blue-logo.png"
+            alt="Wingle"
+            width={120}
+            height={32}
+            priority
+          />
         </Link>
 
-        <nav className="hidden items-center gap-6 text-sm font-medium text-[color:var(--color-text-muted)] md:flex">
-          <Link className="hover:text-[color:var(--color-text)]" href="#products">
-            {t('nav.products')}
-          </Link>
-          <Link className="hover:text-[color:var(--color-text)]" href="#agencies">
-            {t('nav.agencies')}
-          </Link>
-          <Link className="hover:text-[color:var(--color-text)]" href="#atlas">
-            {t('nav.atlas')}
-          </Link>
-          <Link className="hover:text-[color:var(--color-text)]" href="#white-label">
-            {t('nav.whiteLabel')}
-          </Link>
-          <Link className="hover:text-[color:var(--color-text)]" href="#wingle-app">
-            {t('nav.app')}
-          </Link>
+        <nav className="hidden items-center gap-6 text-sm font-semibold text-[color:var(--color-ink-muted)] lg:flex">
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              className="transition-colors hover:text-[color:var(--color-ink)]"
+              href={link.href}
+            >
+              {t(link.key)}
+            </Link>
+          ))}
         </nav>
 
-        <div className="flex items-center gap-3">
-          <Button href="#contact" variant="outline" size="sm">
+        <div className="hidden items-center gap-3 lg:flex">
+          <Button href="/contact" variant="outline" size="sm">
             {t('nav.contact')}
           </Button>
-          <Button href="#contact" size="sm">
+          <Button href="/contact" variant="primary" size="sm">
             {t('nav.cta')}
           </Button>
         </div>
+
+        <details className="relative lg:hidden">
+          <summary className="cursor-pointer list-none rounded-full border border-[color:var(--color-stroke)] px-4 py-2 text-sm font-semibold text-[color:var(--color-ink)]">
+            {t('nav.menu')}
+          </summary>
+          <div className="absolute right-0 mt-3 w-64 rounded-[var(--radius-lg)] border border-[color:var(--color-stroke)] bg-[color:var(--color-surface)] p-4 shadow-[var(--shadow-soft)]">
+            <div className="flex flex-col gap-3 text-sm font-semibold text-[color:var(--color-ink)]">
+              {links.map((link) => (
+                <Link key={link.href} href={link.href}>
+                  {t(link.key)}
+                </Link>
+              ))}
+              <Button href="/contact" variant="primary" size="sm">
+                {t('nav.cta')}
+              </Button>
+            </div>
+          </div>
+        </details>
       </Container>
     </header>
   );

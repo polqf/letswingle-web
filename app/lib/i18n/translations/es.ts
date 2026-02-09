@@ -1,7 +1,7 @@
 export const es = {
   nav: {
     home: 'Inicio',
-    agencies: 'Wingle Pass para agencias',
+    agencies: 'Para agencias',
     atlas: 'Wingle Atlas',
     whiteLabel: 'White Label',
     app: 'App Wingle',
@@ -170,7 +170,7 @@ export const es = {
   },
   agencies: {
     hero: {
-      eyebrow: 'Wingle Pass para agencias',
+      eyebrow: 'Wingle para agencias',
       title: 'Servicios premium en aeropuertos para agencias que necesitan certeza.',
       subtitle:
         'Tres niveles curados, confirmados bajo solicitud, pensados para viajes de alto nivel.',
@@ -299,7 +299,7 @@ export const es = {
       eyebrow: 'Resultados',
       title: 'Una mejor experiencia para agencias y viajeros',
       subtitle: 'Atlas conecta el viaje antes de la salida.',
-      panelEyebrow: 'Se complementa con Wingle Pass',
+      panelEyebrow: 'Se complementa con Wingle para agencias',
       panelTitle: 'Un portafolio que trabaja junto',
       panelBody: 'Atlas funciona solo o junto a servicios premium en aeropuertos.',
       items: {
@@ -307,7 +307,7 @@ export const es = {
         two: 'Agencias con una impresión premium a escala',
         three: 'Traspaso claro entre itinerario y servicios',
       },
-      cta: 'Combinar con Wingle Pass para agencias',
+      cta: 'Combinar con Wingle para agencias',
     },
     contact: {
       title: 'Ver Atlas en acción',
@@ -457,7 +457,7 @@ export const es = {
       subtitle: 'Ofertas B2B y B2C que funcionan por separado.',
       b2bTitle: 'Para agencias y partners',
       b2bBody:
-        'Wingle Pass para agencias, Wingle Atlas y servicios White Label.',
+        'Wingle para agencias, Wingle Atlas y servicios White Label.',
       b2cTitle: 'Para viajeros',
       b2cBody: 'App Wingle y servicios disponibles en winglepass.com.',
     },
@@ -619,7 +619,7 @@ export const es = {
       error: 'Algo salió mal. Inténtalo de nuevo.',
       success: 'Gracias. Nos pondremos en contacto pronto.',
       options: {
-        agencies: 'Wingle Pass para agencias',
+        agencies: 'Wingle para agencias',
         atlas: 'Wingle Atlas',
         whiteLabel: 'White Label',
         app: 'App Wingle',

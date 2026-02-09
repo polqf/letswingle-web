@@ -1,10 +1,10 @@
 export const en = {
   nav: {
     home: 'Home',
-    agencies: 'Wingle Pass for Agencies',
+    agencies: 'For Agencies',
     atlas: 'Wingle Atlas',
     whiteLabel: 'White Label',
-    app: 'Wingle App',
+    app: 'The App',
     blog: 'Blog',
     about: 'About',
     contact: 'Contact',
@@ -35,7 +35,7 @@ export const en = {
       cards: {
         agencies: {
           label: 'B2B',
-          title: 'Wingle Pass for Agencies',
+          title: 'Wingle for Agencies',
           description:
             'Curated premium airport services for agencies. Three tiers, confirmed per request.',
           cta: 'See the agency product',
@@ -171,7 +171,7 @@ export const en = {
   },
   agencies: {
     hero: {
-      eyebrow: 'Wingle Pass for Agencies',
+      eyebrow: 'Wingle for Agencies',
       title: 'Premium airport services for agencies that need certainty.',
       subtitle:
         'Three curated tiers, confirmed per request, designed for luxury and high-touch travel.',
@@ -300,7 +300,7 @@ export const en = {
       eyebrow: 'Outcomes',
       title: 'A better experience for agencies and travelers',
       subtitle: 'Atlas makes the trip feel connected before departure.',
-      panelEyebrow: 'Pairs with Wingle Pass',
+      panelEyebrow: 'Pairs with Wingle for Agencies',
       panelTitle: 'A portfolio that works together',
       panelBody: 'Atlas stands alone, or complements premium airport services.',
       items: {
@@ -308,7 +308,7 @@ export const en = {
         two: 'Agencies deliver a premium impression at scale',
         three: 'Clear handoff from itinerary to airport services',
       },
-      cta: 'Pair with Wingle Pass for Agencies',
+      cta: 'Pair with Wingle for Agencies',
     },
     contact: {
       title: 'See Atlas in action',
@@ -458,7 +458,7 @@ export const en = {
       subtitle: 'B2B and B2C offerings that can operate independently.',
       b2bTitle: 'For agencies and partners',
       b2bBody:
-        'Wingle Pass for Agencies, Wingle Atlas, and White Label services.',
+        'Wingle for Agencies, Wingle Atlas, and White Label services.',
       b2cTitle: 'For travelers',
       b2cBody: 'Wingle app and the services available at winglepass.com.',
     },
@@ -620,7 +620,7 @@ export const en = {
       error: 'Something went wrong. Please try again.',
       success: 'Thank you. We will reach out shortly.',
       options: {
-        agencies: 'Wingle Pass for Agencies',
+        agencies: 'Wingle for Agencies',
         atlas: 'Wingle Atlas',
         whiteLabel: 'White Label',
         app: 'Wingle App',

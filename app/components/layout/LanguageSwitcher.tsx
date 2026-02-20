@@ -31,7 +31,7 @@ export function LanguageSwitcher({ locale, className }: LanguageSwitcherProps) {
   const baseClasses =
     'rounded-full border px-3 py-1 text-xs font-semibold transition-colors';
   const activeClasses =
-    'border-[color:var(--color-brand-blue)] bg-[color:var(--color-brand-blue)] text-white';
+    'border-[color:var(--color-brand-blue)] text-[color:var(--color-brand-blue)] border-2';
   const inactiveClasses =
     'border-[color:var(--color-stroke)] text-[color:var(--color-ink-muted)] hover:text-[color:var(--color-ink)]';
 

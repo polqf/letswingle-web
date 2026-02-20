@@ -26,7 +26,7 @@ export async function Footer() {
           </p>
         </div>
 
-        <div className="space-y-3 text-sm font-semibold text-[color:var(--color-ink)]">
+        <div className="flex flex-col items-start gap-3 text-sm font-semibold text-[color:var(--color-ink)]">
           <p className="text-xs uppercase tracking-[0.2em] text-[color:var(--color-ink-muted)]">
             {t('footer.products')}
           </p>
@@ -36,7 +36,7 @@ export async function Footer() {
           <Link href="/products/white-label">{t('nav.whiteLabel')}</Link>
         </div>
 
-        <div className="space-y-3 text-sm font-semibold text-[color:var(--color-ink)]">
+        <div className="flex flex-col items-start gap-3 text-sm font-semibold text-[color:var(--color-ink)]">
           <p className="text-xs uppercase tracking-[0.2em] text-[color:var(--color-ink-muted)]">
             {t('footer.company')}
           </p>
@@ -46,7 +46,7 @@ export async function Footer() {
           <Link href="/contact">{t('nav.contact')}</Link>
         </div>
 
-        <div className="space-y-3 text-sm font-semibold text-[color:var(--color-ink)]">
+        <div className="flex flex-col items-start gap-3 text-sm font-semibold text-[color:var(--color-ink)]">
           <p className="text-xs uppercase tracking-[0.2em] text-[color:var(--color-ink-muted)]">
             {t('footer.legalLinks')}
           </p>

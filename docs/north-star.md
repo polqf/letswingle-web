@@ -45,6 +45,7 @@ A journalist or investor lands on the site and finds a professional, polished pr
 
 - **Every product has a dedicated, well-crafted page** with a clear value proposition, visual assets, and a single primary CTA.
 - **The blog is active and engaging**, with regular Cockpit Diaries episodes and news posts. It is the canonical blog for the company, no longer split across multiple subdomains.
+- **Press coverage is centralized** on a dedicated press page for credibility.
 - **Legal pages are complete and current** in both English and Spanish.
 - **Social proof is integrated throughout**: App Store ratings, press mentions, partner logos, user testimonials.
 
@@ -85,6 +86,7 @@ A journalist or investor lands on the site and finds a professional, polished pr
 | Wingle Atlas product page with contact/demo form | Complete |
 | White Label product page with contact form | Complete |
 | Blog (Cockpit Diaries + News) | Complete, sole canonical source |
+| Press page | Complete |
 | About / Company page | Complete |
 | Contact page | Complete |
 | Legal pages (EN/ES) | Complete |

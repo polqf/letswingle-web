@@ -10,6 +10,7 @@ export default async function AgenciesPage() {
   const tiers = ['basic', 'meet', 'vvip'] as const;
   const reasons = ['one', 'two', 'three', 'four'] as const;
   const steps = ['one', 'two', 'three'] as const;
+  const atlasHighlights = ['one', 'two', 'three'] as const;
 
   return (
     <>
@@ -132,6 +133,38 @@ export default async function AgenciesPage() {
                 </p>
               </div>
             ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="bg-[color:var(--color-surface)] py-20">
+        <Container className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+          <div className="space-y-6">
+            <SectionHeader
+              eyebrow={t('atlas.hero.eyebrow')}
+              title={t('atlas.outcomes.title')}
+              subtitle={t('atlas.outcomes.subtitle')}
+            />
+            <ul className="space-y-3 text-sm text-[color:var(--color-ink-muted)]">
+              {atlasHighlights.map((item) => (
+                <li key={item}>• {t(`atlas.outcomes.items.${item}`)}</li>
+              ))}
+            </ul>
+            <Button href="/products/atlas" variant="primary">
+              {t('atlas.outcomes.cta')}
+            </Button>
+          </div>
+
+          <div className="rounded-[var(--radius-xl)] border border-[color:var(--color-stroke)] bg-[color:var(--color-brand-offwhite)] p-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--color-ink-muted)]">
+              {t('atlas.outcomes.panelEyebrow')}
+            </p>
+            <p className="mt-3 text-lg font-semibold text-[color:var(--color-ink)]">
+              {t('atlas.outcomes.panelTitle')}
+            </p>
+            <p className="mt-4 text-sm text-[color:var(--color-ink-muted)]">
+              {t('atlas.outcomes.panelBody')}
+            </p>
           </div>
         </Container>
       </section>

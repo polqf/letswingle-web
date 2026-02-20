@@ -42,6 +42,7 @@ export async function Footer() {
           </p>
           <Link href="/about">{t('nav.about')}</Link>
           <Link href="/blog">{t('nav.blog')}</Link>
+          <Link href="/press">{t('nav.press')}</Link>
           <Link href="/contact">{t('nav.contact')}</Link>
         </div>
 

@@ -3,12 +3,13 @@ import { Container } from '@/app/components/ui/Container';
 import { SectionHeader } from '@/app/components/ui/SectionHeader';
 import { Tag } from '@/app/components/ui/Tag';
 import { ContactBand } from '@/app/components/sections/ContactBand';
+import { PressPreview } from '@/app/components/sections/home/PressPreview';
 import { getTranslations } from '@/app/lib/i18n/getTranslations';
 
 export default async function WingleAppPage() {
   const t = await getTranslations();
   const highlights = ['one', 'two', 'three'] as const;
-  const services = ['one', 'two', 'three'] as const;
+  const services = ['one', 'two', 'three', 'four'] as const;
 
   return (
     <>
@@ -56,6 +57,34 @@ export default async function WingleAppPage() {
       <section className="py-20">
         <Container className="space-y-12">
           <SectionHeader
+            eyebrow={t('app.blocks.eyebrow')}
+            title={t('app.blocks.title')}
+            subtitle={t('app.blocks.subtitle')}
+          />
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="rounded-[var(--radius-lg)] border border-[color:var(--color-stroke)] bg-[color:var(--color-surface)] p-6">
+              <p className="text-base font-semibold text-[color:var(--color-ink)]">
+                {t('app.blocks.connection.title')}
+              </p>
+              <p className="mt-3 text-sm text-[color:var(--color-ink-muted)]">
+                {t('app.blocks.connection.description')}
+              </p>
+            </div>
+            <div className="rounded-[var(--radius-lg)] border border-[color:var(--color-stroke)] bg-[color:var(--color-surface)] p-6">
+              <p className="text-base font-semibold text-[color:var(--color-ink)]">
+                {t('app.blocks.services.title')}
+              </p>
+              <p className="mt-3 text-sm text-[color:var(--color-ink-muted)]">
+                {t('app.blocks.services.description')}
+              </p>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="py-20">
+        <Container className="space-y-12">
+          <SectionHeader
             eyebrow={t('app.highlights.eyebrow')}
             title={t('app.highlights.title')}
             subtitle={t('app.highlights.subtitle')}
@@ -75,6 +104,9 @@ export default async function WingleAppPage() {
               </div>
             ))}
           </div>
+          <Button href="/products/wingle-app/faqs" variant="outline">
+            {t('app.faqsCta')}
+          </Button>
         </Container>
       </section>
 
@@ -112,6 +144,8 @@ export default async function WingleAppPage() {
           </div>
         </Container>
       </section>
+
+      <PressPreview />
 
       <ContactBand
         title={t('app.contact.title')}

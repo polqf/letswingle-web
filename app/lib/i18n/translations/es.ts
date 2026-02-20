@@ -1,234 +1,168 @@
 export const es = {
   nav: {
     home: 'Inicio',
-    agencies: 'Para agencias',
+    agencies: 'Wingle para profesionales de viajes',
     atlas: 'Wingle Atlas',
     whiteLabel: 'White Label',
     app: 'App Wingle',
     blog: 'Blog',
-    about: 'Sobre Wingle',
+    about: 'Qué es Wingle',
+    press: 'Prensa',
     contact: 'Contacto',
-    cta: 'Habla con nuestro equipo',
+    cta: 'Envíanos un mensaje',
     menu: 'Menú',
   },
   home: {
     hero: {
-      eyebrow: 'Para agencias, partners y viajeros',
-      title: 'Viajes premium, curados con confianza.',
+      eyebrow: 'Viaja mejor con Wingle',
+      title: 'Tu pase para viajar mejor',
       subtitle:
-        'Wingle combina servicios aeroportuarios curados, itinerarios digitales y conexión humana para que los viajes críticos se sientan claros y tranquilos.',
-      primaryCta: 'Habla con nuestro equipo',
-      secondaryCta: 'Ver productos',
-      panelEyebrow: 'Qué hacemos',
-      panelTitle: 'Un portafolio completo bajo una sola marca',
+        'Sin suscripción. Usa créditos cuando el viaje realmente lo necesita.',
+      primaryCta: 'Descubrir la app',
+      secondaryCta: 'Wingle para profesionales de viajes',
+      panelEyebrow: 'Diseñado para viajeros y profesionales',
+      panelTitle: 'Una marca, dos caminos claros',
       panelBody: {
-        one: 'Servicios premium en aeropuertos para agencias y partners.',
-        two: 'Itinerarios digitales que convierten PDFs en viajes.',
-        three: 'Una app de consumo que mantiene la marca visible.',
+        one: 'La App Wingle resuelve momentos de fricción con créditos.',
+        two: 'Wingle para profesionales escala servicios premium globalmente.',
+        three:
+          'Atlas transforma PDFs estáticos y mantiene el know-how de destinos de la agencia en un solo lugar compartido.',
       },
-      panelNote: 'No hay compra directa. Confirmamos opciones bajo solicitud.',
-    },
-    paths: {
-      eyebrow: 'Elige un camino',
-      title: 'Productos distintos para audiencias distintas',
-      subtitle: 'Cada producto funciona por separado, y juntos funcionan aún mejor.',
-      cards: {
-        agencies: {
-          label: 'B2B',
-          title: 'Wingle Pass para agencias',
-          description:
-            'Servicios premium en aeropuertos para agencias. Tres niveles, confirmados bajo solicitud.',
-          cta: 'Ver producto para agencias',
-        },
-        atlas: {
-          label: 'B2B',
-          title: 'Wingle Atlas',
-          description:
-            'Constructor de itinerarios digitales que reemplaza PDFs por experiencias interactivas.',
-          cta: 'Explorar Atlas',
-        },
-        whiteLabel: {
-          label: 'B2B',
-          title: 'White Label',
-          description:
-            'Integra la capa de servicios de Wingle bajo tu marca con un estándar premium.',
-          cta: 'Iniciar conversación',
-        },
-        app: {
-          label: 'B2C',
-          title: 'App Wingle',
-          description:
-            'La app para viajeros que combina conexión en vuelo con servicios premium.',
-          cta: 'Descubrir la app',
-        },
-      },
+      panelNote: 'Simple, modular y adaptado a flujos reales.',
     },
     agencies: {
-      eyebrow: 'Para agencias',
-      title: 'Tres niveles de servicio, un estándar premium',
-      subtitle: 'Servicios curados que las agencias pueden confiar, confirmados bajo solicitud.',
-      tiers: {
-        basic: {
-          title: 'Basic',
-          description:
-            'Acceso curado a más de 700 lounges en todo el mundo, filtrados por calidad y ajuste.',
-          availability: 'Cobertura global',
-          pricing: 'Precio confirmado bajo solicitud',
-        },
-        meet: {
-          title: 'Meet & Assist',
-          description:
-            'Acompañamiento personal desde la puerta del avión, pasando por seguridad y control de pasaportes, hasta el lounge VIP.',
-          availability: 'Aeropuertos seleccionados, confirmado bajo solicitud',
-          pricing: 'Precio confirmado bajo solicitud',
-        },
-        vvip: {
-          title: 'VVIP',
-          description:
-            'Llegada en terminal privada, check-in y seguridad privados, traslado acompañado hasta el avión.',
-          availability: 'Aeropuertos seleccionados, confirmado bajo solicitud',
-          pricing: 'Precio confirmado bajo solicitud',
-        },
-      },
-    },
-    atlas: {
-      eyebrow: 'Wingle Atlas',
-      title: 'Itinerarios que se sienten vivos',
+      eyebrow: 'Wingle para profesionales de viajes',
+      title:
+        'Tu partner one-stop de confianza para servicios premium en aeropuertos en todo el mundo',
       subtitle:
-        'Sustituye PDFs estáticos por experiencias interactivas que los viajeros realmente usan.',
+        'Lounges, fast tracks, meet & greet y experiencias VVIP con cobertura global.',
       points: {
-        one: 'Narrativa interactiva para cada tramo del viaje',
-        two: 'Diseñado para flujos de agencias y viajeros en movimiento',
-        three: 'Funciona solo o junto a los servicios para agencias',
+        one: 'Todo, en cualquier lugar del mundo, a través de un solo partner.',
+        two: 'Inteligencia interna que filtra y recomienda solo servicios up to standard.',
+        three: 'Stack tecnológico modular que se adapta al flujo de cada agencia.',
+        four: 'Instrucciones claras y simples para el viajero en formatos personalizables.',
+        five: 'Operación high-touch con calidad premium predecible.',
       },
-      cta: 'Explorar Wingle Atlas',
-      panelEyebrow: 'Diseñado para agencias',
-      panelTitle: 'De PDF a viaje premium',
-      panelBody: {
-        one: 'Todo el detalle en un solo lugar con contexto claro.',
-        two: 'Un itinerario que el viajero quiere abrir.',
-      },
-    },
-    whiteLabel: {
-      eyebrow: 'White Label',
-      title: 'Integra los servicios de Wingle bajo tu marca',
-      subtitle: 'Capa de servicios curados para partners que necesitan calidad y control.',
-      points: {
-        one: 'Experiencia con marca propia',
-        two: 'Servicios premium confirmados bajo solicitud',
-        three: 'Modelo de integración explicado a alto nivel',
-      },
-      cta: 'Iniciar conversación',
-      panelEyebrow: 'Listo para partners',
-      panelBody: {
-        one: 'Mantén tu marca al frente mientras gestionamos operaciones.',
-        two: 'Entrega un estándar premium sin construir desde cero.',
-      },
+      cta: 'Ver detalle completo',
+      panelEyebrow: 'También incluye Wingle Atlas',
+      panelTitle:
+        'De PDFs estáticos a itinerarios humanos y una base compartida de conocimiento de destinos',
+      panelBody:
+        'Pasa de texto genérico a itinerarios dinámicos y centraliza el know-how de tu agencia para que todo el equipo lo reutilice.',
     },
     app: {
       eyebrow: 'App Wingle',
-      title: 'La app de consumo sigue en primer plano',
-      subtitle: 'Conexión humana en el aire, servicios premium en tierra.',
+      title: 'Tu pase para viajar mejor; sin suscripción',
+      subtitle:
+        'Los beneficios de tener estatus élite con una aerolínea sin tenerlo realmente.',
       points: {
-        one: 'Disponible en iOS y Android',
-        two: 'Servicios premium disponibles en winglepass.com',
-        three: 'Una cara pública visible de la marca Wingle',
+        one: '¿Vas tarde? Canjea créditos por fast-track de seguridad y llega a tu puerta en minutos.',
+        two: '¿Quieres descansar, comer o ducharte antes de volar? Accede a lounges VIP.',
+        three: '¿Dónde dejas tu equipaje al aterrizar? Guárdalo de forma segura en la ciudad que visitas.',
+        four: '¿Vuelves de viaje con ropa sucia? Reserva Land & Laundry y recíbela limpia en 24 horas.',
       },
       primaryCta: 'App Store',
       secondaryCta: 'Google Play',
-      panelEyebrow: 'En la web',
-      panelTitle: 'Explora servicios premium en winglepass.com',
-      panelBody:
-        'Disponibilidad y precio dependen del aeropuerto y el horario. Confirmamos bajo solicitud.',
+      panelEyebrow: 'Cómo funciona',
+      panelTitle: 'Sin suscripción, sin dinero desperdiciado',
+      panelBody: {
+        one: 'Programa basado en créditos para usarlo cuando de verdad te conviene.',
+        two: 'Recarga tu saldo de Wingle Pass en la app y úsalo cuando necesites soporte.',
+        three: 'También disponible en winglepass.com. Disponible en iOS, Android y Web.',
+      },
       panelCta: 'Visitar winglepass.com',
     },
-    trust: {
-      eyebrow: 'Señales',
-      title: 'Confianza para equipos que necesitan certeza',
-      subtitle: 'Confirmamos lo importante antes de decidir.',
+    press: {
+      eyebrow: 'Prensa',
+      title: 'Cobertura de medios que marca el estándar',
+      subtitle: 'Validación independiente de la historia de Wingle.',
       items: {
         one: {
-          title: 'Red de lounges curada',
-          description: 'Más de 700 lounges revisados y filtrados por calidad.',
+          title:
+            '“Los creadores de la App que permite hablar en los aviones : «Había que aprovechar las horas muertas de los vuelos”',
+          source: 'www.elmundo.es',
         },
         two: {
-          title: 'Meet & Assist en hubs seleccionados',
-          description:
-            'Acompañamiento personal confirmado bajo solicitud según aeropuerto y horario.',
+          title:
+            '“El amor sí está en el aire: así es Wingle, el ‘Tinder de los aviones’ para ligar en pleno vuelo”',
+          source: 'www.elconfidencial.com',
         },
         three: {
-          title: 'Presencia de consumo',
-          description: 'Wingle está disponible en iOS y Android.',
+          title: '¿Y si el amor de tu vida vuela en tu mismo avión?',
+          source: 'www.traveler.es',
+        },
+        four: {
+          title:
+            '“Así es el ‘tinder’ de los aviones, la aplicación para chatear con otros pasajeros en pleno vuelo”',
+          source: 'www.lavanguardia.com',
         },
       },
-    },
-    cta: {
-      title: '¿Listo para construir el viaje premium juntos?',
-      subtitle: 'Cuéntanos qué necesitas y te respondemos rápido.',
-      note: 'Disponibilidad y precios se confirman bajo solicitud.',
+      cta: 'Ver toda la prensa',
     },
   },
   agencies: {
     hero: {
-      eyebrow: 'Wingle para agencias',
-      title: 'Servicios premium en aeropuertos para agencias que necesitan certeza.',
+      eyebrow: 'Wingle para profesionales de viajes',
+      title:
+        'Tu partner one-stop de confianza para servicios premium en aeropuertos en todo el mundo',
       subtitle:
-        'Tres niveles curados, confirmados bajo solicitud, pensados para viajes de alto nivel.',
-      primaryCta: 'Habla con nuestro equipo',
-      secondaryCta: 'Ver niveles de servicio',
-      panelEyebrow: 'Para agencias',
-      panelTitle: 'Un one-stop shop de servicios premium',
+        'Lounges, fast tracks, meet & greet y experiencias VVIP con cobertura global.',
+      primaryCta: 'Envíanos un mensaje',
+      secondaryCta: 'Ver capacidades',
+      panelEyebrow: 'Operación global',
+      panelTitle: 'Todo, en cualquier lugar del mundo',
       panelBody:
-        'Comparte ruta, horarios y viajeros. Respondemos rápido con opciones confirmadas.',
+        'Modelo operativo modular pensado para adaptarse al flujo de cada agencia.',
     },
     tiers: {
-      eyebrow: 'Niveles de servicio',
-      title: 'Un estándar premium en cada nivel',
-      subtitle: 'Cada opción se cura y se confirma bajo solicitud.',
+      eyebrow: 'Pilares de servicio',
+      title: 'Servicios premium filtrados por calidad y encaje',
+      subtitle:
+        'Curamos lo que realmente está up to standard y guiamos al viajero con instrucciones claras.',
       items: {
         basic: {
-          title: 'Basic',
+          title: 'Lounges + Fast Track',
           description:
-            'Acceso curado a más de 700 lounges en todo el mundo, filtrados por calidad.',
+            'Acceso a lounges curados y fast-track cuando velocidad y confort importan.',
           availability: 'Cobertura global',
-          pricing: 'Precio confirmado bajo solicitud',
+          pricing: 'Personalizado por ruta y aeropuerto',
         },
         meet: {
           title: 'Meet & Assist',
           description:
-            'Acompañamiento desde la puerta del avión, seguridad y control de pasaportes hasta el lounge VIP.',
-          availability: 'Aeropuertos seleccionados, confirmado bajo solicitud',
-          pricing: 'Precio confirmado bajo solicitud',
+            'Acompañamiento integral del pasajero en puntos clave del aeropuerto.',
+          availability: 'Hubs principales y rutas prioritarias',
+          pricing: 'Personalizado por ruta y aeropuerto',
         },
         vvip: {
           title: 'VVIP',
           description:
-            'Llegada a terminal privada, check-in y seguridad privados, traslado acompañado hasta el avión.',
-          availability: 'Aeropuertos seleccionados, confirmado bajo solicitud',
-          pricing: 'Precio confirmado bajo solicitud',
+            'Llegadas por terminal privada, gestión privada y experiencias premium a medida.',
+          availability: 'Aeropuertos seleccionados en todo el mundo',
+          pricing: 'Personalizado por ruta y aeropuerto',
         },
       },
     },
     reasons: {
-      eyebrow: 'Por qué Wingle',
-      title: 'Un estándar premium en el que puedes confiar',
-      subtitle: 'Nos centramos en lo que hace que el servicio sea fluido.',
+      eyebrow: 'Por qué las agencias eligen Wingle',
+      title: 'Construido para flujos reales de agencia',
+      subtitle: 'Tecnología, operación y claridad para el viajero en un solo partner.',
       items: {
         one: {
-          title: 'Calidad curada',
-          description: 'Filtramos opciones para que cada recomendación sea fiable.',
+          title: 'Inteligencia interna de calidad',
+          description: 'Solo recomendamos servicios que cumplen el estándar premium.',
         },
         two: {
-          title: 'Confirmación rápida',
-          description: 'Respondemos con opciones claras y próximos pasos.',
+          title: 'Cobertura global',
+          description: 'Entrega consistente por destino, ruta y tipo de servicio.',
         },
         three: {
-          title: 'Encaje con tu flujo',
-          description: 'Comparte detalles en el formato que ya usas: email o PDF.',
+          title: 'Stack modular',
+          description: 'Nos adaptamos al flujo de cada agencia en lugar de imponer uno rígido.',
         },
         four: {
-          title: 'Coordinación de alto nivel',
-          description: 'Un equipo real gestiona la logística de principio a fin.',
+          title: 'Comunicación traveler-first',
+          description: 'Instrucciones claras y personalizables para uso fácil del servicio.',
         },
       },
     },
@@ -255,64 +189,69 @@ export const es = {
       },
     },
     contact: {
-      title: 'Planifica la experiencia con nosotros',
-      subtitle: 'Comparte los detalles y confirmaremos disponibilidad y precios.',
-      note: 'No hay compra directa. Responde una persona real.',
+      title: 'Planifica servicios premium de aeropuerto con nosotros',
+      subtitle:
+        'Comparte ruta, horarios y perfil del viajero. Respondemos con opciones a medida.',
+      note: 'Cobertura global, calidad curada, un solo partner.',
     },
   },
   atlas: {
     hero: {
       eyebrow: 'Wingle Atlas',
-      title: 'Itinerarios digitales con acabado premium',
+      title:
+        'Creación y visualización de itinerarios más humana, personalizada e interactiva',
       subtitle:
-        'Convierte PDFs en experiencias interactivas que los viajeros usan de verdad.',
+        'Pasa de PDFs estáticos con texto genérico a itinerarios dinámicos que sí se usan.',
       primaryCta: 'Solicitar demo',
       secondaryCta: 'Ver funcionalidades',
-      panelEyebrow: 'Experiencia del viajero',
-      panelTitle: 'Un itinerario moderno, sin complejidad',
-      panelBody: 'Entrega una experiencia cuidada antes del viaje.',
+      panelEyebrow: 'Capa de conocimiento Atlas',
+      panelTitle: 'El know-how de destinos de tu agencia, ordenado y reutilizable',
+      panelBody:
+        'Captura cada tip de cada travel designer para que todo el equipo lo reutilice y enriquezca.',
     },
     features: {
-      eyebrow: 'Qué incluye',
-      title: 'Diseñado para flujos de agencia',
-      subtitle: 'Todo lo necesario para un itinerario moderno.',
+      eyebrow: 'Experiencia del viajero',
+      title: 'Entrega la información adecuada justo cuando hace falta',
+      subtitle: 'Itinerarios human-first con contexto, visuales y claridad.',
       items: {
         one: {
-          title: 'Timeline interactivo',
-          description: 'Un flujo claro para cada tramo del viaje.',
+          title: 'Tips detallados de hoteles y destino',
+          description: 'Recomendaciones relevantes en el momento exacto del viaje.',
         },
         two: {
-          title: 'Detalles con contexto',
-          description: 'Información adecuada en el momento adecuado.',
+          title: 'Imágenes de calidad y ayudas visuales',
+          description: 'Contexto visual para entender mejor cada elección.',
         },
         three: {
-          title: 'Experiencia mobile-first',
-          description: 'Pensada para viajeros siempre en movimiento.',
+          title: 'Timelines interactivos actualizados a diario',
+          description: 'Un itinerario vivo, siempre actualizado y fácil de seguir.',
         },
         four: {
-          title: 'Compartible por enlace',
-          description: 'Entrega itinerarios con una presentación premium.',
+          title: 'Guía humana con notas de voz',
+          description: 'Tips directos del travel designer y disponibilidad offline.',
         },
       },
     },
     outcomes: {
-      eyebrow: 'Resultados',
-      title: 'Una mejor experiencia para agencias y viajeros',
-      subtitle: 'Atlas conecta el viaje antes de la salida.',
-      panelEyebrow: 'Se complementa con Wingle para agencias',
-      panelTitle: 'Un portafolio que trabaja junto',
-      panelBody: 'Atlas funciona solo o junto a servicios premium en aeropuertos.',
+      eyebrow: 'Sistema de conocimiento',
+      title: 'Convierte el know-how de la agencia en un activo compartido',
+      subtitle:
+        'El conocimiento de un travel designer queda disponible para toda la empresa, entre oficinas.',
+      panelEyebrow: 'Inteligencia acumulativa',
+      panelTitle: 'Cada itinerario mejora con el tiempo',
+      panelBody:
+        'Los itinerarios guardados y el feedback del cliente elevan la calidad de cada nuevo viaje.',
       items: {
-        one: 'Viajeros guiados y bien informados',
-        two: 'Agencias con una impresión premium a escala',
-        three: 'Traspaso claro entre itinerario y servicios',
+        one: 'El conocimiento se guarda en Atlas y queda reutilizable y ordenado.',
+        two: 'Los diseñadores colaboran con inteligencia de destino compartida.',
+        three: 'Cada nuevo viaje parte de la mejor información de toda la red.',
       },
-      cta: 'Combinar con Wingle para agencias',
+      cta: 'Ver Atlas en detalle',
     },
     contact: {
-      title: 'Ver Atlas en acción',
-      subtitle: 'Cuéntanos cómo trabajas y te mostramos Atlas.',
-      note: 'Respondemos rápido con próximos pasos.',
+      title: 'Descubre cómo Atlas mejora tus itinerarios',
+      subtitle: 'Cuéntanos cómo crea viajes tu equipo y definimos el setup ideal.',
+      note: 'Diseño human-first y conocimiento reutilizable de agencia.',
     },
   },
   whiteLabel: {
@@ -370,52 +309,71 @@ export const es = {
   app: {
     hero: {
       eyebrow: 'App Wingle',
-      title: 'Un viaje más humano, del gate al aire',
+      title: 'Tu pase para viajar mejor; sin suscripción',
       subtitle:
-        'La app de consumo combina conexión en vuelo con servicios premium.',
+        'Los beneficios de tener estatus élite con una aerolínea sin tenerlo realmente.',
       primaryCta: 'App Store',
       secondaryCta: 'Google Play',
-      panelEyebrow: 'Servicios premium online',
-      panelTitle: 'Explora servicios en la web',
-      panelBody: 'Disponibilidad y precio dependen de aeropuerto y horario.',
+      panelEyebrow: 'Cómo funciona',
+      panelTitle: 'Sin suscripción. Créditos solo cuando los necesitas.',
+      panelBody: 'Recarga tu saldo y usa créditos en momentos reales del viaje.',
+    },
+    blocks: {
+      eyebrow: 'Momentos de viaje resueltos',
+      title: 'Usa créditos donde realmente marcan la diferencia',
+      subtitle: 'Soporte práctico antes de salir, al llegar y después del viaje.',
+      connection: {
+        title: 'Fast-track cuando vas tarde',
+        description:
+          'Canjea créditos por fast-track de seguridad y llega a tu puerta en minutos.',
+      },
+      services: {
+        title: 'Acceso a lounge VIP',
+        description:
+          'Descansa, come o dúchate antes de volar con acceso premium a lounges.',
+      },
     },
     highlights: {
-      eyebrow: 'Lo mejor',
-      title: 'Diseñado para viajeros actuales',
-      subtitle: 'Conexión, claridad y momentos premium.',
+      eyebrow: 'Más formas de usar créditos',
+      title: 'Soporte premium más allá de la cola del aeropuerto',
+      subtitle: 'Resuelve fricciones desde que aterrizas hasta la colada.',
       items: {
         one: {
-          title: 'Conexión en vuelo',
-          description: 'Conoce a otros viajeros cuando te apetezca.',
+          title: 'Consigna en la ciudad',
+          description:
+            'Guarda equipaje de forma segura en la ciudad cuando no quieres cargar con él.',
         },
         two: {
-          title: 'Servicios premium',
-          description: 'Servicios curados confirmados bajo solicitud.',
+          title: 'Servicio Land & Laundry',
+          description:
+            'Reserva lavandería tras un viaje largo y recibe la ropa limpia en 24 horas.',
         },
         three: {
-          title: 'Momentos de viaje',
-          description: 'Haz que el viaje se sienta ligero antes y después del vuelo.',
+          title: 'Uso flexible bajo demanda',
+          description: 'Usa créditos solo cuando el viaje pide más velocidad o comodidad.',
         },
       },
     },
+    faqsCta: 'Leer las preguntas frecuentes',
     services: {
-      eyebrow: 'Servicios premium',
-      title: 'Confirmados bajo solicitud, nunca asumidos',
-      subtitle: 'Confirmamos disponibilidad según aeropuerto y horario.',
+      eyebrow: 'Cómo funciona',
+      title: 'Sin suscripción, sin dinero desperdiciado',
+      subtitle: 'Programa de créditos para momentos que sí importan.',
       panelEyebrow: 'winglepass.com',
-      panelTitle: 'Una experiencia web dedicada',
-      panelBody: 'Explora servicios, comparte detalles y recibe confirmación.',
+      panelTitle: 'También disponible en Web',
+      panelBody: 'Gestiona y usa tus créditos en winglepass.com, iOS y Android.',
       panelCta: 'Visitar winglepass.com',
       items: {
-        one: 'Acceso curado a lounges cuando está disponible',
-        two: 'Opciones flexibles según aeropuerto y ruta',
-        three: 'Próximos pasos claros tras cada solicitud',
+        one: 'Recarga tu saldo de Wingle Pass directamente en la app.',
+        two: 'Gasta créditos solo cuando el viaje necesita soporte prioritario.',
+        three: 'Usa una sola cuenta en iOS, Android y web.',
+        four: 'Sin suscripción recurrente.',
       },
     },
     contact: {
-      title: '¿Dudas sobre la app o partnerships?',
-      subtitle: 'Cuéntanos qué necesitas y te orientamos.',
-      note: 'Respondemos rápido con próximos pasos.',
+      title: '¿Necesitas ayuda con App Wingle o Wingle Pass?',
+      subtitle: 'Cuéntanos qué necesitas y te guiamos rápido.',
+      note: 'Configuración simple y soporte práctico para viajar mejor.',
     },
   },
   about: {
@@ -478,6 +436,146 @@ export const es = {
       title: 'Inicia la conversación',
       subtitle: 'Cuéntanos qué necesitas. Confirmamos opciones bajo solicitud.',
       note: 'No hay compra directa. Seguimos con próximos pasos.',
+    },
+  },
+  faqs: {
+    hero: {
+      eyebrow: 'FAQs de la app',
+      title: 'Preguntas frecuentes',
+      subtitle: 'Respuestas rápidas sobre la experiencia Wingle.',
+    },
+    list: {
+      eyebrow: 'FAQs',
+      title: 'Preguntas comunes',
+      subtitle: 'Si necesitas más detalle, contacta con el equipo.',
+    },
+    items: {
+      one: {
+        question: 'Can I chat with people before I fly?',
+        answer:
+          'Wingle connects you with passengers on your same flight and allows you to chat with them while you fly. For the moment, the chat function is only available during the flight. You can still use the app before and after your flight to browse activities and experiences wherever you are flying to!',
+      },
+      two: {
+        question: 'What flights is Wingle available on?',
+        answer:
+          'To keep the best experience and ensure that there are enough Winglers on each flight, Wingle will be enabled progressively across more and more routes. Stay tuned to our Instagram account to know which routes are enabled or check directly on the app!',
+      },
+      three: {
+        question: 'Is Wingle available for iOS and Android?',
+        answer:
+          'Wingle is already available on iOS, and the Android version is coming before summer',
+      },
+      four: {
+        question: 'How do I get in touch regarding my purchased activity?',
+        answer:
+          'Wingle does not handle any of the in-destination activities. They are managed by Viator and its partners, so please get in touch through the channels mentioned in your confirmation email.',
+      },
+      five: {
+        question: 'What personal information does Wingle store?',
+        answer:
+          'As any platform, Wingle needs some personal information to create your profile, provide personalized activity recommendations and enable the app to work. However, we keep this to a minimum, and will never store any of your conversations or media shared on the Wingle chat. That’s why chats disappear after the flight. Wingle does store basic information such as your name, email, age and profile elements (Wingle DNA, and profile pictures) as well as flight history to deliver the Wingle experience. When you delete your account, we delete the information.',
+      },
+      six: {
+        question: 'What information do other passengers see from me?',
+        answer:
+          'Other passengers will only see your name, age and Wingle DNA when they click on your seat. They will not see any pictures at the start. In order for them to see your pictures, you need to give them access to your profile.',
+      },
+      seven: {
+        question: 'What happens to the chats and seat map when I land?',
+        answer:
+          'When you land, the seat map and chats disappear. For two reasons: privacy and to keep the expectation. It’s now or never.',
+      },
+      eight: {
+        question: 'What do I need to do to make sure the app works?',
+        answer:
+          'The golden rule is very simple: keep Bluetooth and Wi-Fi connectivity turned on in your device.',
+      },
+      nine: {
+        question: 'Is Wingle selling the in-destination experiences?',
+        answer:
+          'Wingle does not sell the experiences directly, but is connected to Viator, a global experiences provider. Purchases for experiences are fulfilled through the Viator website and Viator secure payment method. Wingle does not store any payment information',
+      },
+      ten: {
+        question: 'How does the offline chat work? Is it safe?',
+        answer:
+          'Wingle’s core functionality, the chat, works offline. What does this mean? Well, it means that Wingle chat does not require an internet connection to work. Hold on, but you’re telling me to keep Bluetooth and Wi-Fi on… how is that? Right, we need you to keep Bluetooth and Wi-Fi technology ON on your phone, but without the need of an internet connection. Just keep them ON, but don’t worry about internet. And if you were wondering, yes, it is perfectly safe to keep them on during your flight, you can even keep them on with flight mode activated.',
+      },
+      eleven: {
+        question: 'Will my exact seat be shown on the app?',
+        answer:
+          'NO. The Wingle seat map does not show the exact seat location of other passengers. Rather, the app shows «illuminated seats» randomly allocated on the app’s seat map. Wingle is stalker-proof.',
+      },
+      twelve: {
+        question: 'Will my exact seat be shown on the app?',
+        answer:
+          'Of course. If there is anyone that you want to block during your flight, for whatever reason, you can block them on the app. Additionally, Wingle also allows you to report a user in case of offensive activity.',
+      },
+    },
+  },
+  press: {
+    hero: {
+      eyebrow: 'Prensa',
+      title: 'En los medios',
+      subtitle: 'Cobertura que refleja la credibilidad de Wingle.',
+    },
+    list: {
+      eyebrow: 'Destacados',
+      title: 'Apariciones recientes',
+      subtitle: 'Selección de cobertura en medios confiables.',
+    },
+    items: {
+      one: {
+        title:
+          '“Los creadores de la App que permite hablar en los aviones : «Había que aprovechar las horas muertas de los vuelos”',
+        source: 'www.elmundo.es',
+        url: 'https://www.elmundo.es/madrid/2024/07/19/669945c9e9cf4a0b748b45a6.html',
+      },
+      two: {
+        title:
+          '“El amor sí está en el aire: así es Wingle, el ‘Tinder de los aviones’ para ligar en pleno vuelo”',
+        source: 'www.elconfidencial.com',
+        url: 'https://www.elconfidencial.com/tecnologia/2024-09-23/wingle-tinder-aviones-ligar-vuelos-1qrt_3968387/',
+      },
+      three: {
+        title: '¿Y si el amor de tu vida vuela en tu mismo avión?',
+        source: 'www.traveler.es',
+        url: 'https://www.traveler.es/articulos/wingle-app-conocer-gente-durante-un-vuelo',
+      },
+      four: {
+        title:
+          '“Así es el ‘tinder’ de los aviones, la aplicación para chatear con otros pasajeros en pleno vuelo”',
+        source: 'www.lavanguardia.com',
+        url: 'https://www.lavanguardia.com/magazine/experiencias/20241105/10068477/aplicacion-wingle-app-avion-socializar-chatear.html',
+      },
+      five: {
+        title: '“La primera app para chatear en un avión es de Bilbao”',
+        source: 'www.elcorreo.com',
+        url: 'https://www.elcorreo.com',
+      },
+      six: {
+        title:
+          '“Wingle, la aplicación para encontrar el amor en pleno vuelo: “Chatear con gente en el mismo avión”',
+        source: 'www.cuatro.com',
+        url: 'https://www.cuatro.com/noticias/sociedad/20240814/wingle-aplicacion-encontrar-amor-vuelo_18_013236110.html',
+      },
+      seven: {
+        title:
+          '“¿Qué es Wingle? Así es la aplicación de citas offline que te permite conocer gente en pleno vuelo”',
+        source: 'www.lasexta.com',
+        url: 'https://www.lasexta.com/noticias/sociedad/que-wingle-asi-aplicacion-citas-offline-que-permite-conocer-gente-pleno-vuelo_20240720669befa4ef89480001fff31c.html',
+      },
+      eight: {
+        title:
+          'Dos españoles crean una app para chatear con pasajeros del mismo avión: «Al aterrizar el chat desaparece para siempre»',
+        source: 'www.telecinco.es',
+        url: 'https://www.telecinco.es/noticias/euskadi/20240814/aplicacion-avion-chat-pasajeros-amor-amistad_18_013232114.html',
+      },
+      nine: {
+        title:
+          '«New menssaging app hopes to get travellers to fill idle time on flights by talking to others»',
+        source: 'www.straitstimes.com',
+        url: 'https://www.straitstimes.com/singapore/new-messaging-app-hopes-to-get-travellers-to-fill-idle-time-on-flights-by-talking-to-others',
+      },
     },
   },
   blog: {

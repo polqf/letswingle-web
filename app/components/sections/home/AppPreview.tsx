@@ -5,6 +5,8 @@ import { getTranslations } from '@/app/lib/i18n/getTranslations';
 
 export async function AppPreview() {
   const t = await getTranslations();
+  const details = ['one', 'two', 'three', 'four'] as const;
+  const howItWorks = ['one', 'two', 'three'] as const;
 
   return (
     <section id="wingle-app" className="bg-[color:var(--color-surface)] py-20">
@@ -16,9 +18,9 @@ export async function AppPreview() {
             subtitle={t('home.app.subtitle')}
           />
           <ul className="space-y-3 text-sm text-[color:var(--color-ink-muted)]">
-            <li>• {t('home.app.points.one')}</li>
-            <li>• {t('home.app.points.two')}</li>
-            <li>• {t('home.app.points.three')}</li>
+            {details.map((detail) => (
+              <li key={detail}>• {t(`home.app.points.${detail}`)}</li>
+            ))}
           </ul>
           <div className="flex flex-col gap-3 sm:flex-row">
             <Button
@@ -42,9 +44,11 @@ export async function AppPreview() {
           <p className="mt-3 text-lg font-semibold text-[color:var(--color-ink)]">
             {t('home.app.panelTitle')}
           </p>
-          <p className="mt-4 text-sm text-[color:var(--color-ink-muted)]">
-            {t('home.app.panelBody')}
-          </p>
+          <ul className="mt-4 space-y-3 text-sm text-[color:var(--color-ink-muted)]">
+            {howItWorks.map((step) => (
+              <li key={step}>• {t(`home.app.panelBody.${step}`)}</li>
+            ))}
+          </ul>
           <Button
             href="https://winglepass.com"
             variant="ghost"

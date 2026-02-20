@@ -1,4 +1,4 @@
-import { headers } from 'next/headers';
+import { cookies, headers } from 'next/headers';
 
 import { en } from './translations/en';
 import { es } from './translations/es';
@@ -12,6 +12,12 @@ const translations: Record<Locale, TranslationSchema> = {
 };
 
 async function resolveLocale(): Promise<Locale> {
+  const cookieStore = await cookies();
+  const savedLocale = cookieStore.get('wingle-locale')?.value;
+  if (savedLocale === 'en' || savedLocale === 'es') {
+    return savedLocale;
+  }
+
   const h = await headers();
   const acceptLanguage = h.get('accept-language') ?? '';
   return acceptLanguage.toLowerCase().includes('es') ? 'es' : 'en';

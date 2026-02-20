@@ -1,21 +1,21 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { LanguageSwitcher } from '@/app/components/layout/LanguageSwitcher';
 import { Button } from '@/app/components/ui/Button';
 import { Container } from '@/app/components/ui/Container';
-import { getTranslations } from '@/app/lib/i18n/getTranslations';
+import { getLocale, getTranslations } from '@/app/lib/i18n/getTranslations';
 
 const links = [
   { href: '/products/wingle-app', key: 'nav.app' },
   { href: '/products/agencies', key: 'nav.agencies' },
-  { href: '/products/atlas', key: 'nav.atlas' },
-  { href: '/products/white-label', key: 'nav.whiteLabel' },
   { href: '/blog', key: 'nav.blog' },
   { href: '/about', key: 'nav.about' },
 ];
 
 export async function Header() {
   const t = await getTranslations();
+  const locale = await getLocale();
 
   return (
     <header className="sticky top-0 z-50 border-b border-[color:var(--color-stroke)]/60 bg-[color:var(--color-brand-offwhite)]/90 backdrop-blur">
@@ -43,6 +43,7 @@ export async function Header() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
+          <LanguageSwitcher locale={locale} />
           <Button href="/contact" variant="primary" size="sm">
             {t('nav.cta')}
           </Button>
@@ -54,6 +55,7 @@ export async function Header() {
           </summary>
           <div className="absolute right-0 mt-3 w-64 rounded-[var(--radius-lg)] border border-[color:var(--color-stroke)] bg-[color:var(--color-surface)] p-4 shadow-[var(--shadow-soft)]">
             <div className="flex flex-col gap-3 text-sm font-semibold text-[color:var(--color-ink)]">
+              <LanguageSwitcher locale={locale} />
               {links.map((link) => (
                 <Link key={link.href} href={link.href}>
                   {t(link.key)}

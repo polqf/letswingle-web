@@ -103,10 +103,12 @@ The site should follow this information architecture:
 
 - **Home** — Hero + product overview cards + social proof + CTAs
 - **Wingle (B2C app)** — Showcases Chat + Pass features → CTAs to App Store, Google Play, `winglepass.com`
+  - **FAQs** — App FAQ page for common questions (`/products/wingle-app/faqs`)
 - **Wingle Pass for Agencies** — Detailed value proposition → CTA to contact form / demo request
 - **Wingle Atlas** — Product showcase → CTA to contact form / demo request
 - **White Label** — Overview of white-label capabilities → CTA to contact form
 - **Blog** — Cockpit Diaries + News (migrated from `winglepass.com/blog`)
+- **Press** — Media coverage and appearances
 - **About** — Company story, team, mission
 - **Contact** — General contact form
 - **Legal** — Terms, Privacy Policy, Cookie Policy (EN/ES)

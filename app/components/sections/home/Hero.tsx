@@ -20,11 +20,11 @@ export async function Hero() {
             {t('home.hero.subtitle')}
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Button href="/contact" variant="accent" size="lg">
+            <Button href="/products/wingle-app" variant="accent" size="lg">
               {t('home.hero.primaryCta')}
             </Button>
             <Button
-              href="#products"
+              href="#travel-professionals"
               variant="outline"
               size="lg"
               className="border-[color:var(--color-brand-offwhite)]/40 text-[color:var(--color-brand-offwhite)] hover:bg-[color:var(--color-brand-offwhite)]/10"

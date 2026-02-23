@@ -1,10 +1,11 @@
 import Link from 'next/link';
 
-import { PressLogoGrid } from '@/app/components/press/PressLogoGrid';
+import { PRESS_LOGOS } from '@/app/components/press/PressLogoGrid';
 import { Container } from '@/app/components/ui/Container';
 import { SectionHeader } from '@/app/components/ui/SectionHeader';
 import { Tag } from '@/app/components/ui/Tag';
 import { getTranslations } from '@/app/lib/i18n/getTranslations';
+import Image from 'next/image';
 
 export default async function PressPage() {
   const t = await getTranslations();
@@ -29,8 +30,6 @@ export default async function PressPage() {
           subtitle={t('press.list.subtitle')}
         />
 
-        <PressLogoGrid />
-
         <div className="grid gap-4 md:grid-cols-2">
           {items.map((item) => (
             <Link
@@ -43,9 +42,15 @@ export default async function PressPage() {
               <p className="text-sm font-semibold text-[color:var(--color-ink)] group-hover:text-[color:var(--color-brand-blue)]">
                 {t(`press.items.${item}.title`)}
               </p>
-              <p className="text-xs uppercase tracking-[0.2em] text-[color:var(--color-ink-muted)]">
-                {t(`press.items.${item}.source`)}
-              </p>
+              <div className="flex items-center justify-start">
+                <Image
+                  src={`/press/${PRESS_LOGOS[item]}`}
+                  alt={t(`press.items.${item}.source`)}
+                  width={160}
+                  height={40}
+                  className="h-8 w-48 object-contain object-left"
+                />
+              </div>
             </Link>
           ))}
         </div>

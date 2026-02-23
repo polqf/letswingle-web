@@ -371,7 +371,7 @@ export const es = {
       },
     },
     contact: {
-      title: '¿Necesitas ayuda con App Wingle o Wingle Pass?',
+      title: '¿Necesitas ayuda con la App de Wingle?',
       subtitle: 'Cuéntanos qué necesitas y te guiamos rápido.',
       note: 'Configuración simple y soporte práctico para viajar mejor.',
     },

@@ -1,3 +1,4 @@
+import { AppLinks } from '@/app/products/wingle-app/AppLinks';
 import { Button } from '@/app/components/ui/Button';
 import { Container } from '@/app/components/ui/Container';
 import { SectionHeader } from '@/app/components/ui/SectionHeader';
@@ -7,35 +8,6 @@ import { ContactBand } from '@/app/components/sections/ContactBand';
 import { PressPreview } from '@/app/components/sections/home/PressPreview';
 import { getTranslations } from '@/app/lib/i18n/getTranslations';
 import { mobileAppPreviewImage } from '@/app/lib/images';
-
-export async function AppLinks() {
-  const t = await getTranslations();
-  return (
-    <div className="flex flex-col gap-3 sm:flex-row">
-      <Button
-        href="https://apps.apple.com/es/app/wingle-vuela-mejor/id6479176150"
-        variant="primary"
-        size="lg"
-      >
-        {t('app.hero.primaryCta')}
-      </Button>
-      <Button
-        href="https://winglepass.com"
-        variant="outline"
-        size="lg"
-      >
-        {t('home.app.panelCta')}
-      </Button>
-      <Button
-        href="https://play.google.com/store/apps/details?id=com.letswingle.android"
-        variant="outline"
-        size="lg"
-      >
-        {t('app.hero.secondaryCta')}
-      </Button>
-    </div>
-  );
-}
 
 export default async function WingleAppPage() {
   const t = await getTranslations();

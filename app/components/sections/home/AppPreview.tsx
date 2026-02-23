@@ -1,9 +1,8 @@
-import { Button } from '@/app/components/ui/Button';
 import { Container } from '@/app/components/ui/Container';
 import { SectionHeader } from '@/app/components/ui/SectionHeader';
 import { getTranslations } from '@/app/lib/i18n/getTranslations';
 import Image from 'next/image';
-import { AppLinks } from '@/app/products/wingle-app/page';
+import { AppLinks } from '@/app/products/wingle-app/AppLinks';
 import { mobileAppPreviewImage } from '@/app/lib/images';
 
 export async function AppPreview() {

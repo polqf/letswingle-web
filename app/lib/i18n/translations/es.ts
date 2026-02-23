@@ -17,8 +17,8 @@ export const es = {
       eyebrow: 'Viaja mejor con Wingle',
       title: 'Tu pase para viajar mejor',
       subtitle:
-        'Sin suscripción. Usa créditos cuando el viaje realmente lo necesita.',
-      primaryCta: 'Descubrir la app',
+        'Para viajeros que quieren mejorar su experiencia de vuelo y para agencias que quieren mejorar los viajes de sus clientes.',
+      primaryCta: 'Descubre la app',
       secondaryCta: 'Wingle para profesionales de viajes',
       panelEyebrow: 'Diseñado para viajeros y profesionales',
       panelTitle: 'Una marca, dos caminos claros',
@@ -31,13 +31,12 @@ export const es = {
       panelNote: 'Simple, modular y adaptado a flujos reales.',
     },
     agencies: {
-      eyebrow: 'Wingle para profesionales de viajes',
-      title:
-        'Tu partner one-stop de confianza para servicios premium en aeropuertos en todo el mundo',
+      eyebrow: 'Tu partner one-stop de confianza para servicios premium en aeropuertos',
+      title: 'Wingle para profesionales de viajes',
       subtitle:
-        'Lounges, fast tracks, meet & greet y experiencias VVIP con cobertura global.',
+        'Mejora la experiencia de vuelo de tus clientes con lounges, fast tracks, meet & greet y experiencias VVIP; a nivel global.',
       points: {
-        one: 'Todo, en cualquier lugar del mundo, a través de un solo partner.',
+        one: 'Todo, en cualquier lugar del mundo. Con un solo partner.',
         two: 'Inteligencia interna que filtra y recomienda solo servicios up to standard.',
         three: 'Stack tecnológico modular que se adapta al flujo de cada agencia.',
         four: 'Instrucciones claras y simples para el viajero en formatos personalizables.',
@@ -46,7 +45,7 @@ export const es = {
       cta: 'Ver detalle completo',
       panelEyebrow: 'También incluye Wingle Atlas',
       panelTitle:
-        'De PDFs estáticos a itinerarios humanos y una base compartida de conocimiento de destinos',
+        'Itinerarios de viaje dinámicos, visuales y humanos. Una base de conocimiento reutilizable en tu agencia.',
       panelBody:
         'Pasa de texto genérico a itinerarios dinámicos y centraliza el know-how de tu agencia para que todo el equipo lo reutilice.',
     },
@@ -67,15 +66,15 @@ export const es = {
       panelTitle: 'Sin suscripción, sin dinero desperdiciado',
       panelBody: {
         one: 'Programa basado en créditos para usarlo cuando de verdad te conviene.',
-        two: 'Recarga tu saldo de Wingle Pass en la app y úsalo cuando necesites soporte.',
-        three: 'También disponible en winglepass.com. Disponible en iOS, Android y Web.',
+        two: 'Recarga tu monedero Wingle con créditos desde la app o la web y gástalos cuando quieras.',
+        three: 'Los créditos no caducan. Sin suscripción.',
       },
       panelCta: 'Visitar winglepass.com',
     },
     press: {
       eyebrow: 'Prensa',
-      title: 'Cobertura de medios que marca el estándar',
-      subtitle: 'Validación independiente de la historia de Wingle.',
+      title: 'Wingle en las noticias',
+      subtitle: '',
       items: {
         one: {
           title:
@@ -101,19 +100,6 @@ export const es = {
     },
   },
   agencies: {
-    hero: {
-      eyebrow: 'Wingle para profesionales de viajes',
-      title:
-        'Tu partner one-stop de confianza para servicios premium en aeropuertos en todo el mundo',
-      subtitle:
-        'Lounges, fast tracks, meet & greet y experiencias VVIP con cobertura global.',
-      primaryCta: 'Envíanos un mensaje',
-      secondaryCta: 'Ver capacidades',
-      panelEyebrow: 'Operación global',
-      panelTitle: 'Todo, en cualquier lugar del mundo',
-      panelBody:
-        'Modelo operativo modular pensado para adaptarse al flujo de cada agencia.',
-    },
     tiers: {
       eyebrow: 'Pilares de servicio',
       title: 'Servicios premium filtrados por calidad y encaje',
@@ -142,6 +128,31 @@ export const es = {
           pricing: 'Personalizado por ruta y aeropuerto',
         },
       },
+    },
+    hero: {
+      eyebrow: 'Wingle para profesionales de viajes',
+      title: 'Mejora la experiencia de viaje de tus clientes',
+      subtitle:
+        'Mejor experiencia incluso antes de salir, con itinerarios dinámicos, visuales y humanos. Mejor experiencia en el aeropuerto, con acceso a servicios VIP.',
+      primaryCta: 'Descubre Wingle Pro',
+      secondaryCta: 'Descubre Wingle Atlas',
+      panelEyebrow: 'Operación global',
+      panelTitle: 'Todo, en cualquier lugar del mundo',
+      panelBody:
+        'Lounges, fast tracks, meet & greet y experiencias VVIP; a nivel global. Sin tecnología rígida, nos integramos con tu forma de trabajar.',
+    },
+    pro: {
+      eyebrow: 'Wingle Pro',
+      title: 'Experiencias premium en aeropuertos en todo el mundo',
+      subtitle:
+        'Mejora la experiencia de vuelo de tus clientes con lounges, fast tracks, meet & greet y experiencias VVIP; a nivel global.',
+      points: {
+        one: 'Todo, en cualquier lugar del mundo. Con un solo partner.',
+        two: 'Inteligencia interna que filtra y recomienda solo servicios up to standard.',
+        three: 'Stack tecnológico modular que se adapta al flujo de cada agencia.',
+        four: 'Instrucciones claras y simples para el viajero en formatos personalizables.',
+      },
+      cta: 'Conoce más sobre Wingle Pro',
     },
     reasons: {
       eyebrow: 'Por qué las agencias eligen Wingle',
@@ -193,6 +204,19 @@ export const es = {
       subtitle:
         'Comparte ruta, horarios y perfil del viajero. Respondemos con opciones a medida.',
       note: 'Cobertura global, calidad curada, un solo partner.',
+    },
+  },
+  pro: {
+    hero: {
+      eyebrow: 'Wingle Pro',
+      title: 'Partner one-stop para todas tus necesidades premium de aeropuerto y viaje',
+      subtitle:
+        'Lounges, fast tracks, meet & greet y experiencias VVIP; a nivel global. Sin tecnología rígida, nos integramos con tu forma de trabajar.',
+      primaryCta: 'Envíanos un mensaje',
+      secondaryCta: 'Ver funcionalidades',
+      panelEyebrow: 'Operativa global',
+      panelTitle: 'Todo, en cualquier lugar del mundo',
+      panelBody: 'Con un solo partner.',
     },
   },
   atlas: {
@@ -315,13 +339,13 @@ export const es = {
       primaryCta: 'App Store',
       secondaryCta: 'Google Play',
       panelEyebrow: 'Cómo funciona',
-      panelTitle: 'Sin suscripción. Créditos solo cuando los necesitas.',
-      panelBody: 'Recarga tu saldo y usa créditos en momentos reales del viaje.',
+      panelTitle: 'Sin suscripción. Usa "Wingle Credits" solo cuando los necesitas.',
+      panelBody: 'Recarga tu cartera y usa créditos para mejorar tu experiencia de vuelo y viaje.',
     },
     blocks: {
       eyebrow: 'Momentos de viaje resueltos',
-      title: 'Usa créditos donde realmente marcan la diferencia',
-      subtitle: 'Soporte práctico antes de salir, al llegar y después del viaje.',
+      title: 'Mejora tu experiencia en el aeropuerto',
+      subtitle: '',
       connection: {
         title: 'Fast-track cuando vas tarde',
         description:
@@ -330,7 +354,7 @@ export const es = {
       services: {
         title: 'Acceso a lounge VIP',
         description:
-          'Descansa, come o dúchate antes de volar con acceso premium a lounges.',
+          'Disponible en todo el mundo. ¿No sabes qué lounge elegir? Indica tu vuelo y te recomendamos el mejor.',
       },
     },
     highlights: {
@@ -349,8 +373,8 @@ export const es = {
             'Reserva lavandería tras un viaje largo y recibe la ropa limpia en 24 horas.',
         },
         three: {
-          title: 'Uso flexible bajo demanda',
-          description: 'Usa créditos solo cuando el viaje pide más velocidad o comodidad.',
+          title: 'E-SIM en todo el mundo',
+          description: 'Usa créditos para tener cobertura de internet en todo el mundo.',
         },
       },
     },
@@ -358,22 +382,24 @@ export const es = {
     services: {
       eyebrow: 'Cómo funciona',
       title: 'Sin suscripción, sin dinero desperdiciado',
-      subtitle: 'Programa de créditos para momentos que sí importan.',
+      subtitle: 'Programa de créditos para uso bajo demanda.',
       panelEyebrow: 'winglepass.com',
       panelTitle: 'También disponible en Web',
       panelBody: 'Gestiona y usa tus créditos en winglepass.com, iOS y Android.',
       panelCta: 'Visitar winglepass.com',
       items: {
         one: 'Recarga tu saldo de Wingle Pass directamente en la app.',
-        two: 'Gasta créditos solo cuando el viaje necesita soporte prioritario.',
-        three: 'Usa una sola cuenta en iOS, Android y web.',
-        four: 'Sin suscripción recurrente.',
+        two: 'Diferentes tamaños de paquetes de créditos según lo que viajes.',
+        three: 'Gasta créditos solo cuando te apetezca.',
+        four: 'Usa una sola cuenta en iOS, Android y web.',
+        five: 'Sin suscripción recurrente.',
+        six: 'Los créditos no caducan, no hay prisa por gastarlos.',
       },
     },
     contact: {
-      title: '¿Necesitas ayuda con la App de Wingle?',
-      subtitle: 'Cuéntanos qué necesitas y te guiamos rápido.',
-      note: 'Configuración simple y soporte práctico para viajar mejor.',
+      title: '¿Necesitas ayuda?',
+      subtitle: 'Escríbenos y te respondemos lo antes posible.',
+      note: '',
     },
   },
   about: {

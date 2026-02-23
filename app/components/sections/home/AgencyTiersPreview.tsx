@@ -2,6 +2,7 @@ import { Button } from '@/app/components/ui/Button';
 import { Container } from '@/app/components/ui/Container';
 import { SectionHeader } from '@/app/components/ui/SectionHeader';
 import { getTranslations } from '@/app/lib/i18n/getTranslations';
+import { atlasPreviewImage } from '@/app/lib/images';
 import Image from 'next/image';
 
 export async function AgencyTiersPreview() {
@@ -30,7 +31,7 @@ export async function AgencyTiersPreview() {
           </div>
           <div className="max-h-[400px] overflow-hidden rounded-[var(--radius-xl)] border border-[color:var(--color-stroke)] bg-[color:var(--color-brand-offwhite)]">
             <Image
-              src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0b/4f/b0/0b4fb0c7-01b5-bafe-624b-8a02975082bd/appstore2_6.5.jpg/460x996bb.webp"
+              src={atlasPreviewImage}
               alt="App Preview"
               width={460}
               height={996}

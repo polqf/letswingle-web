@@ -1,0 +1,2 @@
+export const mobileAppPreviewImage = 'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0b/4f/b0/0b4fb0c7-01b5-bafe-624b-8a02975082bd/appstore2_6.5.jpg/460x996bb.webp';
+export const atlasPreviewImage = 'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0b/4f/b0/0b4fb0c7-01b5-bafe-624b-8a02975082bd/appstore2_6.5.jpg/460x996bb.webp';

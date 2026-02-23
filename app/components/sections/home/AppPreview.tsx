@@ -3,6 +3,8 @@ import { Container } from '@/app/components/ui/Container';
 import { SectionHeader } from '@/app/components/ui/SectionHeader';
 import { getTranslations } from '@/app/lib/i18n/getTranslations';
 import Image from 'next/image';
+import { AppLinks } from '@/app/products/wingle-app/page';
+import { mobileAppPreviewImage } from '@/app/lib/images';
 
 export async function AppPreview() {
   const t = await getTranslations();
@@ -25,24 +27,11 @@ export async function AppPreview() {
                 <li key={detail}>• {t(`home.app.points.${detail}`)}</li>
               ))}
             </ul>
-            <div className="flex flex-col gap-3 sm:flex-row">
-              <Button
-                href="https://apps.apple.com/es/app/wingle-vuela-mejor/id6479176150"
-                variant="primary"
-              >
-                {t('home.app.primaryCta')}
-              </Button>
-              <Button
-                href="https://play.google.com/store/apps/details?id=com.letswingle.android"
-                variant="outline"
-              >
-                {t('home.app.secondaryCta')}
-              </Button>
-            </div>
+            <AppLinks />
           </div>
           <div className="max-h-[400px] overflow-hidden rounded-[var(--radius-xl)] border border-[color:var(--color-ink)]/20 bg-[color:var(--color-brand-offwhite)]/50 shadow-[var(--shadow-soft)]">
             <Image
-              src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0b/4f/b0/0b4fb0c7-01b5-bafe-624b-8a02975082bd/appstore2_6.5.jpg/460x996bb.webp"
+              src={mobileAppPreviewImage}
               alt="App Preview"
               width={460}
               height={996}

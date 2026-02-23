@@ -6,11 +6,41 @@ import Image from 'next/image';
 import { ContactBand } from '@/app/components/sections/ContactBand';
 import { PressPreview } from '@/app/components/sections/home/PressPreview';
 import { getTranslations } from '@/app/lib/i18n/getTranslations';
+import { mobileAppPreviewImage } from '@/app/lib/images';
+
+export async function AppLinks() {
+  const t = await getTranslations();
+  return (
+    <div className="flex flex-col gap-3 sm:flex-row">
+      <Button
+        href="https://apps.apple.com/es/app/wingle-vuela-mejor/id6479176150"
+        variant="primary"
+        size="lg"
+      >
+        {t('app.hero.primaryCta')}
+      </Button>
+      <Button
+        href="https://winglepass.com"
+        variant="outline"
+        size="lg"
+      >
+        {t('home.app.panelCta')}
+      </Button>
+      <Button
+        href="https://play.google.com/store/apps/details?id=com.letswingle.android"
+        variant="outline"
+        size="lg"
+      >
+        {t('app.hero.secondaryCta')}
+      </Button>
+    </div>
+  );
+}
 
 export default async function WingleAppPage() {
   const t = await getTranslations();
   const highlights = ['one', 'two', 'three'] as const;
-  const services = ['one', 'two', 'three', 'four'] as const;
+  const services = ['one', 'two', 'three', 'four', 'five', 'six'] as const;
 
   return (
     <>
@@ -24,29 +54,7 @@ export default async function WingleAppPage() {
             <p className="text-base text-[color:var(--color-ink-muted)] md:text-lg">
               {t('app.hero.subtitle')}
             </p>
-            <div className="flex flex-col gap-3 sm:flex-row">
-              <Button
-                href="https://apps.apple.com/es/app/wingle-vuela-mejor/id6479176150"
-                variant="primary"
-                size="lg"
-              >
-                {t('app.hero.primaryCta')}
-              </Button>
-              <Button
-                href="https://winglepass.com"
-                variant="outline"
-                size="lg"
-              >
-                {t('home.app.panelCta')}
-              </Button>
-              <Button
-                href="https://play.google.com/store/apps/details?id=com.letswingle.android"
-                variant="outline"
-                size="lg"
-              >
-                {t('app.hero.secondaryCta')}
-              </Button>
-            </div>
+            <AppLinks />
           </div>
           <div className="rounded-[var(--radius-xl)] border border-[color:var(--color-stroke)] bg-[color:var(--color-surface)] p-6 shadow-[var(--shadow-soft)]">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--color-ink-muted)]">
@@ -66,7 +74,7 @@ export default async function WingleAppPage() {
         <Container className="space-y-12">
         <div className="max-h-[400px] overflow-hidden rounded-[var(--radius-xl)] border border-[color:var(--color-stroke)] bg-[color:var(--color-brand-offwhite)]">
           <Image
-            src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0b/4f/b0/0b4fb0c7-01b5-bafe-624b-8a02975082bd/appstore2_6.5.jpg/460x996bb.webp"
+            src={mobileAppPreviewImage}
             alt="App Preview"
             width={460}
             height={996}

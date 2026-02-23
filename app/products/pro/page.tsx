@@ -17,17 +17,17 @@ export default async function AgenciesPage() {
         <Container className="grid gap-12 py-20 md:py-28 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
           <div className="space-y-6">
             <Tag className="border-[color:var(--color-brand-offwhite)]/40 bg-transparent text-[color:var(--color-brand-offwhite)]">
-              {t('agencies.hero.eyebrow')}
+              {t('pro.hero.eyebrow')}
             </Tag>
             <h1 className="font-display text-4xl leading-tight md:text-6xl">
-              {t('agencies.hero.title')}
+              {t('pro.hero.title')}
             </h1>
             <p className="text-base text-[color:var(--color-brand-offwhite)]/85 md:text-lg">
-              {t('agencies.hero.subtitle')}
+              {t('pro.hero.subtitle')}
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Button href="/contact" variant="accent" size="lg">
-                {t('agencies.hero.primaryCta')}
+                {t('pro.hero.primaryCta')}
               </Button>
               <Button
                 href="#tiers"
@@ -35,20 +35,20 @@ export default async function AgenciesPage() {
                 size="lg"
                 className="border-[color:var(--color-brand-offwhite)]/40 text-[color:var(--color-brand-offwhite)] hover:bg-[color:var(--color-brand-offwhite)]/10"
               >
-                {t('agencies.hero.secondaryCta')}
+                {t('pro.hero.secondaryCta')}
               </Button>
             </div>
           </div>
 
           <div className="rounded-[var(--radius-xl)] border border-[color:var(--color-brand-offwhite)]/20 bg-[color:var(--color-brand-offwhite)]/10 p-6">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--color-brand-yellow)]">
-              {t('agencies.hero.panelEyebrow')}
+              {t('pro.hero.panelEyebrow')}
             </p>
             <p className="mt-3 text-lg font-semibold">
-              {t('agencies.hero.panelTitle')}
+              {t('pro.hero.panelTitle')}
             </p>
             <p className="mt-4 text-sm text-[color:var(--color-brand-offwhite)]/80">
-              {t('agencies.hero.panelBody')}
+              {t('pro.hero.panelBody')}
             </p>
           </div>
         </Container>

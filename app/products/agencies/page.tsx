@@ -7,10 +7,8 @@ import { getTranslations } from '@/app/lib/i18n/getTranslations';
 
 export default async function AgenciesPage() {
   const t = await getTranslations();
-  const tiers = ['basic', 'meet', 'vvip'] as const;
-  const reasons = ['one', 'two', 'three', 'four'] as const;
-  const steps = ['one', 'two', 'three'] as const;
   const atlasHighlights = ['one', 'two', 'three'] as const;
+  const proHighlights = ['one', 'two', 'three', 'four'] as const;
 
   return (
     <>
@@ -27,11 +25,11 @@ export default async function AgenciesPage() {
               {t('agencies.hero.subtitle')}
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
-              <Button href="/contact" variant="accent" size="lg">
+              <Button href="/products/pro" variant="accent" size="lg">
                 {t('agencies.hero.primaryCta')}
               </Button>
               <Button
-                href="#tiers"
+                href="/products/atlas"
                 variant="outline"
                 size="lg"
                 className="border-[color:var(--color-brand-offwhite)]/40 text-[color:var(--color-brand-offwhite)] hover:bg-[color:var(--color-brand-offwhite)]/10"
@@ -55,87 +53,27 @@ export default async function AgenciesPage() {
         </Container>
       </section>
 
-      <section id="tiers" className="py-20">
-        <Container className="space-y-12">
-          <SectionHeader
-            eyebrow={t('agencies.tiers.eyebrow')}
-            title={t('agencies.tiers.title')}
-            subtitle={t('agencies.tiers.subtitle')}
-          />
-          <div className="grid gap-6 lg:grid-cols-3">
-            {tiers.map((tier) => (
-              <div
-                key={tier}
-                className="rounded-[var(--radius-lg)] border border-[color:var(--color-stroke)] bg-[color:var(--color-surface)] p-6"
-              >
-                <h3 className="text-xl font-semibold">
-                  {t(`agencies.tiers.items.${tier}.title`)}
-                </h3>
-                <p className="mt-3 text-sm text-[color:var(--color-ink-muted)]">
-                  {t(`agencies.tiers.items.${tier}.description`)}
-                </p>
-                <div className="mt-6 space-y-2 text-xs uppercase tracking-[0.2em] text-[color:var(--color-ink-muted)]">
-                  <p>{t(`agencies.tiers.items.${tier}.availability`)}</p>
-                  <p>{t(`agencies.tiers.items.${tier}.pricing`)}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
-
       <section className="bg-[color:var(--color-surface)] py-20">
-        <Container className="space-y-12">
-          <SectionHeader
-            eyebrow={t('agencies.reasons.eyebrow')}
-            title={t('agencies.reasons.title')}
-            subtitle={t('agencies.reasons.subtitle')}
-          />
-          <div className="grid gap-6 md:grid-cols-2">
-            {reasons.map((reason) => (
-              <div
-                key={reason}
-                className="rounded-[var(--radius-lg)] border border-[color:var(--color-stroke)] bg-[color:var(--color-brand-offwhite)] p-6"
-              >
-                <p className="text-sm font-semibold text-[color:var(--color-ink)]">
-                  {t(`agencies.reasons.items.${reason}.title`)}
-                </p>
-                <p className="mt-3 text-sm text-[color:var(--color-ink-muted)]">
-                  {t(`agencies.reasons.items.${reason}.description`)}
-                </p>
-              </div>
-            ))}
+        <Container className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+          <div className="space-y-6">
+            <SectionHeader
+              eyebrow={t('agencies.pro.eyebrow')}
+              title={t('agencies.pro.title')}
+              subtitle={t('agencies.pro.subtitle')}
+            />
+            <ul className="space-y-3 text-sm text-[color:var(--color-ink-muted)]">
+              {proHighlights.map((item) => (
+                <li key={item}>• {t(`agencies.pro.points.${item}`)}</li>
+              ))}
+            </ul>
+            <Button href="/products/pro" variant="primary">
+              {t('agencies.pro.cta')}
+            </Button>
           </div>
         </Container>
       </section>
 
-      <section className="py-20">
-        <Container className="space-y-12">
-          <SectionHeader
-            eyebrow={t('agencies.process.eyebrow')}
-            title={t('agencies.process.title')}
-            subtitle={t('agencies.process.subtitle')}
-          />
-          <div className="grid gap-6 md:grid-cols-3">
-            {steps.map((step) => (
-              <div
-                key={step}
-                className="rounded-[var(--radius-lg)] border border-[color:var(--color-stroke)] bg-[color:var(--color-surface)] p-6"
-              >
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--color-ink-muted)]">
-                  {t(`agencies.process.items.${step}.label`)}
-                </p>
-                <p className="mt-3 text-base font-semibold text-[color:var(--color-ink)]">
-                  {t(`agencies.process.items.${step}.title`)}
-                </p>
-                <p className="mt-3 text-sm text-[color:var(--color-ink-muted)]">
-                  {t(`agencies.process.items.${step}.description`)}
-                </p>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
+      <hr className="border-[color:var(--color-stroke)]" />
 
       <section className="bg-[color:var(--color-surface)] py-20">
         <Container className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">

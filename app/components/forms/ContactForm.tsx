@@ -55,14 +55,14 @@ export function ContactForm({ product, locale = 'en' }: ContactFormProps) {
           <input
             className="rounded-[var(--radius-md)] border border-[color:var(--color-stroke)] bg-[color:var(--color-brand-offwhite)] px-4 py-3 text-[color:var(--color-ink)] placeholder:text-[color:var(--color-ink-muted)] focus:outline-none focus:ring-2 focus:ring-[color:var(--color-brand-blue)]/40"
             name="name"
-            placeholder={t('forms.contact.namePlaceholder')}
+            placeholder={t('forms.contact.namePlaceholder') + "*"}
             required
             autoComplete="name"
           />
         </label>
         <label className="flex flex-col gap-2">
           <span className="font-semibold text-[color:var(--color-ink)]">
-            {t('forms.contact.emailLabel')}
+            {t('forms.contact.emailLabel') + "*"}
           </span>
           <input
             className="rounded-[var(--radius-md)] border border-[color:var(--color-stroke)] bg-[color:var(--color-brand-offwhite)] px-4 py-3 text-[color:var(--color-ink)] placeholder:text-[color:var(--color-ink-muted)] focus:outline-none focus:ring-2 focus:ring-[color:var(--color-brand-blue)]/40"
@@ -104,7 +104,7 @@ export function ContactForm({ product, locale = 'en' }: ContactFormProps) {
       </label>
       <label className="flex flex-col gap-2">
         <span className="font-semibold text-[color:var(--color-ink)]">
-          {t('forms.contact.messageLabel')}
+          {t('forms.contact.messageLabel') + "*"}
         </span>
         <textarea
           className="min-h-[120px] rounded-[var(--radius-md)] border border-[color:var(--color-stroke)] bg-[color:var(--color-brand-offwhite)] px-4 py-3 text-[color:var(--color-ink)] placeholder:text-[color:var(--color-ink-muted)] focus:outline-none focus:ring-2 focus:ring-[color:var(--color-brand-blue)]/40"

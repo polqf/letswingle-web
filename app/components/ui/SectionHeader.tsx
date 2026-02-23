@@ -6,6 +6,7 @@ interface SectionHeaderProps {
   subtitle?: string;
   align?: 'left' | 'center';
   className?: string;
+  style?: 'light' | 'dark';
 }
 
 export function SectionHeader({
@@ -13,6 +14,7 @@ export function SectionHeader({
   title,
   subtitle,
   align = 'left',
+  style = 'dark',
   className,
 }: SectionHeaderProps) {
   const isCenter = align === 'center';
@@ -26,7 +28,10 @@ export function SectionHeader({
       )}
     >
       {eyebrow ? (
-        <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--color-ink-muted)]">
+        <span className={cn(
+          'text-xs font-semibold uppercase tracking-[0.2em]',
+          style === 'light' ? 'text-[color:var(--color-brand-offwhite)]' : 'text-[color:var(--color-ink-muted)]'
+        )}>
           {eyebrow}
         </span>
       ) : null}
@@ -34,7 +39,10 @@ export function SectionHeader({
         {title}
       </h2>
       {subtitle ? (
-        <p className="text-base text-[color:var(--color-ink-muted)] md:text-lg">
+        <p className={cn(
+          'text-base',
+          style === 'light' ? 'text-[color:var(--color-brand-offwhite)]/85' : 'text-[color:var(--color-ink-muted)]'
+        )}>
           {subtitle}
         </p>
       ) : null}

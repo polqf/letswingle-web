@@ -95,9 +95,6 @@ export default async function AtlasPage() {
                 <li key={outcome}>• {t(`atlas.outcomes.items.${outcome}`)}</li>
               ))}
             </ul>
-            <Button href="/products/agencies" variant="primary">
-              {t('atlas.outcomes.cta')}
-            </Button>
           </div>
         </Container>
       </section>

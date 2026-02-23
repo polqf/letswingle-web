@@ -42,49 +42,6 @@ export default async function AboutPage() {
             title={t('about.values.title')}
             subtitle={t('about.values.subtitle')}
           />
-          <div className="grid gap-6 md:grid-cols-2">
-            {values.map((value) => (
-              <div
-                key={value}
-                className="rounded-[var(--radius-lg)] border border-[color:var(--color-stroke)] bg-[color:var(--color-surface)] p-6"
-              >
-                <p className="text-sm font-semibold text-[color:var(--color-ink)]">
-                  {t(`about.values.items.${value}.title`)}
-                </p>
-                <p className="mt-3 text-sm text-[color:var(--color-ink-muted)]">
-                  {t(`about.values.items.${value}.description`)}
-                </p>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      <section className="bg-[color:var(--color-surface)] py-20">
-        <Container className="space-y-12">
-          <SectionHeader
-            eyebrow={t('about.portfolio.eyebrow')}
-            title={t('about.portfolio.title')}
-            subtitle={t('about.portfolio.subtitle')}
-          />
-          <div className="grid gap-6 md:grid-cols-2">
-            <div className="rounded-[var(--radius-lg)] border border-[color:var(--color-stroke)] bg-[color:var(--color-brand-offwhite)] p-6">
-              <p className="text-sm font-semibold text-[color:var(--color-ink)]">
-                {t('about.portfolio.b2bTitle')}
-              </p>
-              <p className="mt-3 text-sm text-[color:var(--color-ink-muted)]">
-                {t('about.portfolio.b2bBody')}
-              </p>
-            </div>
-            <div className="rounded-[var(--radius-lg)] border border-[color:var(--color-stroke)] bg-[color:var(--color-brand-offwhite)] p-6">
-              <p className="text-sm font-semibold text-[color:var(--color-ink)]">
-                {t('about.portfolio.b2cTitle')}
-              </p>
-              <p className="mt-3 text-sm text-[color:var(--color-ink-muted)]">
-                {t('about.portfolio.b2cBody')}
-              </p>
-            </div>
-          </div>
         </Container>
       </section>
 

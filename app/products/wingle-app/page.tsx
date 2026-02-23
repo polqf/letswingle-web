@@ -2,6 +2,7 @@ import { Button } from '@/app/components/ui/Button';
 import { Container } from '@/app/components/ui/Container';
 import { SectionHeader } from '@/app/components/ui/SectionHeader';
 import { Tag } from '@/app/components/ui/Tag';
+import Image from 'next/image';
 import { ContactBand } from '@/app/components/sections/ContactBand';
 import { PressPreview } from '@/app/components/sections/home/PressPreview';
 import { getTranslations } from '@/app/lib/i18n/getTranslations';
@@ -32,6 +33,13 @@ export default async function WingleAppPage() {
                 {t('app.hero.primaryCta')}
               </Button>
               <Button
+                href="https://winglepass.com"
+                variant="outline"
+                size="lg"
+              >
+                {t('home.app.panelCta')}
+              </Button>
+              <Button
                 href="https://play.google.com/store/apps/details?id=com.letswingle.android"
                 variant="outline"
                 size="lg"
@@ -52,6 +60,20 @@ export default async function WingleAppPage() {
             </p>
           </div>
         </Container>
+      </section>
+
+      <section>
+        <Container className="space-y-12">
+        <div className="max-h-[400px] overflow-hidden rounded-[var(--radius-xl)] border border-[color:var(--color-stroke)] bg-[color:var(--color-brand-offwhite)]">
+          <Image
+            src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0b/4f/b0/0b4fb0c7-01b5-bafe-624b-8a02975082bd/appstore2_6.5.jpg/460x996bb.webp"
+            alt="App Preview"
+            width={460}
+            height={996}
+            className="h-auto w-full max-h-[400px] object-contain object-center"
+          />
+        </div>
+      </Container>
       </section>
 
       <section className="py-20">
@@ -112,24 +134,6 @@ export default async function WingleAppPage() {
 
       <section className="bg-[color:var(--color-surface)] py-20">
         <Container className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-          <div className="rounded-[var(--radius-xl)] border border-[color:var(--color-stroke)] bg-[color:var(--color-brand-offwhite)] p-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--color-ink-muted)]">
-              {t('app.services.panelEyebrow')}
-            </p>
-            <p className="mt-3 text-lg font-semibold text-[color:var(--color-ink)]">
-              {t('app.services.panelTitle')}
-            </p>
-            <p className="mt-4 text-sm text-[color:var(--color-ink-muted)]">
-              {t('app.services.panelBody')}
-            </p>
-            <Button
-              href="https://winglepass.com"
-              variant="ghost"
-              className="mt-6 text-[color:var(--color-brand-blue)]"
-            >
-              {t('app.services.panelCta')}
-            </Button>
-          </div>
           <div className="space-y-6">
             <SectionHeader
               eyebrow={t('app.services.eyebrow')}

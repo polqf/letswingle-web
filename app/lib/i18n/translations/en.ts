@@ -14,8 +14,8 @@ export const en = {
   },
   home: {
     hero: {
-      eyebrow: 'Travel better with Wingle',
-      title: 'Your pass to better travel',
+      eyebrow: 'Your pass to better travel',
+      title: 'Travel better with Wingle',
       subtitle:
         'No subscription required. Use credits when travel actually needs it.',
       primaryCta: 'Discover the app',
@@ -31,8 +31,8 @@ export const en = {
       panelNote: 'Simple, modular, and built to match real workflows.',
     },
     agencies: {
-      eyebrow: 'Wingle for Travel Professionals',
-      title: 'Your trusted one-stop partner for premium airport services globally',
+      eyebrow: 'Your trusted one-stop partner for premium airport services globally',
+      title: 'Wingle for Travel Professionals',
       subtitle:
         'Lounges, fast tracks, meet & greet services, and VVIP experiences with global coverage.',
       points: {
@@ -69,7 +69,7 @@ export const en = {
         two: 'Top up your Wingle Pass credits in the app and spend them when you need support.',
         three: 'Also available on winglepass.com. Available on iOS, Android, and Web.',
       },
-      panelCta: 'Visit winglepass.com',
+      panelCta: 'winglepass.com',
     },
     press: {
       eyebrow: 'Press',

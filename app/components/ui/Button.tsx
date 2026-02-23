@@ -25,7 +25,7 @@ const variantClasses: Record<ButtonVariant, string> = {
   primary:
     'bg-[color:var(--color-brand-blue)] !text-white hover:opacity-90 active:opacity-80',
   accent:
-    'bg-[color:var(--color-brand-yellow)] text-[color:var(--color-ink)] hover:opacity-90 active:opacity-80',
+    'bg-[color:var(--color-brand-blue)] !text-white hover:opacity-90 active:opacity-80',
   outline:
     'border border-[color:var(--color-ink)]/20 text-[color:var(--color-ink)] hover:bg-[color:var(--color-surface)]',
   ghost:

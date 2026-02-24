@@ -200,10 +200,9 @@ export const es = {
       },
     },
     contact: {
-      title: 'Planifica servicios premium de aeropuerto con nosotros',
-      subtitle:
-        'Comparte ruta, horarios y perfil del viajero. Respondemos con opciones a medida.',
-      note: 'Cobertura global, calidad curada, un solo partner.',
+      title: 'Escríbenos para mejorar la experiencia de viaje de tus clientes',
+      subtitle: '',
+      note: '',
     },
   },
   pro: {
@@ -217,6 +216,11 @@ export const es = {
       panelEyebrow: 'Operativa global',
       panelTitle: 'Todo, en cualquier lugar del mundo',
       panelBody: 'Con un solo partner.',
+    },
+    outcomes: {
+      panelEyebrow: 'Wingle Pro',
+      panelTitle: 'Tu partner one-stop para todas tus necesidades premium de aeropuerto y viaje',
+      panelBody: '',
     },
   },
   atlas: {
@@ -258,17 +262,18 @@ export const es = {
     },
     outcomes: {
       eyebrow: 'Sistema de conocimiento',
-      title: 'Convierte el know-how de la agencia en un activo compartido',
+      title: 'Itinerarios de viaje atractivos y una base de conocimiento compartida en tu empresa',
       subtitle:
-        'El conocimiento de un travel designer queda disponible para toda la empresa, entre oficinas.',
+        'Itinerarios dinámicos, visuales y humanos que impulsan el engagement. Los tips de cada agente, guardados y compartidos en la empresa.',
       panelEyebrow: 'Inteligencia acumulativa',
       panelTitle: 'Cada itinerario mejora con el tiempo',
       panelBody:
         'Los itinerarios guardados y el feedback del cliente elevan la calidad de cada nuevo viaje.',
       items: {
-        one: 'El conocimiento se guarda en Atlas y queda reutilizable y ordenado.',
-        two: 'Los diseñadores colaboran con inteligencia de destino compartida.',
-        three: 'Cada nuevo viaje parte de la mejor información de toda la red.',
+        one: 'Itinerarios de viaje con visuales de calidad, información útil (p. ej. tiempo en vivo) y tips humanos (notas de voz de tu agente).',
+        two: 'El conocimiento se guarda en Atlas y queda reutilizable y ordenado.',
+        three: 'Los diseñadores colaboran con inteligencia de destino compartida.',
+        four: 'Cada nuevo viaje parte de la mejor información de toda la red.',
       },
       cta: 'Ver Atlas en detalle',
     },
@@ -405,35 +410,19 @@ export const es = {
   about: {
     hero: {
       eyebrow: 'Sobre Wingle',
-      title: 'Viajes premium con calma y confianza',
+      title: 'Nuestra misión es hacer que volar sea más cómodo de lo que es hoy',
       subtitle:
-        'Wingle es una marca de viajes premium que ayuda a personas y partners a ir más lejos con confianza.',
+        'Wingle nació en 2024 con la misión clara de hacer los vuelos más cómodos y que disfruten más. Empezamos como una red social offline que permitía conocer y chatear con gente del mismo vuelo. Evolucionamos hacia una plataforma agnóstica de aerolíneas que te permite volar mejor sin tener estatus con ninguna. Luego vimos que los profesionales del viaje tienen los mismos problemas que los viajeros con la experiencia en aeropuerto, así que ampliamos Wingle para apoyar a profesionales y agencias.',
       panelEyebrow: 'North star',
       panelTitle: 'Confianza para explorar',
-      panelBody: 'Convertimos complejidad en experiencias de viaje de alta confianza.',
+      panelBody:
+        'Convertimos complejidad en experiencias de viaje de alta confianza. Creemos que profesionales y agencias deberían tener las mismas oportunidades que los viajeros para volar mejor sin estatus con ninguna aerolínea.',
     },
     values: {
       eyebrow: 'Lo que defendemos',
-      title: 'Energía exploradora, claridad operativa',
-      subtitle: 'Resultados premium con precisión real.',
-      items: {
-        one: {
-          title: 'Calma y confianza',
-          description: 'Seguros sin ser ruidosos, claros sin ser fríos.',
-        },
-        two: {
-          title: 'Premium con calidez',
-          description: 'Experiencias elevadas con trato humano.',
-        },
-        three: {
-          title: 'Confianza curada',
-          description: 'Elegimos lo que cumple el estándar y explicamos por qué.',
-        },
-        four: {
-          title: 'Ingeniosos y prácticos',
-          description: 'Soluciones inteligentes explicadas de forma simple.',
-        },
-      },
+      title: 'Estamos en evolución constante',
+      subtitle:
+        'Nos encanta aprender sobre los problemas actuales de la experiencia de viaje y encontrar soluciones. Escríbenos para contarnos más o simplemente charlar. ¡Nos vemos en el aire!',
     },
     portfolio: {
       eyebrow: 'Portafolio',
@@ -447,8 +436,8 @@ export const es = {
     },
     contact: {
       title: 'Habla con el equipo Wingle',
-      subtitle: 'Estamos listos para hablar de agencias, partnerships o la app.',
-      note: 'Respondemos rápido con próximos pasos claros.',
+      subtitle: 'Te respondemos rápido, ¡prometido!',
+      note: '',
     },
   },
   contact: {

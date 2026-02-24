@@ -21,17 +21,6 @@ export default async function AboutPage() {
               {t('about.hero.subtitle')}
             </p>
           </div>
-          <div className="rounded-[var(--radius-xl)] border border-[color:var(--color-stroke)] bg-[color:var(--color-surface)] p-6 shadow-[var(--shadow-soft)]">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--color-ink-muted)]">
-              {t('about.hero.panelEyebrow')}
-            </p>
-            <p className="mt-3 text-lg font-semibold text-[color:var(--color-ink)]">
-              {t('about.hero.panelTitle')}
-            </p>
-            <p className="mt-4 text-sm text-[color:var(--color-ink-muted)]">
-              {t('about.hero.panelBody')}
-            </p>
-          </div>
         </Container>
       </section>
 

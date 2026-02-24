@@ -7,7 +7,7 @@ import { getTranslations } from '@/app/lib/i18n/getTranslations';
 
 export default async function AgenciesPage() {
   const t = await getTranslations();
-  const atlasHighlights = ['one', 'two', 'three'] as const;
+  const atlasHighlights = ['one', 'two', 'three', 'four'] as const;
   const proHighlights = ['one', 'two', 'three', 'four'] as const;
 
   return (
@@ -69,6 +69,18 @@ export default async function AgenciesPage() {
             <Button href="/products/pro" variant="primary">
               {t('agencies.pro.cta')}
             </Button>
+          </div>
+
+          <div className="rounded-[var(--radius-xl)] border border-[color:var(--color-stroke)] bg-[color:var(--color-brand-offwhite)] p-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[color:var(--color-ink-muted)]">
+              {t('pro.outcomes.panelEyebrow')}
+            </p>
+            <p className="mt-3 text-lg font-semibold text-[color:var(--color-ink)]">
+              {t('pro.outcomes.panelTitle')}
+            </p>
+            <p className="mt-4 text-sm text-[color:var(--color-ink-muted)]">
+              {t('pro.outcomes.panelBody')}
+            </p>
           </div>
         </Container>
       </section>

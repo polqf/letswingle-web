@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { usePathname, useSearchParams } from 'next/navigation';
 
 type Locale = 'en' | 'es';
@@ -37,18 +36,18 @@ export function LanguageSwitcher({ locale, className }: LanguageSwitcherProps) {
 
   return (
     <div className={className ?? 'flex items-center gap-2'}>
-      <Link
+      <a
         href={localeHref('en', redirect)}
         className={`${baseClasses} ${locale === 'en' ? activeClasses : inactiveClasses}`}
       >
         EN
-      </Link>
-      <Link
+      </a>
+      <a
         href={localeHref('es', redirect)}
         className={`${baseClasses} ${locale === 'es' ? activeClasses : inactiveClasses}`}
       >
         ES
-      </Link>
+      </a>
     </div>
   );
 }

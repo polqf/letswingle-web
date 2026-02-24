@@ -23,9 +23,10 @@ export function ContactForm({ product, locale = 'en' }: ContactFormProps) {
 
     const form = event.currentTarget;
     const formData = new FormData(form);
-    if (product) {
+    if (!formData.get('product') && product) {
       formData.set('product', product);
     }
+    formData.set('locale', locale);
 
     try {
       const response = await fetch('/api/contact', {

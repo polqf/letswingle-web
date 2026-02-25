@@ -345,6 +345,12 @@ export const en = {
         six: 'Credits don’t expire, so there’s no rush to spend them quickly.',
       },
     },
+    instagram: {
+      eyebrow: 'Follow us',
+      title: 'See Wingle in action',
+      subtitle: 'Updates, travel moments, and behind the scenes on Instagram.',
+      cta: 'Follow @lets_wingle',
+    },
     contact: {
       title: 'Need help?',
       subtitle: 'Reach out and we’ll reply ASAP.',

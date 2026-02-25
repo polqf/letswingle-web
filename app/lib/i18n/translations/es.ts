@@ -347,6 +347,12 @@ export const es = {
         six: 'Los créditos no caducan, no hay prisa por gastarlos.',
       },
     },
+    instagram: {
+      eyebrow: 'Síguenos',
+      title: 'Wingle en acción',
+      subtitle: 'Novedades, momentos de viaje y detrás de cámaras en Instagram.',
+      cta: 'Seguir a @lets_wingle',
+    },
     contact: {
       title: '¿Necesitas ayuda?',
       subtitle: 'Escríbenos y te respondemos lo antes posible.',

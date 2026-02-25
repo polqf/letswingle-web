@@ -146,6 +146,13 @@ export default async function WingleAppPage() {
         </Container>
       </section>
 
+      <InstagramPreview
+        eyebrow={t('app.instagram.eyebrow')}
+        title={t('app.instagram.title')}
+        subtitle={t('app.instagram.subtitle')}
+        cta={t('app.instagram.cta')}
+      />
+
       <PressPreview />
 
       <ContactBand

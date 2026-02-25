@@ -4,6 +4,7 @@ import { Bricolage_Grotesque } from 'next/font/google';
 import '@/app/globals.css';
 import { Footer } from '@/app/components/layout/Footer';
 import { Header } from '@/app/components/layout/Header';
+import { AnalyticsProvider } from '@/app/components/layout/AnalyticsProvider';
 import { getLocale, getTranslations } from '@/app/lib/i18n/getTranslations';
 
 const bricolage = Bricolage_Grotesque({
@@ -55,6 +56,7 @@ export default async function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <AnalyticsProvider />
       </body>
     </html>
   );

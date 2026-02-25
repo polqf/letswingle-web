@@ -3,7 +3,7 @@
 ## Completed
 
 - [x] Initial site revamp using branding guidelines
-- [x] All product pages (App, Pro, Atlas, White Label, Agencies hub)
+- [x] All product pages (App, Pro, Atlas, Agencies hub)
 - [x] Blog migration (Cockpit Diaries + News)
 - [x] Press page with media logos
 - [x] About page
@@ -17,7 +17,6 @@
 ## Pending
 
 ### High Priority
-- [ ] Retire `/products/white-label` page — White Label is a Wingle Pro integration method, not a standalone product. Content should be folded into Pro page or removed. Update nav, footer, and any internal links.
 - [ ] Cookie consent banner (GDPR compliance)
 - [ ] Links to IG / TikTok on footer
 - [ ] Replace temporary app preview images (currently Apple CDN) with owned assets

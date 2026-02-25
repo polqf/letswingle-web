@@ -255,10 +255,9 @@ This document records architectural and design decisions for the project, starti
 - The specific integration method is determined during the sales process based on each client's needs and technical capabilities.
 
 **Implication:**
-- The `/products/white-label` page on the website should be retired or folded into the Wingle Pro page.
-- Public-facing copy should describe Wingle Pro as "flexible" and "adapting to each agency's workflow" without enumerating integration methods.
+- The `/products/white-label` page has been retired from the website.
+- Public-facing copy describes Wingle Pro as "flexible" and "adapting to each agency's workflow" without enumerating integration methods.
 - Internal documentation may reference integration methods for operational clarity.
-- Navigation, footer, and any links pointing to the White Label page need to be updated.
 
 ---
 

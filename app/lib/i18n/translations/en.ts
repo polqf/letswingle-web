@@ -3,7 +3,6 @@ export const en = {
     home: 'Home',
     agencies: 'Wingle for Travel Professionals',
     atlas: 'Wingle Atlas',
-    whiteLabel: 'White Label',
     app: 'Wingle App',
     blog: 'Blog',
     about: "What's Wingle",
@@ -281,58 +280,6 @@ export const en = {
       note: 'Human-first design plus reusable agency knowledge.',
     },
   },
-  whiteLabel: {
-    hero: {
-      eyebrow: 'White Label',
-      title: 'Your brand, powered by Wingle airport services',
-      subtitle:
-        'Embed a curated service layer while keeping your identity front and center.',
-      primaryCta: 'Talk to our team',
-      secondaryCta: 'View capabilities',
-      panelEyebrow: 'Partner-ready',
-      panelTitle: 'A premium layer without rebuilding operations',
-      panelBody: 'We confirm services per request and support your delivery.',
-    },
-    capabilities: {
-      eyebrow: 'Capabilities',
-      title: 'A white-label service layer built for trust',
-      subtitle: 'Clear scope, clear process, premium delivery.',
-      items: {
-        one: {
-          title: 'Brandable experience',
-          description: 'Keep your brand front and center across the journey.',
-        },
-        two: {
-          title: 'Curated airport services',
-          description: 'Offer premium services without maintaining the network yourself.',
-        },
-        three: {
-          title: 'Operational support',
-          description: 'We coordinate confirmations and logistics with your team.',
-        },
-      },
-    },
-    audience: {
-      eyebrow: 'Who it is for',
-      title: 'Built for premium travel partners',
-      subtitle: 'A flexible fit alongside existing workflows.',
-      panelEyebrow: 'Integration model',
-      panelTitle: 'High-level, partner-friendly',
-      panelBody:
-        'We outline the model clearly without requiring a complex technical build-out.',
-      items: {
-        one: 'Airlines and travel brands',
-        two: 'High-touch agency networks',
-        three: 'Loyalty or card programs',
-      },
-      cta: 'Start a conversation',
-    },
-    contact: {
-      title: 'Explore a white-label partnership',
-      subtitle: 'Tell us about your brand and audience. We will follow up quickly.',
-      note: 'Availability and pricing are confirmed per request.',
-    },
-  },
   app: {
     hero: {
       eyebrow: 'Wingle App',
@@ -426,7 +373,7 @@ export const en = {
       subtitle: 'B2B and B2C offerings that can operate independently.',
       b2bTitle: 'For agencies and partners',
       b2bBody:
-        'Wingle for Agencies, Wingle Atlas, and White Label services.',
+        'Wingle for Agencies and Wingle Atlas.',
       b2cTitle: 'For travelers',
       b2cBody: 'Wingle app and the services available at winglepass.com.',
     },
@@ -730,7 +677,6 @@ export const en = {
       options: {
         agencies: 'Wingle for Agencies',
         atlas: 'Wingle Atlas',
-        whiteLabel: 'White Label',
         app: 'Wingle App',
         web: 'Wingle',
       },

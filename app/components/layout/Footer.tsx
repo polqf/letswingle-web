@@ -33,7 +33,6 @@ export async function Footer() {
           <Link href="/products/wingle-app">{t('nav.app')}</Link>
           <Link href="/products/agencies">{t('nav.agencies')}</Link>
           <Link href="/products/atlas">{t('nav.atlas')}</Link>
-          <Link href="/products/white-label">{t('nav.whiteLabel')}</Link>
         </div>
 
         <div className="flex flex-col items-start gap-3 text-sm font-semibold text-[color:var(--color-ink)]">

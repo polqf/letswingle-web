@@ -85,7 +85,6 @@ A journalist or investor lands on the site and finds a professional, polished pr
 | Wingle for Travel Professionals hub page | **Complete** |
 | Wingle Pro product page with contact form | **Complete** |
 | Wingle Atlas product page with contact/demo form | **Complete** |
-| `/products/white-label` page | **Needs review** — White Label is an integration method of Wingle Pro, not a standalone product. This page should be retired or folded into the Pro page. |
 | Blog (Cockpit Diaries + News) | **Complete** (sole canonical source pending redirects from `winglepass.com`) |
 | Press page | **Complete** (9 outlets with logos) |
 | About / Company page | **Complete** |

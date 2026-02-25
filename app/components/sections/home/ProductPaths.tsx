@@ -32,14 +32,6 @@ export async function ProductPaths() {
       description: t('home.paths.cards.atlas.description'),
       cta: t('home.paths.cards.atlas.cta'),
     },
-    {
-      key: 'whiteLabel',
-      href: '/products/white-label',
-      label: t('home.paths.cards.whiteLabel.label'),
-      title: t('home.paths.cards.whiteLabel.title'),
-      description: t('home.paths.cards.whiteLabel.description'),
-      cta: t('home.paths.cards.whiteLabel.cta'),
-    },
   ];
 
   return (

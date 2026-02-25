@@ -90,7 +90,6 @@ These are **internal implementation details** and should **not** be presented as
 - **"Wingle Pro"** is the B2B premium airport services product. It is fundamentally different from the B2C Wingle Pass — it includes curated quality filtering, Meet & Assist, and VVIP tiers that the B2C product does not offer.
 - **"Wingle for Travel Professionals"** is the umbrella term for the B2B offering on the website, encompassing both Wingle Pro and Wingle Atlas.
 - **"Wingle Atlas"** is always referred to by its full name.
-- **"White label"** is an integration method of Wingle Pro, not a separate product. Do not present it publicly as a standalone offering.
 - The company name **LETS WINGLE S.L.** is rarely used publicly. The brand is simply **"Wingle"**.
 
 ## What This Project Is NOT

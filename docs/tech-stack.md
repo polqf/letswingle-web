@@ -138,8 +138,7 @@ letswingle-web/
 │   │   ├── wingle-app/        # B2C app showcase + AppLinks + faqs/ subpage
 │   │   ├── agencies/          # Wingle for Travel Professionals hub
 │   │   ├── pro/               # Wingle Pro (premium airport services)
-│   │   ├── atlas/             # Wingle Atlas (digital itineraries)
-│   │   └── white-label/       # To be retired (White Label is a Wingle Pro integration method, not a product)
+│   │   └── atlas/             # Wingle Atlas (digital itineraries)
 │   ├── about/                 # Company page
 │   ├── contact/               # General contact
 │   ├── press/                 # Press page with media logos

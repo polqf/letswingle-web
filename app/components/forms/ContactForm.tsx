@@ -98,7 +98,6 @@ export function ContactForm({ product, locale = 'en' }: ContactFormProps) {
           <option value="">{t('forms.contact.productPlaceholder')}</option>
           <option value="agencies">{t('forms.contact.options.agencies')}</option>
           <option value="atlas">{t('forms.contact.options.atlas')}</option>
-          <option value="white-label">{t('forms.contact.options.whiteLabel')}</option>
           <option value="wingle-app">{t('forms.contact.options.app')}</option>
           <option value="wingle">{t('forms.contact.options.web')}</option>
         </select>

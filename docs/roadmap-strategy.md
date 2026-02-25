@@ -9,7 +9,7 @@ The site is **live and largely complete**. Phases 1 through 3 (Foundation, Full 
 | Asset | Status | Notes |
 |---|---|---|
 | Home page with app + agency previews | Complete | Gateway to product pages, not a single-scroll summary |
-| All product pages (App, Pro, Atlas, Agencies hub) | Complete | Each self-contained with hero, value prop, and ContactBand. Note: `/products/white-label` exists but should be retired — White Label is an integration method of Wingle Pro, not a standalone product. |
+| All product pages (App, Pro, Atlas, Agencies hub) | Complete | Each self-contained with hero, value prop, and ContactBand. |
 | Blog (Cockpit Diaries + News) | Complete | Migrated from `winglepass.com/blog`, Markdown-based |
 | Press page with logo grid | Complete | 9 media outlets with external article links |
 | About page | Complete | Company story and values |
@@ -60,7 +60,6 @@ The site should be built incrementally, prioritizing the pages that drive the mo
 
 - **Wingle Atlas** (`/products/atlas`) — Features, knowledge system, ContactBand
 - **Wingle App** (`/products/wingle-app`) — Services showcase, App Store/Play links, FAQs subpage
-- **~~White Label~~** (`/products/white-label`) — **To be retired.** White Label is an integration method of Wingle Pro, not a standalone product. Content should be folded into the Pro page or removed.
 - **About** (`/about`) — Company story and values
 - **Press** (`/press`) — 9 media outlets with logo grid and external links
 
@@ -109,8 +108,6 @@ The site should be built incrementally, prioritizing the pages that drive the mo
 | Per-page SEO metadata and structured data | Discoverability | Phase 4 |
 | Social media links in footer (IG, TikTok) | Brand presence | Soon |
 | App preview images — replace temporary Apple CDN screenshots | Brand consistency | Soon |
-| Retire `/products/white-label` page | White Label is a Wingle Pro integration method, not a product | Soon |
-
 ## What Must Be Solved Next
 
 ### High Priority

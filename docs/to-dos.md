@@ -13,20 +13,19 @@
 - [x] Contact form validation (server-side + client-side)
 - [x] App FAQs page
 - [x] Press appearances (9 outlets with logos and links)
+- [x] Cookie consent banner (GDPR compliance)
+- [x] Links to IG / TikTok on footer
+- [x] `winglepass.com/blog` → `letswingle.com/blog` 301 redirects
+- [x] Per-page SEO metadata (OG tags, descriptions, canonical URLs)
+- [x] Dynamic sitemap generation (`app/sitemap.ts`) + `robots.ts`
+- [x] Google Analytics 4 integration (consent-gated via `NEXT_PUBLIC_GA4_MEASUREMENT_ID`)
+- [x] Vercel Analytics and Speed Insights
+- [x] Instagram preview section on Wingle App page
 
 ## Pending
 
 ### High Priority
-- [ ] Cookie consent banner (GDPR compliance)
-- [ ] Links to IG / TikTok on footer
 - [ ] Replace temporary app preview images (currently Apple CDN) with owned assets
-
-### SEO & Analytics
-- [ ] `winglepass.com/blog` → `letswingle.com/blog` 301 redirects
-- [ ] Per-page SEO metadata (OG tags, descriptions, structured data)
-- [ ] Dynamic sitemap generation
-- [ ] Google Analytics 4 integration
-- [ ] Vercel Analytics and Speed Insights
 
 ### Quality & Compliance
 - [ ] Accessibility audit (WCAG 2.1 AA)

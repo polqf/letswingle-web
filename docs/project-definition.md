@@ -34,7 +34,7 @@ The B2C app remains the public face of the brand — generating press, social pr
 
 Travel agencies are the primary revenue driver. They land on the **Wingle for Travel Professionals** hub (`/products/agencies`) and need to understand:
 
-- **Wingle Pro**: A curated, premium airport services platform purpose-built for travel agencies — especially luxury and high-end operators. This is **not** the same as the B2C Wingle Pass. The agency product offers three tiers of service, from curated lounge access to full VVIP private terminal experiences (see "Service Tiers" below). Wingle adapts to each agency's workflow through multiple integration methods (see "Integration Paths" below).
+- **Wingle Pro**: A curated, premium airport services **partner-led service offering** for travel agencies — especially luxury and high-end operators. This is **not** the same as the B2C Wingle Pass. The agency offering has three tiers of service, from curated lounge access to full VVIP private terminal experiences (see "Service Tiers" below). Wingle adapts to each agency's workflow through multiple integration methods (see "Integration Paths" below).
 - **Wingle Atlas**: A digital itinerary builder that replaces static PDF trip documents with rich, interactive, context-aware travel experiences delivered to travelers. It also serves as a shared knowledge base across the agency.
 - That these are two separate products that can work independently or together.
 - How to get started (contact form / demo request).
@@ -61,7 +61,7 @@ The site showcases the following products. These are the canonical names and des
 
 ### Wingle Pro — Service Tiers
 
-This is the company's highest-revenue product and its primary focus. Unlike the B2C Wingle Pass (which offers standard lounge access), Wingle Pro is positioned as a **"one-stop partner for premium airport services"** with three distinct service tiers:
+This is the company's highest-revenue offering and its primary focus. Unlike the B2C Wingle Pass (which offers standard lounge access), Wingle Pro is positioned as a **"one-stop partner for premium airport services"** with three distinct service tiers:
 
 | Tier | Description | Price Range | Availability |
 |---|---|---|---|
@@ -87,7 +87,7 @@ These are **internal implementation details** and should **not** be presented as
 ### Internal vs. External Naming
 
 - **"Wingle Pass"** and **"Wingle Chat"** are internal product names. Externally, the B2C app is simply called **"Wingle"** — it combines both.
-- **"Wingle Pro"** is the B2B premium airport services product. It is fundamentally different from the B2C Wingle Pass — it includes curated quality filtering, Meet & Assist, and VVIP tiers that the B2C product does not offer.
+- **"Wingle Pro"** is the B2B premium airport services offering (partner-led service model). It is fundamentally different from the B2C Wingle Pass — it includes curated quality filtering, Meet & Assist, and VVIP tiers that the B2C product does not offer.
 - **"Wingle for Travel Professionals"** is the umbrella term for the B2B offering on the website, encompassing both Wingle Pro and Wingle Atlas.
 - **"Wingle Atlas"** is always referred to by its full name.
 - The company name **LETS WINGLE S.L.** is rarely used publicly. The brand is simply **"Wingle"**.
@@ -116,7 +116,7 @@ The site should follow this information architecture:
 - **Contact** (`/contact`) — General contact form
 - **Legal** — Terms (`/legal/terms`), Privacy Policy (`/legal/privacy`), Cookie Policy (`/legal/cookies`) (EN/ES)
 
-Products with a user-facing platform (B2C app, `winglepass.com`) get CTAs that link out. B2B products (Wingle Pro, Wingle Atlas) collect interest via embedded `ContactBand` sections with contact forms.
+Products with a user-facing platform (B2C app, `winglepass.com`) get CTAs that link out. B2B offerings (Wingle Pro, Wingle Atlas) collect interest via embedded `ContactBand` sections with contact forms.
 Navigation and homepage sections list the **B2C app first**, followed by B2B products.
 
 ## Role Within the Ecosystem

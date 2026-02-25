@@ -16,6 +16,7 @@ These guidelines define how Wingle should **look**, **sound**, and **behave** ac
 - This is a **top-of-funnel company website**, not a product app. No implied login, checkout, or self-serve purchasing.
 - **B2C presence is crucial**. Never imply the consumer product is deprioritized or “on hold.”
 - Public naming uses **Wingle Pro** (B2B airport services), **Wingle Atlas** (B2B itineraries), and **Wingle for Travel Professionals** (B2B umbrella). Avoids internal names like “Wingle Pass” / “Wingle Chat” as standalone product names.
+- **Wingle Pro positioning (important nuance)**: describe Wingle Pro as a **trusted partner / service model for travel agencies** (agencies bring the travelers; we confirm and coordinate premium airport services). Avoid framing it as “a B2B product” or “a platform” in public copy unless specifically approved.
 
 ---
 

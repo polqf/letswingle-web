@@ -4,6 +4,7 @@ import { Bricolage_Grotesque } from 'next/font/google';
 import '@/app/globals.css';
 import { Footer } from '@/app/components/layout/Footer';
 import { Header } from '@/app/components/layout/Header';
+import { CookieBanner } from '@/app/components/layout/CookieBanner';
 import { AnalyticsProvider } from '@/app/components/layout/AnalyticsProvider';
 import { getLocale, getTranslations } from '@/app/lib/i18n/getTranslations';
 
@@ -49,6 +50,15 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   const locale = await getLocale();
+  const t = await getTranslations();
+
+  const cookieTranslations = {
+    message: t('cookieBanner.message'),
+    learnMore: t('cookieBanner.learnMore'),
+    rejectAll: t('cookieBanner.rejectAll'),
+    acceptNecessary: t('cookieBanner.acceptNecessary'),
+    acceptAll: t('cookieBanner.acceptAll'),
+  };
 
   return (
     <html lang={locale} className={bricolage.variable}>
@@ -56,6 +66,7 @@ export default async function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <CookieBanner translations={cookieTranslations} />
         <AnalyticsProvider />
       </body>
     </html>

@@ -3,7 +3,7 @@
 These guidelines define how Wingle should **look**, **sound**, and **behave** across marketing pages, product UI, comms, and AI-generated output.
 
 **Scope**
-- Applies to: **all products in the Wingle ecosystem** (letswingle.com, Wingle app, Wingle for Agencies, Wingle Atlas, White Label, winglepass.com), product marketing, emails, decks, PR, and in-product copy.
+- Applies to: **all products in the Wingle ecosystem** (letswingle.com, Wingle app, Wingle Pro, Wingle Atlas, winglepass.com), product marketing, emails, decks, PR, and in-product copy.
 - Does not define final visual identity details (logo usage, colors, type scale). Those will live in `docs/visual-identity.md` once finalized.
 
 **Source of truth**
@@ -15,7 +15,7 @@ These guidelines define how Wingle should **look**, **sound**, and **behave** ac
 **Non-negotiables**
 - This is a **top-of-funnel company website**, not a product app. No implied login, checkout, or self-serve purchasing.
 - **B2C presence is crucial**. Never imply the consumer product is deprioritized or “on hold.”
-- Public naming avoids internal product names like “Wingle Pass” / “Wingle Chat.”
+- Public naming uses **Wingle Pro** (B2B airport services), **Wingle Atlas** (B2B itineraries), and **Wingle for Travel Professionals** (B2B umbrella). Avoids internal names like “Wingle Pass” / “Wingle Chat” as standalone product names.
 
 ---
 
@@ -74,7 +74,7 @@ We are: **Dreamers, not utopians. Ingenious, not jokers. Passionate, not out of 
 
 ### Tone split by audience (critical)
 
-#### B2B tone (Agencies, White Label partners)
+#### B2B tone (Agencies, enterprise partners)
 Optimize for: **premium + reliable + curated + fast** with a *touch* of Explorer/Magician.
 - **Write like**: a trusted operations partner with taste.
 - **Signal**: responsiveness, process, quality bar, and clarity on “what happens next.”
@@ -269,7 +269,7 @@ AI-generated output must behave like a disciplined Wingle team member: calm, pre
 - Default CTA language: **“Talk to our team”** (variations allowed per page, but keep it calm).
 
 ### AI checklist (validate before shipping)
-- [ ] Uses public brand architecture: **Wingle**, **Wingle for Agencies**, **Wingle Atlas** (no “Wingle Pass/Chat” in public copy).
+- [ ] Uses public brand architecture: **Wingle** (app), **Wingle Pro** (B2B airport services), **Wingle Atlas** (B2B itineraries), **Wingle for Travel Professionals** (B2B umbrella). No “Wingle Pass” or “Wingle Chat” as standalone product names in public copy.
 - [ ] Tone matches audience: B2B = premium/clear; B2C = more exploratory.
 - [ ] No forbidden promises (guarantees, instant, always, zero contact, self-serve checkout).
 - [ ] Limitations are stated plainly with a next step (“share details → we confirm”).
@@ -287,6 +287,9 @@ You asked for a list of the kinds of promises/phrases we’d *intend* to use so 
 - “Confirmed quickly, tailored to your request.”
 - “Designed to fit agency workflows.”
 - “A premium standard you can trust.”
+- “One-stop partner for all your premium airport and travel needs.”
+- “In-house intelligence filters and recommends only up-to-standard services.”
+- “Customized per route and airport.”
 
 ### Useful but needs explicit approval (wording + legal/comms review)
 - “Meet & Assist in selected airports (confirmed per request).”

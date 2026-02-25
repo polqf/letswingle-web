@@ -11,40 +11,45 @@ These guidelines are derived from the conventions established in `wingle-web` an
 ```
 app/
 ├── components/           # All shared components
-│   ├── ui/              # Generic UI primitives (Button, Card, Input, etc.)
-│   ├── layout/          # Layout components (Header, Footer, Navigation)
-│   ├── forms/           # Contact and lead capture form components
-│   ├── blog/            # Blog-specific components (PostCard, PostList, etc.)
-│   └── products/        # Product showcase components (FeatureGrid, PricingTable, etc.)
+│   ├── ui/              # Generic UI primitives (Button, Container, SectionHeader, Tag)
+│   ├── layout/          # Layout components (Header, Footer, LanguageSwitcher)
+│   ├── forms/           # Contact form (ContactForm — client component)
+│   ├── sections/        # Reusable page sections (ContactBand, LegalShell)
+│   │   └── home/        # Homepage-specific sections (Hero, AppPreview, AgencyTiersPreview, etc.)
+│   └── press/           # Press-specific components (PressLogoGrid)
 ├── lib/
-│   ├── i18n/            # Translation files and hook
+│   ├── i18n/            # Translation files and hooks
 │   │   ├── translations/
 │   │   │   ├── en.ts
 │   │   │   └── es.ts
-│   │   └── useTranslations.ts
-│   ├── analytics/       # Analytics setup and helpers
-│   ├── blog/            # Blog utilities (Markdown parsing, content loading)
-│   └── utils/           # General utilities
-├── types/               # Shared TypeScript types
-├── static/              # Static structured content (product data, FAQs)
-├── (routes)/            # Page routes (Next.js App Router)
-└── api/                 # API routes (contact form handlers)
+│   │   └── getTranslations.ts  # Server-side translation access + useTranslations client hook
+│   └── images.ts        # Centralized external image URLs
+├── blog/                # Blog pages and utilities
+│   ├── lib/             # content.ts (loading), utils.ts (formatting, reading time)
+│   └── components/      # BlogListItem
+├── products/            # Product page routes
+│   └── wingle-app/      # Includes AppLinks client component
+├── api/                 # API routes
+│   ├── contact/         # POST handler (Resend, rate limiting, honeypot)
+│   └── locale/          # GET handler (locale switching)
+└── (other routes)/      # about/, contact/, press/, legal/
 ```
 
 ### Where Logic Should Live
 
 | Logic Type | Location | Example |
 |---|---|---|
-| Page layout and composition | `app/(routes)/*/page.tsx` | Assembling components into a product page |
-| Reusable UI | `app/components/ui/` | `Button`, `Card`, `Badge` |
-| Site layout | `app/components/layout/` | `Header`, `Footer`, `Navigation` |
-| Form handling | `app/components/forms/` | `ContactForm`, `DemoRequestForm` |
-| Blog content parsing | `app/lib/blog/` | Markdown loading, frontmatter parsing |
-| Translation strings | `app/lib/i18n/translations/` | `en.ts`, `es.ts` |
-| Product content data | `app/static/` | Feature lists, testimonials, service descriptions |
-| Form submission endpoints | `app/api/` | POST handlers for contact forms |
-| General utilities | `app/lib/utils/` | `cn()` (clsx + tailwind-merge), formatters |
-| Shared types | `app/types/` | `ContactFormData`, `BlogPost`, `ProductInfo` |
+| Page layout and composition | `app/*/page.tsx` | Assembling components into a product page |
+| Reusable UI | `app/components/ui/` | `Button`, `Container`, `SectionHeader`, `Tag` |
+| Site layout | `app/components/layout/` | `Header`, `Footer`, `LanguageSwitcher` |
+| Page sections | `app/components/sections/` | `ContactBand`, `LegalShell`, `home/Hero`, etc. |
+| Form handling | `app/components/forms/` | `ContactForm` (client component) |
+| Blog content parsing | `app/blog/lib/` | `content.ts` (loading), `utils.ts` (formatting) |
+| Translation strings | `app/lib/i18n/translations/` | `en.ts`, `es.ts` (~760 keys each) |
+| Product content data | Translation files | All product text lives in `en.ts` / `es.ts` |
+| Form submission endpoints | `app/api/contact/` | POST handler with Resend email delivery |
+| Locale switching | `app/api/locale/` | GET handler for cookie-based locale switching |
+| External image URLs | `app/lib/images.ts` | Centralized image URL constants |
 
 ---
 
@@ -271,14 +276,27 @@ Blog content here in Markdown...
 
 ### Blog Utilities
 
-Blog loading and parsing logic lives in `app/lib/blog/`:
+Blog loading and parsing logic lives in `app/blog/lib/`:
 
 ```typescript
-// app/lib/blog/index.ts
-export function getAllPosts(): BlogPost[] { /* ... */ }
+// app/blog/lib/content.ts
+export function getAllPosts(): BlogPost[] { /* ... */ }    // Cockpit Diaries
+export function getAllNews(): BlogPost[] { /* ... */ }      // News articles
 export function getPostBySlug(slug: string): BlogPost | null { /* ... */ }
-export function getPostsByCategory(category: BlogCategory): BlogPost[] { /* ... */ }
+export function getNewsBySlug(slug: string): BlogPost | null { /* ... */ }
 ```
+
+```typescript
+// app/blog/lib/utils.ts
+export function formatDate(dateString: string): string { /* ... */ }
+export function getReadingTime(content: string): number { /* ... */ }
+export async function markdownToHtml(markdown: string): Promise<string> { /* ... */ }
+```
+
+Blog content lives in `content/blog/posts/` (Cockpit Diaries) and `content/blog/news/` (News). Routes:
+- `/blog` — hub page with featured content from both categories
+- `/blog/entry` and `/blog/entry/[slug]` — Cockpit Diaries listing and individual posts
+- `/blog/news` and `/blog/news/[slug]` — News listing and individual articles
 
 ---
 
@@ -355,7 +373,7 @@ export async function POST(request: NextRequest) {
 | Page files | `page.tsx` (Next.js convention) | `app/products/agencies/page.tsx` |
 | Layout files | `layout.tsx` (Next.js convention) | `app/layout.tsx` |
 | Translation files | lowercase language code | `en.ts`, `es.ts` |
-| Static content files | camelCase | `agencyFeatures.ts`, `atlasTestimonials.ts` |
+| Static content / image URLs | camelCase | `images.ts` |
 | Types | PascalCase | `ContactFormData`, `BlogPost` |
 | CSS custom properties | kebab-case | `--color-primary`, `--font-heading` |
 

@@ -2,19 +2,22 @@
 
 ## Current State
 
-The project does not exist yet. The `letswingle-web` repository is empty.
+The site is **live and largely complete**. Phases 1 through 3 (Foundation, Full Product Portfolio, Blog Migration) have been implemented. The site covers all products, all audiences, and hosts the company blog.
 
-The current `letswingle.com` is a legacy single-page landing focused on the in-flight chat feature. It is outdated: it does not reflect the company's current product portfolio, B2B focus, or market positioning. It will be fully replaced by this project.
+### What Has Been Built
 
-### What Exists Elsewhere (to Migrate or Reference)
-
-| Asset | Current Location | Action |
+| Asset | Status | Notes |
 |---|---|---|
-| Blog (Cockpit Diaries + News) | `winglepass.com/blog` (Next.js, Markdown) | Migrate content and rendering logic here |
-| Legacy blog | `cockpit.letswingle.com` (Jekyll) | Already consolidated into winglepass.com; decommission |
-| Old landing HTML | `OLD/wingle-landing/` in monorepo | Reference for branding inspiration only; do not reuse code |
-| Legal pages | `winglepass.com` (Markdown, EN/ES) | Reference structure; create fresh copies for company-level terms |
-| Product descriptions | App Store listings, press articles | Extract and refine for product pages |
+| Home page with app + agency previews | Complete | Gateway to product pages, not a single-scroll summary |
+| All product pages (App, Pro, Atlas, Agencies hub) | Complete | Each self-contained with hero, value prop, and ContactBand. Note: `/products/white-label` exists but should be retired — White Label is an integration method of Wingle Pro, not a standalone product. |
+| Blog (Cockpit Diaries + News) | Complete | Migrated from `winglepass.com/blog`, Markdown-based |
+| Press page with logo grid | Complete | 9 media outlets with external article links |
+| About page | Complete | Company story and values |
+| Contact page | Complete | Standalone page with embedded ContactForm |
+| Legal pages (Terms, Privacy, Cookies) | Complete | Internationalized via translations |
+| EN/ES internationalization | Complete | ~760 translation keys per language, language switcher in header |
+| Contact form infrastructure | Complete | Resend for email delivery, rate limiting, honeypot spam detection |
+| Brand visual identity | Applied | Bricolage Grotesque, Wingle Blue/Yellow/Off-White, logo assets |
 
 ## Target End State
 
@@ -41,82 +44,90 @@ The site should be built incrementally, prioritizing the pages that drive the mo
 
 ## Phases
 
-### Phase 1: Foundation and Core Pages
-
-**Goal:** A deployable site with the essential structure.
+### Phase 1: Foundation and Core Pages — COMPLETE
 
 - Project scaffolding (Next.js 15, TypeScript, Tailwind CSS 4)
-- Root layout with navigation and footer
-- Internationalization setup (EN/ES)
-- **Home page** — Hero, product overview cards, social proof, CTAs
-- **Wingle Pass for Agencies** — Full product page with value proposition and contact form
-- **Contact page** — General contact form
-- **Legal pages** — Terms, Privacy, Cookies (EN/ES)
+- Root layout with header (brand logo, nav, language switcher) and footer (4-column grid)
+- Internationalization setup (EN/ES) with ~760 keys per language
+- **Home page** — Hero + App preview + Agencies/Atlas preview
+- **Wingle for Travel Professionals hub** (`/products/agencies`) — Links to Pro and Atlas
+- **Wingle Pro** (`/products/pro`) — Service tiers, reasons, process, ContactBand
+- **Contact page** — Standalone ContactForm
+- **Legal pages** — Terms, Privacy, Cookies (all internationalized)
+- **Contact form backend** — Resend email delivery, rate limiting, honeypot spam detection
 
-**Why first:** This gives the site a deployable presence and the most critical B2B conversion page. The contact form for agencies is the single most important conversion surface.
+### Phase 2: Full Product Portfolio — COMPLETE
 
-### Phase 2: Full Product Portfolio
+- **Wingle Atlas** (`/products/atlas`) — Features, knowledge system, ContactBand
+- **Wingle App** (`/products/wingle-app`) — Services showcase, App Store/Play links, FAQs subpage
+- **~~White Label~~** (`/products/white-label`) — **To be retired.** White Label is an integration method of Wingle Pro, not a standalone product. Content should be folded into the Pro page or removed.
+- **About** (`/about`) — Company story and values
+- **Press** (`/press`) — 9 media outlets with logo grid and external links
 
-**Goal:** Every product has a dedicated page.
+### Phase 3: Blog Migration — COMPLETE
 
-- **Wingle Atlas** — Product page with showcase and contact/demo form
-- **Wingle (B2C app)** — App showcase page with App Store/Google Play links and winglepass.com CTA
-- **White Label** — Product overview with contact form
-- **About / Company** — Story, mission, team
+- Markdown content migrated: 11 Cockpit Diaries episodes, 9 News articles
+- Blog hub at `/blog` with featured sections and latest feed
+- Category pages at `/blog/entry` and `/blog/news`
+- Individual posts at `/blog/entry/[slug]` and `/blog/news/[slug]`
+- Built with `gray-matter` + `remark` + `remark-html` + `remark-gfm`
+- Static generation via `generateStaticParams()`
 
-**Why second:** Completes the product portfolio. Atlas is in active development and needs a public presence to generate early agency interest. The B2C page is critical for brand visibility even though the product is in maintenance mode.
-
-### Phase 3: Blog Migration
-
-**Goal:** `letswingle.com/blog` replaces `winglepass.com/blog` as the primary blog.
-
-- Migrate Markdown content from `wingle-web/content/blog/`
-- Implement blog index and post rendering
-- Set up categories (Cockpit Diaries, News)
-- Redirect `winglepass.com/blog` → `letswingle.com/blog` (coordinate with wingle-web)
-- Decommission `cockpit.letswingle.com`
-
-**Why third:** Blog is important for SEO and thought leadership, but it already exists elsewhere. Migration is not blocking for initial launch.
-
-### Phase 4: SEO, Analytics, and Hardening
+### Phase 4: SEO, Analytics, and Hardening — IN PROGRESS
 
 **Goal:** The site is optimized for discoverability and measurability.
 
-- Dynamic sitemap generation
-- Structured data (JSON-LD: Organization, Product, BlogPosting)
-- Open Graph and social media meta tags per page
-- Google Analytics 4 integration
-- Vercel Analytics and Speed Insights
-- Performance audit and optimization (Core Web Vitals)
-- Accessibility audit (WCAG 2.1 AA)
+- [ ] Dynamic sitemap generation
+- [ ] Structured data (JSON-LD: Organization, Product, BlogPosting)
+- [x] Open Graph metadata (base-level in root layout)
+- [ ] Per-page OG tags and meta descriptions
+- [ ] Google Analytics 4 integration
+- [ ] Vercel Analytics and Speed Insights
+- [ ] Performance audit and optimization (Core Web Vitals)
+- [ ] Accessibility audit (WCAG 2.1 AA)
+- [ ] Cookie consent banner (GDPR compliance)
+- [ ] `winglepass.com/blog` → `letswingle.com/blog` 301 redirects
 
 **Why last:** Optimization is iterative and benefits from having all content in place first.
 
-## Open Questions (to Resolve During Build)
+## Resolved Questions
+
+| Question | Resolution |
+|---|---|
+| Contact form backend | **Resend** for email delivery via `/api/contact`. Sends styled HTML to `CONTACT_NOTIFY_EMAIL` (defaults to `hi@letswingle.com`). Includes rate limiting and honeypot spam detection. |
+| Blog categories | **Two categories**: Cockpit Diaries (episodes) and News. Separate listing pages and URL structures. |
+| Blog content moved or duplicated? | **Moved.** Content lives in `content/blog/` as Markdown. `winglepass.com/blog` redirects still pending. |
+| Press kit / media page | **Yes.** Press page at `/press` with 9 media outlet logos and article links. |
+| CRM integration for lead tracking? | **Not yet.** Contact form sends email; CRM integration is a future enhancement. |
+
+## Open Questions
 
 | Question | Impact | When to Decide |
 |---|---|---|
-| Contact form backend — own API route, Wingle backend endpoint, or third-party (e.g., Formspree, HubSpot)? | Phase 1 | Before building contact forms |
-| Should the blog support additional categories beyond Cockpit Diaries and News? | Phase 3 | During blog migration |
-| Will `winglepass.com` blog content be moved or duplicated? (Move = redirects needed) | Phase 3 | Before blog migration |
-| Should there be a press kit / media page? | Phase 2 or later | Based on PR needs |
-| CRM integration for lead tracking? | Phase 1-2 | Based on sales team needs |
+| `winglepass.com/blog` → `letswingle.com/blog` 301 redirects | SEO value preservation | Before decommissioning `winglepass.com` blog |
+| Cookie consent banner implementation | GDPR compliance | Before GA4 or any analytics cookies |
+| Per-page SEO metadata and structured data | Discoverability | Phase 4 |
+| Social media links in footer (IG, TikTok) | Brand presence | Soon |
+| App preview images — replace temporary Apple CDN screenshots | Brand consistency | Soon |
+| Retire `/products/white-label` page | White Label is a Wingle Pro integration method, not a product | Soon |
 
-## What Must Be Solved First vs. Later
+## What Must Be Solved Next
 
-### Must Be Solved First
+### High Priority
 
-- Navigation and information architecture — gets harder to change as content grows.
-- Internationalization approach — retrofitting i18n is costly.
-- Contact form infrastructure — the primary conversion mechanism.
-- Visual design system / brand guidelines for the site — consistency across pages.
+- Cookie consent / GDPR compliance — required before deploying analytics.
+- Per-page SEO metadata — structured data, OG tags, descriptions for each route.
+- `winglepass.com/blog` redirects — coordinate with `wingle-web` to avoid broken links.
+- Social media links in footer — IG and TikTok are active channels.
+- Replace temporary app preview images with owned assets.
 
 ### Can Be Solved Later
 
-- Blog migration — existing blog is functional at `winglepass.com/blog`.
-- Advanced SEO — diminishing returns until content is complete.
+- Advanced SEO and sitemap generation — diminishing returns without analytics data.
 - Animation and micro-interactions — polish, not structure.
 - Additional languages beyond EN/ES.
+- CRM integration for lead management.
+- A/B testing infrastructure.
 
 ## Trade-offs
 
@@ -125,5 +136,5 @@ The site should be built incrementally, prioritizing the pages that drive the mo
 | Same stack as sibling projects | Consistency, shared knowledge | Heavier than needed for a marketing site |
 | Markdown blog (no CMS) | Simple, version-controlled, fast | Non-technical team cannot edit without code access |
 | No authentication | Simpler, faster, more secure | Cannot personalize content per visitor |
-| B2B pages before B2C | Aligns with revenue priority | May delay brand refresh for consumer audience |
+| B2B pages before B2C | Aligned with revenue priority | Delayed brand refresh for consumer audience initially |
 | EN/ES only at launch | Faster to ship | Excludes Italian market (app supports IT) |

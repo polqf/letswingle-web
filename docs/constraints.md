@@ -77,7 +77,7 @@ Blog posts are Markdown files committed to the repository. There is no CMS, no a
 
 ### Each Product Page Is Self-Contained
 
-Product pages (Agencies, Atlas, White Label, B2C App) must be independently comprehensible. A visitor may land directly on any product page from a search result or shared link. No product page should depend on the visitor having seen the home page first.
+Product pages (Agencies hub, Pro, Atlas, B2C App) must be independently comprehensible. A visitor may land directly on any product page from a search result or shared link. No product page should depend on the visitor having seen the home page first.
 
 **Implication:** Each product page needs its own hero, value proposition, and CTA. Shared components (nav, footer) provide site-wide context, but the page itself must stand alone.
 

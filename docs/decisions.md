@@ -64,7 +64,7 @@ This document records architectural and design decisions for the project, starti
 
 ## D005: Contact Forms as the Conversion Mechanism
 
-**Decision:** Product pages for B2B offerings (Agencies, Atlas, White Label) use embedded contact forms as the primary conversion mechanism, rather than linking to external tools.
+**Decision:** Product pages for B2B offerings (Agencies hub, Pro, Atlas) use embedded contact forms as the primary conversion mechanism, rather than linking to external tools.
 
 **Rationale:**
 - Agencies should not be redirected away from the site to express interest. Every redirect is a drop-off risk.
@@ -75,7 +75,7 @@ This document records architectural and design decisions for the project, starti
 - Calendly-style scheduling widgets. Good for later stages of the funnel, but premature for initial interest capture.
 - External form tools (Google Forms, Typeform). These break the visual experience and lose product context.
 
-**Open decision:** The backend for form submissions (own API route, Wingle backend endpoint, or third-party service like Formspree/HubSpot) is not yet decided. This should be resolved before building the first form.
+**Resolved:** The backend for form submissions uses **Resend** for email delivery via a Next.js API route (`/api/contact`). Submissions are sent as styled HTML email to the configured `CONTACT_NOTIFY_EMAIL` (defaults to `hi@letswingle.com`). The API route includes in-memory IP-based rate limiting (8 requests per 60s) and honeypot spam detection.
 
 ---
 
@@ -168,3 +168,107 @@ This document records architectural and design decisions for the project, starti
 - Content changes go through the same PR review process as code changes.
 
 **Alternative considered:** Storing all content in Markdown. This works well for the blog but is awkward for structured content (feature lists, comparison tables, CTAs) that benefits from type safety.
+
+**Actual implementation note:** Product and page content is stored entirely within translation files (`en.ts`, `es.ts`) rather than separate static content files. This keeps all user-visible strings in one place per language, simplifying the i18n workflow.
+
+---
+
+## D013: "Wingle Pro" Replaces "Wingle Pass for Agencies"
+
+**Decision:** The B2B premium airport services product is publicly named **"Wingle Pro"** rather than "Wingle Pass for Agencies".
+
+**Rationale:**
+- "Wingle Pro" is shorter, cleaner, and avoids confusion with the B2C "Wingle Pass" credits system.
+- The website uses **"Wingle for Travel Professionals"** as the umbrella B2B brand, with "Wingle Pro" and "Wingle Atlas" as the two products underneath.
+- The agencies hub page (`/products/agencies`) links to separate product pages for Pro (`/products/pro`) and Atlas (`/products/atlas`), giving each product its own dedicated landing.
+
+**Implication:** All documentation and public-facing copy should use "Wingle Pro" for the B2B airport services product. "Wingle Pass for Agencies" is retired as a product name.
+
+---
+
+## D014: Resend for Email Delivery
+
+**Decision:** Contact form submissions are delivered via **Resend** through a Next.js API route, rather than a third-party form service or the Wingle backend.
+
+**Rationale:**
+- Resend provides a simple, developer-friendly email API with good deliverability.
+- The API route allows full control over validation, rate limiting, and spam detection without external dependencies.
+- Styled HTML emails provide a professional notification to the sales team.
+- No CRM integration is needed at this stage; email is sufficient for lead routing.
+
+**Trade-off accepted:** No CRM integration means leads must be managed manually from email. If volume increases, a CRM integration should be added.
+
+---
+
+## D015: Homepage as Gateway, Not Summary
+
+**Decision:** The homepage routes users to dedicated product pages rather than presenting all product information in a single scroll.
+
+**Rationale:**
+- The old approach (8 sections covering every product) made the homepage long and unfocused.
+- Each product now has a dedicated, self-contained page with its own hero, value proposition, and CTA.
+- The homepage acts as a gateway: Hero → App preview → Agency/Atlas preview → CTAs to specific pages.
+- This improves SEO (each product page targets its own keywords) and reduces cognitive load on the homepage.
+
+**Alternative considered:** Keeping detailed product sections on the homepage. This was the initial implementation but was replaced during the revamp.
+
+---
+
+## D016: Blog Split into Entry and News Routes
+
+**Decision:** The blog uses separate URL structures for Cockpit Diaries (`/blog/entry/[slug]`) and News (`/blog/news/[slug]`), with a shared hub at `/blog`.
+
+**Rationale:**
+- The two content types serve different purposes: Cockpit Diaries are founder journals; News covers product launches and partnerships.
+- Separate routes allow distinct listing pages, targeted SEO, and clearer content organization.
+- The shared `/blog` hub provides a unified entry point with featured content from both categories.
+
+---
+
+## D017: Bricolage Grotesque as Brand Typeface
+
+**Decision:** The site uses **Bricolage Grotesque** (Google Fonts) as the sole typeface, loaded via `next/font/google`.
+
+**Rationale:**
+- Defined as the marketing typeface in the brand guidelines (`docs/visual-identity.md`).
+- Condensed ExtraBold for display headings, Condensed Regular for subtitles, non-condensed Regular for body — all from one font family.
+- Google Fonts loading via `next/font` provides automatic optimization and zero layout shift.
+
+**Implication:** No additional typefaces should be introduced for marketing pages without updating the visual identity document.
+
+---
+
+## D018: White Label Is an Integration Method, Not a Product
+
+**Decision:** "White Label" is reclassified as one of four **integration methods** of Wingle Pro. It is not a standalone product and should not be presented publicly as one.
+
+**Context:** Wingle Pro supports four ways for agencies and partners to integrate:
+
+1. **API** — Programmatic access for submitting bookings and retrieving service data.
+2. **Email parsing** — Raw emails are fetched via Google Apps Script, parsed by the backend with AI-assisted extraction, and converted into bookings.
+3. **PDF extraction** — Structured PDFs attached to emails are fetched via Google Apps Script, sent to the backend for AI-assisted data extraction, and converted into bookings.
+4. **White-label landing** — A branded landing page where end clients can purchase service packages under the partner's identity.
+
+**Rationale:**
+- These are implementation details of how Wingle Pro connects with different clients. They are not distinct products with separate value propositions.
+- Publicly presenting "White Label" as a standalone product creates confusion about the product portfolio and dilutes the Wingle Pro message.
+- The specific integration method is determined during the sales process based on each client's needs and technical capabilities.
+
+**Implication:**
+- The `/products/white-label` page on the website should be retired or folded into the Wingle Pro page.
+- Public-facing copy should describe Wingle Pro as "flexible" and "adapting to each agency's workflow" without enumerating integration methods.
+- Internal documentation may reference integration methods for operational clarity.
+- Navigation, footer, and any links pointing to the White Label page need to be updated.
+
+---
+
+## D019: Mission Framing — "Make Travel Better"
+
+**Decision:** Wingle's mission has always been **"make travel better"** (or "make flying better"). The in-flight chat was the first product built toward that mission, not the founding idea itself.
+
+**Rationale:**
+- The company was founded with a broad ambition to improve the full travel experience — before, during, and after the flight.
+- The chat app was chosen as the first product because it addressed a specific high-engagement moment (dead time on planes), but it was always one product in a larger vision.
+- All public-facing narratives — including the company story, about page, and blog — should reflect this broader framing.
+
+**Implication:** Documentation and public copy should not present the company as having "pivoted from a chat app" but rather as having started with one product and expanded to fulfill its broader mission.

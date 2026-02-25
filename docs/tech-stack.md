@@ -40,24 +40,27 @@ This is the same stack used by `wingle-web` and `wingle-atlas-web`. Using identi
 | `lucide-react` | Icon library (consistent with sibling projects) |
 | `clsx` | Conditional CSS class composition |
 | `tailwind-merge` | Tailwind class deduplication |
-| `remark` + `remark-html` | Render blog content from Markdown |
+| `remark` + `remark-html` + `remark-gfm` | Render blog content from Markdown (with GitHub Flavored Markdown support) |
 | `gray-matter` | Parse Markdown frontmatter for blog posts |
 
 ### Internationalization
 
 | Package | Purpose |
 |---|---|
-| Custom `useTranslations` hook | Type-safe i18n (pattern from `wingle-web`) |
+| `getTranslations()` (server) | Server-side translation access via `app/lib/i18n/getTranslations.ts` |
+| `useTranslations(locale)` (client) | Client-side hook for interactive components (e.g., `ContactForm`) |
+| `/api/locale` route | Locale switching via cookie, used by `LanguageSwitcher` component |
 
-Languages supported: **English (EN)** and **Spanish (ES)**.
+Languages supported: **English (EN)** and **Spanish (ES)**. ~760 translation keys per language covering all pages, navigation, forms, and metadata.
 
-### Forms
+### Forms and Email
 
 | Package | Purpose |
 |---|---|
-| Native HTML forms or lightweight library (TBD) | Contact and demo request forms |
+| `resend` | Email delivery for contact form submissions |
+| Native HTML `<form>` with `FormData` | Contact forms (client component with state management) |
 
-Forms submit to an API route or third-party service. No database.
+Forms submit via POST to `/api/contact`, which sends styled HTML email via Resend to the configured `CONTACT_NOTIFY_EMAIL`. Includes in-memory rate limiting and honeypot spam detection. No database.
 
 ### Analytics
 
@@ -87,9 +90,11 @@ The blog migrates from `winglepass.com/blog` (which itself consolidated the Jeky
 |---|---|
 | Storage | Markdown files in `content/blog/` |
 | Frontmatter | `gray-matter` for metadata parsing |
-| Rendering | `remark` + `remark-html` (server-side HTML rendering) |
-| Categories | Cockpit Diaries, News |
-| Routing | `/blog`, `/blog/[slug]` |
+| Rendering | `remark` + `remark-html` + `remark-gfm` (server-side HTML rendering) |
+| Categories | Cockpit Diaries (`content/blog/posts/`), News (`content/blog/news/`) |
+| Routing | `/blog` (hub), `/blog/entry` + `/blog/entry/[slug]` (diaries), `/blog/news` + `/blog/news/[slug]` (news) |
+| Utilities | `app/blog/lib/content.ts` (loading), `app/blog/lib/utils.ts` (date formatting, reading time) |
+| Static generation | `generateStaticParams()` for all post/news slugs |
 
 No headless CMS. Content lives in the repository as Markdown.
 
@@ -97,9 +102,9 @@ No headless CMS. Content lives in the repository as Markdown.
 
 | Aspect | Approach |
 |---|---|
-| Storage | Markdown files in `content/legal/` |
-| Languages | EN and ES variants per document |
-| Pages | Terms of Service, Privacy Policy, Cookie Policy, Legal Notice |
+| Storage | Content lives in translation files (`en.ts` / `es.ts`), rendered by page components |
+| Wrapper | `LegalShell` component provides shared layout (title, subtitle, children) |
+| Pages | Terms of Service (`/legal/terms`), Privacy Policy (`/legal/privacy`), Cookie Policy (`/legal/cookies`) |
 
 ### Static Content
 
@@ -111,31 +116,47 @@ Product descriptions, feature lists, FAQs, and testimonials are stored as struct
 letswingle-web/
 ├── app/                        # Next.js App Router
 │   ├── page.tsx               # Home page
-│   ├── layout.tsx             # Root layout (nav, footer, providers)
-│   ├── components/            # Shared UI components
-│   ├── lib/                   # Utilities, i18n, analytics
-│   │   ├── i18n/              # Translation files and hook
-│   │   └── analytics/         # Analytics setup
+│   ├── layout.tsx             # Root layout (Bricolage Grotesque font, nav, footer, OG metadata)
+│   ├── globals.css            # Design tokens, utility classes, blog styles
+│   ├── components/
+│   │   ├── ui/                # Button, Container, SectionHeader, Tag
+│   │   ├── layout/            # Header, Footer, LanguageSwitcher
+│   │   ├── forms/             # ContactForm (client component)
+│   │   ├── sections/          # ContactBand, LegalShell
+│   │   │   └── home/          # Hero, AppPreview, AgencyTiersPreview, ProductPaths, etc.
+│   │   └── press/             # PressLogoGrid
+│   ├── lib/
+│   │   ├── i18n/              # getTranslations.ts, useTranslations hook, translations/{en,es}.ts
+│   │   └── images.ts          # Centralized external image URLs
 │   ├── blog/                  # Blog pages
-│   │   ├── page.tsx           # Blog index
-│   │   └── [slug]/page.tsx    # Blog post
-│   ├── products/              # Product pages
-│   │   ├── wingle-app/        # B2C app showcase
-│   │   ├── agencies/          # Wingle Pass for Agencies
-│   │   ├── atlas/             # Wingle Atlas
-│   │   └── white-label/       # White Label solution
+│   │   ├── page.tsx           # Blog hub (featured + latest)
+│   │   ├── entry/             # Cockpit Diaries listing + [slug] pages
+│   │   ├── news/              # News listing + [slug] pages
+│   │   ├── components/        # BlogListItem
+│   │   └── lib/               # content.ts, utils.ts
+│   ├── products/
+│   │   ├── wingle-app/        # B2C app showcase + AppLinks + faqs/ subpage
+│   │   ├── agencies/          # Wingle for Travel Professionals hub
+│   │   ├── pro/               # Wingle Pro (premium airport services)
+│   │   ├── atlas/             # Wingle Atlas (digital itineraries)
+│   │   └── white-label/       # To be retired (White Label is a Wingle Pro integration method, not a product)
 │   ├── about/                 # Company page
 │   ├── contact/               # General contact
-│   ├── legal/                 # Terms, Privacy, Cookies
-│   └── api/                   # API routes (contact form handlers)
-├── content/                   # Markdown content
-│   ├── blog/                  # Blog posts
-│   └── legal/                 # Legal documents
-├── public/                    # Static assets (images, fonts)
+│   ├── press/                 # Press page with media logos
+│   ├── legal/                 # terms/, privacy/, cookies/
+│   └── api/
+│       ├── contact/           # POST handler (Resend email, rate limiting, honeypot)
+│       └── locale/            # GET handler (locale switching via cookie)
+├── content/
+│   └── blog/
+│       ├── posts/             # Cockpit Diaries (Markdown)
+│       └── news/              # News articles (Markdown)
+├── public/
+│   ├── brand/                 # Logo assets (blue-logo.png, blue-symbol.png, logo.svg, symbol.svg)
+│   └── press/                 # Media outlet logos (9 outlets)
 ├── docs/                      # Project documentation (this folder)
 ├── next.config.ts
 ├── tsconfig.json
-├── tailwind.config.ts (if needed beyond CSS)
 └── package.json
 ```
 
@@ -150,14 +171,14 @@ Contact forms submit data externally. They do not write to any Wingle-owned data
 | Service | Purpose | Required |
 |---|---|---|
 | **Vercel** | Hosting, deployment, edge functions | Yes |
-| **Vercel Analytics** | Page analytics | Yes |
-| **Google Analytics 4** | Marketing attribution and tracking | Optional |
-| **Contact form backend** | Receive form submissions (e.g., email forwarding, CRM integration, or Wingle backend endpoint) | Yes (for product pages with forms) |
+| **Resend** | Email delivery for contact form submissions | Yes |
+| **Vercel Analytics** | Page analytics | Planned |
+| **Google Analytics 4** | Marketing attribution and tracking | Planned |
 | **AWS CloudFront** | CDN for images shared with other Wingle products | Likely |
 
 This site does **not** integrate with:
 
-- `prod.letswingle.com` (Wingle backend) — except potentially for contact form submission
+- `prod.letswingle.com` (Wingle backend)
 - `partners.letswingle.com` (Partner API)
 - Stripe or any payment provider
 - Any authentication service
@@ -177,19 +198,20 @@ This site does **not** integrate with:
 
 | Variable | Purpose |
 |---|---|
-| `NEXT_PUBLIC_GA4_MEASUREMENT_ID` | Google Analytics 4 (optional) |
-| `CONTACT_FORM_ENDPOINT` | Where contact form submissions are sent |
+| `RESEND_API_KEY` | Resend API key for contact form email delivery |
+| `CONTACT_NOTIFY_EMAIL` | Recipient for contact form submissions (defaults to `hi@letswingle.com`) |
+| `NEXT_PUBLIC_GA4_MEASUREMENT_ID` | Google Analytics 4 (optional, not yet configured) |
 | `NEXT_PUBLIC_SITE_URL` | Canonical site URL (`https://letswingle.com`) |
 
-Minimal environment configuration. No secrets beyond optional analytics IDs and form endpoint.
+Minimal environment configuration. The only secret is the Resend API key.
 
 ## Local vs. Production Differences
 
 | Aspect | Local | Production |
 |---|---|---|
-| URL | `http://localhost:3000` | `https://letswingle.com` |
+| URL | `http://localhost:3001` | `https://letswingle.com` |
 | Analytics | Disabled | Enabled |
-| Contact forms | Log to console or mock | Submit to real endpoint |
+| Contact forms | Send via Resend (requires API key) | Send via Resend |
 | Image optimization | Next.js dev server | Vercel image optimization |
 | Rendering | Dev server (SSR) | Static/ISR (pre-rendered) |
 

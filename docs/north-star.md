@@ -20,20 +20,20 @@ The app page communicates that Wingle is alive, active, and worth downloading �
 
 A luxury travel agency director lands on the site from a Google search, a LinkedIn post, or a sales email. Within 30 seconds, they understand that Wingle offers two products for agencies:
 
-1. **Wingle Pass for Agencies** — A curated premium airport services platform that goes far beyond standard lounge access. They see the three service tiers:
-   - **Basic**: Curated access to 700+ lounges worldwide, quality-filtered by Wingle so agencies can trust that every lounge offered meets a high bar.
-   - **Meet & Assist**: Personal escort from aircraft door through security and passport control to the VIP lounge — the kind of VIP experience their high-end clients expect.
-   - **VVIP**: Private terminal, private check-in, private security, car to the aircraft stairs — zero contact with other passengers.
+1. **Wingle Pro** — A curated premium airport services platform that goes far beyond standard lounge access. They see the three service tiers:
+   - **Lounges + Fast Track**: Curated access to 700+ lounges worldwide, quality-filtered by Wingle's in-house intelligence so agencies can trust that every option meets a high standard.
+   - **Meet & Assist**: End-to-end passenger guidance from aircraft door through security and passport control to the VIP lounge — the kind of VIP experience their high-end clients expect.
+   - **VVIP**: Private terminal, private check-in, private security, car to the aircraft stairs — a fully private experience.
    
-   They see that Wingle positions itself as the agency's "one-stop shop" for everything premium at the airport, that bookings are ingested seamlessly from their existing emails and PDFs, and that pricing for Meet & Assist and VVIP is confirmed per request.
+   They see that Wingle positions itself as the agency's one-stop partner for everything premium at the airport, that the service adapts to each agency's workflow, and that pricing is customized per route and airport.
 
-2. **Wingle Atlas** — A tool that transforms their static PDF itineraries into rich, interactive digital trip experiences their travelers actually enjoy using.
+2. **Wingle Atlas** — A tool that transforms their static PDF itineraries into rich, interactive digital trip experiences their travelers actually enjoy using, while building a shared knowledge base across the agency.
 
 They see that these are separate products that work independently, but that agencies using both get an integrated experience. They click through to a product page, see a clear value proposition with concrete examples, and fill out a contact or demo request form. The sales team receives a qualified lead with context.
 
 ### For Enterprise Partners
 
-A product manager at a travel company or airline lands on the White Label page. They understand that Wingle's travel services infrastructure — the same one powering the B2C app used by thousands — can be embedded under their brand. They see the scope of services available, understand the integration model at a high level, and request a conversation.
+A product manager at a travel company or airline reaches out through the Wingle Pro contact form. During the sales conversation, they learn that Wingle's infrastructure can adapt to their workflow — whether through API integration, email-based booking, or even a branded landing page under their identity. The public site communicates the breadth of Wingle Pro's capabilities; the specific integration approach is tailored during the partnership discussion.
 
 ### For Press and Investors
 
@@ -65,7 +65,7 @@ A journalist or investor lands on the site and finds a professional, polished pr
 
 ### SEO
 
-- **Ranks for relevant terms**: "VIP airport services for travel agencies", "meet and assist airport service", "VVIP airport experience", "airport lounge booking for agencies", "travel agency digital itinerary", "white label airport services", "wingle app", "wingle pass".
+- **Ranks for relevant terms**: "VIP airport services for travel agencies", "meet and assist airport service", "VVIP airport experience", "airport lounge booking for agencies", "travel agency digital itinerary", "premium airport services partner", "wingle app", "wingle pass".
 - **Structured data** (JSON-LD) for Organization, Products, and BlogPostings.
 - **Sitemap and robots.txt** properly configured.
 - **Canonical URLs** established — no content duplication with `winglepass.com`.
@@ -80,21 +80,26 @@ A journalist or investor lands on the site and finds a professional, polished pr
 
 | Capability | State |
 |---|---|
-| Home page with product portfolio overview | Complete |
-| Wingle (B2C app) showcase page | Complete |
-| Wingle Pass for Agencies product page with contact form | Complete |
-| Wingle Atlas product page with contact/demo form | Complete |
-| White Label product page with contact form | Complete |
-| Blog (Cockpit Diaries + News) | Complete, sole canonical source |
-| Press page | Complete |
-| About / Company page | Complete |
-| Contact page | Complete |
-| Legal pages (EN/ES) | Complete |
-| SEO (sitemap, structured data, OG tags) | Complete |
-| Analytics (GA4, Vercel) | Active |
-| EN/ES internationalization | Complete |
-| Press kit / media resources | Available |
-| CRM integration for leads | Active |
+| Home page with product portfolio overview | **Complete** |
+| Wingle App (B2C) showcase page with FAQs | **Complete** |
+| Wingle for Travel Professionals hub page | **Complete** |
+| Wingle Pro product page with contact form | **Complete** |
+| Wingle Atlas product page with contact/demo form | **Complete** |
+| `/products/white-label` page | **Needs review** — White Label is an integration method of Wingle Pro, not a standalone product. This page should be retired or folded into the Pro page. |
+| Blog (Cockpit Diaries + News) | **Complete** (sole canonical source pending redirects from `winglepass.com`) |
+| Press page | **Complete** (9 outlets with logos) |
+| About / Company page | **Complete** |
+| Contact page | **Complete** |
+| Legal pages (EN/ES) | **Complete** (Terms, Privacy, Cookies) |
+| EN/ES internationalization | **Complete** (~760 keys per language, language switcher) |
+| Contact form infrastructure | **Complete** (Resend, rate limiting, honeypot) |
+| Brand visual identity applied | **Complete** (Bricolage Grotesque, brand colors, logo assets) |
+| SEO (sitemap, structured data, OG tags) | Partial (base OG metadata; per-page and structured data pending) |
+| Analytics (GA4, Vercel) | Not yet active |
+| Cookie consent / GDPR | Not yet implemented |
+| Press kit / media resources | Not yet available |
+| CRM integration for leads | Not yet active |
+| `winglepass.com/blog` redirects | Pending |
 
 ## What This Does NOT Become
 

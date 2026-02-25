@@ -16,7 +16,10 @@ export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations();
 
   return {
-    title: t('meta.title'),
+    title: {
+      default: t('meta.title'),
+      template: '%s | Wingle',
+    },
     description: t('meta.description'),
     metadataBase: new URL('https://letswingle.com'),
     openGraph: {
@@ -24,6 +27,17 @@ export async function generateMetadata(): Promise<Metadata> {
       description: t('meta.description'),
       type: 'website',
       url: 'https://letswingle.com',
+      siteName: 'Wingle',
+    },
+    twitter: {
+      card: 'summary_large_image',
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+    alternates: {
+      canonical: 'https://letswingle.com',
     },
   };
 }

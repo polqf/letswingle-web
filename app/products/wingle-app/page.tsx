@@ -1,13 +1,30 @@
+import type { Metadata } from 'next';
+import Image from 'next/image';
+
 import { AppLinks } from '@/app/products/wingle-app/AppLinks';
 import { Button } from '@/app/components/ui/Button';
 import { Container } from '@/app/components/ui/Container';
 import { SectionHeader } from '@/app/components/ui/SectionHeader';
 import { Tag } from '@/app/components/ui/Tag';
-import Image from 'next/image';
 import { ContactBand } from '@/app/components/sections/ContactBand';
+import { InstagramPreview } from '@/app/components/sections/InstagramPreview';
 import { PressPreview } from '@/app/components/sections/home/PressPreview';
 import { getTranslations } from '@/app/lib/i18n/getTranslations';
 import { mobileAppPreviewImage } from '@/app/lib/images';
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations();
+  return {
+    title: t('meta.app.title'),
+    description: t('meta.app.description'),
+    openGraph: {
+      title: t('meta.app.title'),
+      description: t('meta.app.description'),
+      url: 'https://letswingle.com/products/wingle-app',
+    },
+    alternates: { canonical: 'https://letswingle.com/products/wingle-app' },
+  };
+}
 
 export default async function WingleAppPage() {
   const t = await getTranslations();

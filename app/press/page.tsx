@@ -1,11 +1,26 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { PRESS_LOGOS } from '@/app/components/press/PressLogoGrid';
 import { Container } from '@/app/components/ui/Container';
 import { SectionHeader } from '@/app/components/ui/SectionHeader';
 import { Tag } from '@/app/components/ui/Tag';
 import { getTranslations } from '@/app/lib/i18n/getTranslations';
-import Image from 'next/image';
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations();
+  return {
+    title: t('meta.press.title'),
+    description: t('meta.press.description'),
+    openGraph: {
+      title: t('meta.press.title'),
+      description: t('meta.press.description'),
+      url: 'https://letswingle.com/press',
+    },
+    alternates: { canonical: 'https://letswingle.com/press' },
+  };
+}
 
 export default async function PressPage() {
   const t = await getTranslations();

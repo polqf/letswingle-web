@@ -692,10 +692,64 @@ export const en = {
     terms: 'Terms',
     privacy: 'Privacy',
     cookies: 'Cookies',
+    social: 'Follow us',
+  },
+  cookieBanner: {
+    message:
+      'We use cookies to keep the site running and measure how it performs.',
+    learnMore: 'Learn more',
+    rejectAll: 'Reject all',
+    acceptNecessary: 'Necessary only',
+    acceptAll: 'Accept all',
   },
   meta: {
     title: 'Wingle | Travel services for individuals and travel professionals',
     description:
       'Wingle makes flying and travel more enjoyable than it is today. Services for individuals and travel professionals.',
+    about: {
+      title: 'About Wingle | Making air travel more comfortable',
+      description:
+        'Wingle was born with the mission of making air travel more comfortable and enjoyable for individuals and travel professionals.',
+    },
+    blog: {
+      title: 'Blog | Cockpit Diaries & News from Wingle',
+      description:
+        'Company updates, operator notes, and travel insights from the Wingle team.',
+    },
+    contact: {
+      title: 'Contact Wingle | Talk to our team',
+      description:
+        'Share your route, timing, or product interest. We respond quickly.',
+    },
+    press: {
+      title: 'Press | Wingle in the media',
+      description:
+        'Coverage that reflects the credibility of the Wingle story from trusted outlets.',
+    },
+    app: {
+      title: 'Wingle App | Your pass to better travel',
+      description:
+        'The benefits of having elite status with an airline without actually having it. No subscription required.',
+    },
+    agencies: {
+      title: 'Wingle for Travel Professionals | Premium airport services globally',
+      description:
+        'Upgrade your customers\' travel experience with lounges, fast tracks, meet & greet services and VVIP experiences.',
+    },
+    pro: {
+      title: 'Wingle Pro | One-stop partner for premium airport needs',
+      description:
+        'Everything from lounges, fast tracks, meet & greet services and VVIP experiences, globally.',
+    },
+    atlas: {
+      title: 'Wingle Atlas | Itineraries & knowledge repository for agencies',
+      description:
+        'A shared knowledge repository for your agency plus dynamic itineraries that travelers actually use. Capture every tip and reuse it across the team.',
+    },
+    faqs: {
+      title: 'Wingle App FAQs | Frequently asked questions',
+      description:
+        'Quick answers about the Wingle app experience, credits, and services.',
+    },
   },
 } as const;

@@ -1,9 +1,25 @@
+import type { Metadata } from 'next';
+
 import { ContactBand } from '@/app/components/sections/ContactBand';
 import { Button } from '@/app/components/ui/Button';
 import { Container } from '@/app/components/ui/Container';
 import { SectionHeader } from '@/app/components/ui/SectionHeader';
 import { Tag } from '@/app/components/ui/Tag';
 import { getTranslations } from '@/app/lib/i18n/getTranslations';
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations();
+  return {
+    title: t('meta.pro.title'),
+    description: t('meta.pro.description'),
+    openGraph: {
+      title: t('meta.pro.title'),
+      description: t('meta.pro.description'),
+      url: 'https://letswingle.com/products/pro',
+    },
+    alternates: { canonical: 'https://letswingle.com/products/pro' },
+  };
+}
 
 export default async function AgenciesPage() {
   const t = await getTranslations();

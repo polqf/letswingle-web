@@ -1,7 +1,23 @@
+import type { Metadata } from 'next';
+
 import { ContactBand } from '@/app/components/sections/ContactBand';
 import { Container } from '@/app/components/ui/Container';
 import { Tag } from '@/app/components/ui/Tag';
 import { getTranslations } from '@/app/lib/i18n/getTranslations';
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations();
+  return {
+    title: t('meta.contact.title'),
+    description: t('meta.contact.description'),
+    openGraph: {
+      title: t('meta.contact.title'),
+      description: t('meta.contact.description'),
+      url: 'https://letswingle.com/contact',
+    },
+    alternates: { canonical: 'https://letswingle.com/contact' },
+  };
+}
 
 export default async function ContactPage() {
   const t = await getTranslations();

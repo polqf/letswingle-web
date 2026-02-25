@@ -1,12 +1,27 @@
+import type { Metadata } from 'next';
+
 import { ContactBand } from '@/app/components/sections/ContactBand';
 import { Container } from '@/app/components/ui/Container';
 import { SectionHeader } from '@/app/components/ui/SectionHeader';
 import { Tag } from '@/app/components/ui/Tag';
 import { getTranslations } from '@/app/lib/i18n/getTranslations';
 
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations();
+  return {
+    title: t('meta.about.title'),
+    description: t('meta.about.description'),
+    openGraph: {
+      title: t('meta.about.title'),
+      description: t('meta.about.description'),
+      url: 'https://letswingle.com/about',
+    },
+    alternates: { canonical: 'https://letswingle.com/about' },
+  };
+}
+
 export default async function AboutPage() {
   const t = await getTranslations();
-  const values = ['one', 'two', 'three', 'four'] as const;
 
   return (
     <>

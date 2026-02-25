@@ -1,9 +1,25 @@
+import type { Metadata } from 'next';
+
 import { ContactBand } from '@/app/components/sections/ContactBand';
 import { Button } from '@/app/components/ui/Button';
 import { Container } from '@/app/components/ui/Container';
 import { SectionHeader } from '@/app/components/ui/SectionHeader';
 import { Tag } from '@/app/components/ui/Tag';
 import { getTranslations } from '@/app/lib/i18n/getTranslations';
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations();
+  return {
+    title: t('meta.atlas.title'),
+    description: t('meta.atlas.description'),
+    openGraph: {
+      title: t('meta.atlas.title'),
+      description: t('meta.atlas.description'),
+      url: 'https://letswingle.com/products/atlas',
+    },
+    alternates: { canonical: 'https://letswingle.com/products/atlas' },
+  };
+}
 
 export default async function AtlasPage() {
   const t = await getTranslations();

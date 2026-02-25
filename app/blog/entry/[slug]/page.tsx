@@ -1,10 +1,12 @@
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+
 import { markdownToHtml, formatDate, getReadingTime } from '@/app/blog/lib/utils';
 import { getAllPosts, getPostBySlug } from '@/app/blog/lib/content';
 import { Container } from '@/app/components/ui/Container';
 import { Tag } from '@/app/components/ui/Tag';
 import { getLocale, getTranslations } from '@/app/lib/i18n/getTranslations';
-import { notFound } from 'next/navigation';
-import Link from 'next/link';
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>;
@@ -13,6 +15,24 @@ interface BlogPostPageProps {
 export async function generateStaticParams() {
   const posts = await getAllPosts();
   return posts.map((post) => ({ slug: post.slug }));
+}
+
+export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const post = await getPostBySlug(slug);
+  if (!post) return {};
+  return {
+    title: post.title,
+    description: post.description,
+    openGraph: {
+      title: post.title,
+      description: post.description,
+      type: 'article',
+      url: `https://letswingle.com/blog/entry/${slug}`,
+      ...(post.image ? { images: [{ url: post.image }] } : {}),
+    },
+    alternates: { canonical: `https://letswingle.com/blog/entry/${slug}` },
+  };
 }
 
 export default async function BlogEntryPage({ params }: BlogPostPageProps) {

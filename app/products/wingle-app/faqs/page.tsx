@@ -1,7 +1,23 @@
+import type { Metadata } from 'next';
+
 import { Container } from '@/app/components/ui/Container';
 import { SectionHeader } from '@/app/components/ui/SectionHeader';
 import { Tag } from '@/app/components/ui/Tag';
 import { getTranslations } from '@/app/lib/i18n/getTranslations';
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations();
+  return {
+    title: t('meta.faqs.title'),
+    description: t('meta.faqs.description'),
+    openGraph: {
+      title: t('meta.faqs.title'),
+      description: t('meta.faqs.description'),
+      url: 'https://letswingle.com/products/wingle-app/faqs',
+    },
+    alternates: { canonical: 'https://letswingle.com/products/wingle-app/faqs' },
+  };
+}
 
 export default async function WingleAppFaqsPage() {
   const t = await getTranslations();

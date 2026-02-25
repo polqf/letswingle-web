@@ -1,3 +1,6 @@
+import type { Metadata } from 'next';
+import Link from 'next/link';
+
 import { BlogListItem } from '@/app/blog/components/BlogListItem';
 import { getAllNews, getAllPosts } from '@/app/blog/lib/content';
 import { formatDate } from '@/app/blog/lib/utils';
@@ -5,7 +8,20 @@ import { Container } from '@/app/components/ui/Container';
 import { SectionHeader } from '@/app/components/ui/SectionHeader';
 import { Tag } from '@/app/components/ui/Tag';
 import { getLocale, getTranslations } from '@/app/lib/i18n/getTranslations';
-import Link from 'next/link';
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations();
+  return {
+    title: t('meta.blog.title'),
+    description: t('meta.blog.description'),
+    openGraph: {
+      title: t('meta.blog.title'),
+      description: t('meta.blog.description'),
+      url: 'https://letswingle.com/blog',
+    },
+    alternates: { canonical: 'https://letswingle.com/blog' },
+  };
+}
 
 export default async function BlogPage() {
   const [posts, news, locale, t] = await Promise.all([

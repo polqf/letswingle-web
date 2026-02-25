@@ -696,10 +696,64 @@ export const es = {
     terms: 'Términos',
     privacy: 'Privacidad',
     cookies: 'Cookies',
+    social: 'Síguenos',
+  },
+  cookieBanner: {
+    message:
+      'Usamos cookies para que el sitio funcione y medir su rendimiento.',
+    learnMore: 'Saber más',
+    rejectAll: 'Rechazar todas',
+    acceptNecessary: 'Solo necesarias',
+    acceptAll: 'Aceptar todas',
   },
   meta: {
     title: 'Wingle | Servicios de viaje para particulares y agencias/agentes de viaje',
     description:
       'Wingle hace que volar y viajar sea más agradable de lo que es hoy. Servicios para particulares y agencias/agentes de viaje.',
+    about: {
+      title: 'Sobre Wingle | Haciendo los vuelos más cómodos',
+      description:
+        'Wingle nació con la misión de hacer los vuelos más cómodos y agradables para particulares y profesionales del viaje.',
+    },
+    blog: {
+      title: 'Blog | Cockpit Diaries y noticias de Wingle',
+      description:
+        'Actualizaciones, notas del equipo e insights de viaje del equipo de Wingle.',
+    },
+    contact: {
+      title: 'Contacto Wingle | Habla con nuestro equipo',
+      description:
+        'Cuéntanos tu ruta, fechas o interés. Respondemos rápido.',
+    },
+    press: {
+      title: 'Prensa | Wingle en los medios',
+      description:
+        'Apariciones que reflejan la credibilidad de la historia de Wingle.',
+    },
+    app: {
+      title: 'App Wingle | Tu pase a viajar mejor',
+      description:
+        'Las ventajas de tener estatus en una aerolínea sin tenerlo. Sin suscripción.',
+    },
+    agencies: {
+      title: 'Wingle para agencias | Servicios premium de aeropuerto en todo el mundo',
+      description:
+        'Mejora la experiencia de viaje de tus clientes con salas VIP, fast tracks, meet & greet y experiencias VVIP.',
+    },
+    pro: {
+      title: 'Wingle Pro | Tu partner para servicios premium de aeropuerto',
+      description:
+        'Desde salas VIP, fast tracks, meet & greet hasta experiencias VVIP, en todo el mundo.',
+    },
+    atlas: {
+      title: 'Wingle Atlas | Repositorio de conocimiento e itinerarios para agencias',
+      description:
+        'Un repositorio de conocimiento compartido para tu agencia más itinerarios dinámicos que los viajeros realmente usan. Captura cada tip y reutilízalo en todo el equipo.',
+    },
+    faqs: {
+      title: 'FAQs App Wingle | Preguntas frecuentes',
+      description:
+        'Respuestas rápidas sobre la experiencia de la app Wingle, créditos y servicios.',
+    },
   },
 } as const;

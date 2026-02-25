@@ -8,7 +8,22 @@ const nextConfig: NextConfig = {
         hostname: 'is1-ssl.mzstatic.com',
       },
     ],
-    domains: ['is1-ssl.mzstatic.com'],
+  },
+  async redirects() {
+    return [
+      {
+        source: '/blog',
+        has: [{ type: 'host', value: 'winglepass.com' }],
+        destination: 'https://letswingle.com/blog',
+        permanent: true,
+      },
+      {
+        source: '/blog/:path*',
+        has: [{ type: 'host', value: 'winglepass.com' }],
+        destination: 'https://letswingle.com/blog/:path*',
+        permanent: true,
+      },
+    ];
   },
 };
 

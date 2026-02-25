@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 export async function AgencyTiersPreview() {
   const t = await getTranslations();
-  const points = ['one', 'two', 'three', 'four', 'five'] as const;
+  const points = ['one', 'two', 'three', 'four'] as const;
 
   return (
     <section id="travel-professionals" className="py-20 hero-sky text-[color:var(--color-brand-offwhite)]">

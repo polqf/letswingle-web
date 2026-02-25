@@ -1,7 +1,7 @@
 export const es = {
   nav: {
     home: 'Inicio',
-    agencies: 'Wingle para profesionales de viajes',
+    agencies: 'Wingle para agencias/agentes de viaje',
     atlas: 'Wingle Atlas',
     app: 'App Wingle',
     blog: 'Blog',
@@ -18,12 +18,12 @@ export const es = {
       subtitle:
         'Para viajeros que quieren mejorar su experiencia de vuelo y para agencias que quieren mejorar los viajes de sus clientes.',
       primaryCta: 'Descubre la app',
-      secondaryCta: 'Wingle para profesionales de viajes',
+      secondaryCta: 'Wingle para agencias/agentes de viaje',
       panelEyebrow: 'Diseñado para viajeros y profesionales',
       panelTitle: 'Una marca, dos caminos claros',
       panelBody: {
         one: 'La App Wingle resuelve momentos de fricción con créditos.',
-        two: 'Wingle para profesionales escala servicios premium globalmente.',
+        two: 'Wingle para agencias/agentes de viaje escala servicios premium globalmente.',
         three:
           'Atlas transforma PDFs estáticos y mantiene el know-how de destinos de la agencia en un solo lugar compartido.',
       },
@@ -31,7 +31,7 @@ export const es = {
     },
     agencies: {
       eyebrow: 'Tu partner one-stop de confianza para servicios premium en aeropuertos',
-      title: 'Wingle para profesionales de viajes',
+      title: 'Wingle para agencias/agentes de viaje',
       subtitle:
         'Mejora la experiencia de vuelo de tus clientes con lounges, fast tracks, meet & greet y experiencias VVIP; a nivel global.',
       points: {
@@ -39,12 +39,11 @@ export const es = {
         two: 'Inteligencia interna que filtra y recomienda solo servicios up to standard.',
         three: 'Stack tecnológico modular que se adapta al flujo de cada agencia.',
         four: 'Instrucciones claras y simples para el viajero en formatos personalizables.',
-        five: 'Operación high-touch con calidad premium predecible.',
       },
       cta: 'Ver detalle completo',
       panelEyebrow: 'También incluye Wingle Atlas',
       panelTitle:
-        'Itinerarios de viaje dinámicos, visuales y humanos. Una base de conocimiento reutilizable en tu agencia.',
+        'Itinerarios de viaje dinámicos, visuales, atractivos y humanos. Una base de conocimiento reutilizable en tu agencia.',
       panelBody:
         'Pasa de texto genérico a itinerarios dinámicos y centraliza el know-how de tu agencia para que todo el equipo lo reutilice.',
     },
@@ -129,7 +128,7 @@ export const es = {
       },
     },
     hero: {
-      eyebrow: 'Wingle para profesionales de viajes',
+      eyebrow: 'Wingle para agencias/agentes de viaje',
       title: 'Mejora la experiencia de viaje de tus clientes',
       subtitle:
         'Mejor experiencia incluso antes de salir, con itinerarios dinámicos, visuales y humanos. Mejor experiencia en el aeropuerto, con acceso a servicios VIP.',
@@ -359,11 +358,11 @@ export const es = {
       eyebrow: 'Sobre Wingle',
       title: 'Nuestra misión es hacer que volar sea más cómodo de lo que es hoy',
       subtitle:
-        'Wingle nació en 2024 con la misión clara de hacer los vuelos más cómodos y que disfruten más. Empezamos como una red social offline que permitía conocer y chatear con gente del mismo vuelo. Evolucionamos hacia una plataforma agnóstica de aerolíneas que te permite volar mejor sin tener estatus con ninguna. Luego vimos que los profesionales del viaje tienen los mismos problemas que los viajeros con la experiencia en aeropuerto, así que ampliamos Wingle para apoyar a profesionales y agencias.',
+        'Wingle nació en 2024 con la misión clara de hacer los vuelos más cómodos y que disfruten más. Empezamos como una red social offline que permitía conocer y chatear con gente del mismo vuelo. Evolucionamos hacia una plataforma agnóstica de aerolíneas que te permite volar mejor sin tener estatus con ninguna. Luego vimos que los agencias/agentes de viaje tienen los mismos problemas que los viajeros con la experiencia en aeropuerto, así que ampliamos Wingle para apoyar a agencias/agentes de viaje.',
       panelEyebrow: 'North star',
       panelTitle: 'Confianza para explorar',
       panelBody:
-        'Convertimos complejidad en experiencias de viaje de alta confianza. Creemos que profesionales y agencias deberían tener las mismas oportunidades que los viajeros para volar mejor sin estatus con ninguna aerolínea.',
+        'Convertimos complejidad en experiencias de viaje de alta confianza. Creemos que agencias/agentes de viaje deberían tener las mismas oportunidades que los viajeros para volar mejor sin estatus con ninguna aerolínea.',
     },
     values: {
       eyebrow: 'Lo que defendemos',
@@ -688,7 +687,7 @@ export const es = {
   },
   footer: {
     description:
-      'Wingle es la marca de viajes premium que conecta agencias, partners y viajeros con experiencias aeroportuarias excepcionales.',
+      'Wingle hace que volar y viajar sea más agradable de lo que es hoy. Servicios para particulares y agencias/agentes de viaje.',
     legal: 'LETS WINGLE S.L.',
     rights: 'Todos los derechos reservados.',
     products: 'Productos',
@@ -699,8 +698,8 @@ export const es = {
     cookies: 'Cookies',
   },
   meta: {
-    title: 'Wingle | Servicios premium para agencias y viajeros',
+    title: 'Wingle | Servicios de viaje para particulares y agencias/agentes de viaje',
     description:
-      'Wingle es el sitio oficial para servicios aeroportuarios curados, itinerarios digitales y la app Wingle en B2B y B2C.',
+      'Wingle hace que volar y viajar sea más agradable de lo que es hoy. Servicios para particulares y agencias/agentes de viaje.',
   },
 } as const;

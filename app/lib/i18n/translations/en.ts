@@ -39,7 +39,6 @@ export const en = {
         two: 'In-house intelligence filters and recommends only up-to-standard services.',
         three: 'Modular technology stack that adapts to each agency workflow.',
         four: 'Clear, easy-to-follow instructions for travelers in customizable formats.',
-        five: 'Built for high-touch operations with predictable premium quality.',
       },
       cta: 'See full details',
       panelEyebrow: 'Also includes Wingle Atlas',
@@ -684,7 +683,7 @@ export const en = {
   },
   footer: {
     description:
-      'Wingle is the premium travel brand connecting agencies, partners, and travelers with exceptional airport experiences.',
+      'Wingle makes flying and travel more enjoyable than it is today. Services for individuals and travel professionals.',
     legal: 'LETS WINGLE S.L.',
     rights: 'All rights reserved.',
     products: 'Products',
@@ -695,8 +694,8 @@ export const en = {
     cookies: 'Cookies',
   },
   meta: {
-    title: 'Wingle | Premium travel services for agencies and travelers',
+    title: 'Wingle | Travel services for individuals and travel professionals',
     description:
-      'Wingle is the company site for curated airport services, digital itineraries, and the Wingle app across B2B and B2C.',
+      'Wingle makes flying and travel more enjoyable than it is today. Services for individuals and travel professionals.',
   },
 } as const;

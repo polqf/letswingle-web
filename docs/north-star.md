@@ -20,7 +20,7 @@ The app page communicates that Wingle is alive, active, and worth downloading �
 
 A luxury travel agency director lands on the site from a Google search, a LinkedIn post, or a sales email. Within 30 seconds, they understand that Wingle offers two offers for agencies:
 
-1. **Wingle Pro** — A trusted premium airport services partner for travel agencies. It goes beyond standard lounge access, and is delivered through a simple request → confirm → coordinate process. They see the three service tiers:
+1. **Wingle Pro** — A trusted premium airport services partner for travel agencies. **Agencies bring their travelers; Wingle serves and coordinates for the end traveler.** It goes beyond standard lounge access, and is delivered through a simple request → confirm → coordinate process. They see the three service tiers:
    - **Lounges + Fast Track**: Curated access to 700+ lounges worldwide, quality-filtered by Wingle's in-house intelligence so agencies can trust that every option meets a high standard.
    - **Meet & Assist**: End-to-end passenger guidance from aircraft door through security and passport control to the VIP lounge — the kind of VIP experience their high-end clients expect.
    - **VVIP**: Private terminal, private check-in, private security, car to the aircraft stairs — a fully private experience.

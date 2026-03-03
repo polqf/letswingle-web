@@ -378,7 +378,7 @@ export const en = {
       subtitle: 'B2B and B2C offerings that can operate independently.',
       b2bTitle: 'For agencies and partners',
       b2bBody:
-        'Wingle for Agencies and Wingle Atlas.',
+        'Wingle Pro and Wingle Atlas.',
       b2cTitle: 'For travelers',
       b2cBody: 'Wingle app and the services available at winglepass.com.',
     },

@@ -175,14 +175,14 @@ This document records architectural and design decisions for the project, starti
 
 ## D013: "Wingle Pro" Replaces "Wingle Pass for Agencies"
 
-**Decision:** The B2B premium airport services product is publicly named **"Wingle Pro"** rather than "Wingle Pass for Agencies".
+**Decision:** The B2B premium airport services **offering** (partner-led service model) is publicly named **"Wingle Pro"** rather than "Wingle Pass for Agencies".
 
 **Rationale:**
 - "Wingle Pro" is shorter, cleaner, and avoids confusion with the B2C "Wingle Pass" credits system.
-- The website uses **"Wingle for Travel Professionals"** as the umbrella B2B brand, with "Wingle Pro" and "Wingle Atlas" as the two products underneath.
+- The website uses **"Wingle for Travel Professionals"** as the umbrella B2B brand, with "Wingle Pro" (trusted partner service offering) and "Wingle Atlas" (product) as the two offers underneath.
 - The agencies hub page (`/products/agencies`) links to separate product pages for Pro (`/products/pro`) and Atlas (`/products/atlas`), giving each product its own dedicated landing.
 
-**Implication:** All documentation and public-facing copy should use "Wingle Pro" for the B2B airport services product. "Wingle Pass for Agencies" is retired as a product name.
+**Implication:** All documentation and public-facing copy should use "Wingle Pro" for the B2B airport services offering — and must follow the compliance-safe framing: agencies introduce their travelers; Wingle serves/sells to the end traveler; never imply agencies buy/resell. "Wingle Pass for Agencies" is retired as a product name.
 
 ---
 

@@ -105,7 +105,7 @@ By late February 2025, while the consumer app evolved, the team recognized that 
 
 Luxury travel agencies were already coordinating premium airport services for their clients — lounges, meet & assist, VVIP terminal experiences — but doing so through fragmented suppliers, manual processes, and inconsistent quality. Wingle could solve that.
 
-This insight marked the beginning of **Wingle Pro**: a B2B service that gives travel agencies a single partner for premium airport services globally. Rather than building something new from scratch, the team repurposed the platform, supplier relationships, and quality intelligence they had already developed.
+This insight marked the beginning of **Wingle Pro**: a partner-led premium airport services offering where travel agencies bring their travelers, and Wingle confirms and coordinates services for the **end traveler**. Rather than building something new from scratch, the team repurposed the platform, supplier relationships, and quality intelligence they had already developed.
 
 The key advantages for agencies were clear from the start:
 - One partner for everything premium at the airport, anywhere in the world.

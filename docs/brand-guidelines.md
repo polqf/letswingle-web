@@ -17,6 +17,7 @@ These guidelines define how Wingle should **look**, **sound**, and **behave** ac
 - **B2C presence is crucial**. Never imply the consumer product is deprioritized or “on hold.”
 - Public naming uses **Wingle Pro** (B2B airport services), **Wingle Atlas** (B2B itineraries), and **Wingle for Travel Professionals** (B2B umbrella). Avoids internal names like “Wingle Pass” / “Wingle Chat” as standalone product names.
 - **Wingle Pro positioning (important nuance)**: describe Wingle Pro as a **trusted partner / service model for travel agencies** (agencies bring the travelers; we confirm and coordinate premium airport services). Avoid framing it as “a B2B product” or “a platform” in public copy unless specifically approved.
+- **Agency channel compliance (contract-critical)**: our provider contracts only allow us to sell premium airport services to the **end traveler**. Public copy must never imply that agencies *buy* or *resell* those services. The safe framing is: **agencies introduce their travelers** → Wingle confirms options and coordinates delivery for the traveler → agencies stay in control of the client relationship.
 
 ---
 
@@ -116,6 +117,8 @@ Examples (ES)
 - **Don’t**: use certainty verbs for things that depend on availability: “guarantee”, “always”, “instant”, “zero”, “best”.
 - **Do**: state what happens next: “We’ll follow up within X” (only if true) or “We’ll follow up quickly.”
 - **Don’t**: imply self-serve checkout, real-time booking, or “sign up.”
+- **Do (Wingle Pro)**: say “agencies bring us their travelers” / “supporting agencies with their travelers’ airport needs.”
+- **Don’t (Wingle Pro)**: say “we sell to travel agencies” / “agency product” / “agency pricing” / “reseller” / “wholesale.”
 
 ---
 
@@ -243,6 +246,7 @@ Do not publish copy that implies:
 - **No human involvement** for premium services (we often *lean into* human coordination to build trust).
 - **Self-serve booking / checkout** on `letswingle.com`.
 - **“Zero contact”** or similarly absolute claims.
+- **Agencies purchasing or reselling premium airport services** (agency-as-buyer framing).
 
 ### What would immediately feel off-brand
 - Overly playful B2B copy, memes, slang, emojis, or sarcasm.
@@ -276,6 +280,7 @@ AI-generated output must behave like a disciplined Wingle team member: calm, pre
 - [ ] Limitations are stated plainly with a next step (“share details → we confirm”).
 - [ ] No mention of internal strategy shifts (never “B2C maintenance mode” or “we’re focusing on B2B”).
 - [ ] CTAs guide, not pressure; default to “Talk to our team.”
+- [ ] **Wingle Pro compliance**: copy frames agencies as bringing travelers; does not imply agency purchase/resale; traveler is the end client.
 
 ---
 

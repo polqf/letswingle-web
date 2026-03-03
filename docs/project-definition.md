@@ -96,7 +96,6 @@ These are **internal implementation details** and should **not** be presented as
 
 - **Not a product application.** No login, no user data, no transactions.
 - **Not `winglepass.com`.** That remains the B2C web product for Wingle Pass.
-- **Not `cockpit.letswingle.com`.** The blog will migrate here; the Jekyll site will be decommissioned.
 - **Not an API consumer in any meaningful sense.** Contact forms may hit a backend or third-party service, but this site does not integrate with the Wingle backend (`prod.letswingle.com`).
 - **Not a single-product site.** Every product under the Wingle umbrella must be represented.
 

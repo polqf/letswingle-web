@@ -84,7 +84,7 @@ Forms submit via POST to `/api/contact`, which sends styled HTML email via Resen
 
 ### Blog
 
-The blog migrates from `winglepass.com/blog` (which itself consolidated the Jekyll-based `cockpit.letswingle.com`).
+The blog was migrated from `winglepass.com/blog`.
 
 | Aspect | Approach |
 |---|---|

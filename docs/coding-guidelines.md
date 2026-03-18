@@ -1,3 +1,10 @@
+---
+tags:
+  - guideline
+  - main-site
+  - marketing
+  - brand
+---
 # Coding Guidelines — letswingle.com
 
 These guidelines are derived from the conventions established in `wingle-web` and `wingle-atlas-web`, adapted for a marketing site without authentication, API integration, or complex state management.

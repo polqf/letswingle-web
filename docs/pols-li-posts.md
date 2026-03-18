@@ -1,3 +1,9 @@
+---
+tags:
+  - product
+  - main-site
+  - marketing
+---
 # Pol’s LinkedIn posts — working doc
 
 This document is a **writing and planning space** for posts published from Pol’s personal LinkedIn profile.

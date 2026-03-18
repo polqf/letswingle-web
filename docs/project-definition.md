@@ -1,8 +1,15 @@
+---
+tags:
+  - vision
+  - main-site
+  - marketing
+  - brand
+---
 # Project Definition — letswingle.com
 
 ## What This Project Is
 
-This is the **company website for LETS WINGLE S.L.**, hosted at `letswingle.com`. It is a public-facing marketing and information site that presents the full product portfolio under the Wingle brand to multiple distinct audiences.
+This is the **company website for LETS WINGLE S.L.**, hosted at `letswingle.com`. It is a public-facing marketing and information site that presents the full product portfolio under the Wingle brand to multiple distinct audiences. Related: [[wingle-dev-documentation/main/tech-stack]], [[wingle-dev-documentation/wingle-web/project-definition|Wingle Web]], [[wingle-dev-documentation/atlas-web/project-definition|Atlas Web]].
 
 This is **not** a product application. It does not provide authentication, user accounts, dashboards, or transactional functionality. It is a landing-first site designed to inform, position, and convert.
 

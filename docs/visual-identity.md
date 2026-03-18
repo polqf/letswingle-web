@@ -1,3 +1,10 @@
+---
+tags:
+  - product
+  - main-site
+  - brand
+  - marketing
+---
 # Visual Identity — Wingle (Single Source of Truth)
 
 This document is the **single source of truth** for Wingle’s visual identity within this repository (`letswingle-web`) and for marketing surfaces unless explicitly overridden by an approved brand change.

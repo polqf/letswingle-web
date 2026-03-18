@@ -1,3 +1,9 @@
+---
+tags:
+  - vision
+  - main-site
+  - marketing
+---
 # North Star — letswingle.com
 
 ## Vision

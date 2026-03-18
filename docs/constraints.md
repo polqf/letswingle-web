@@ -1,3 +1,9 @@
+---
+tags:
+  - constraint
+  - main-site
+  - marketing
+---
 # Constraints — letswingle.com
 
 ## Technical Constraints

@@ -1,3 +1,9 @@
+---
+tags:
+  - product
+  - main-site
+  - marketing
+---
 # The Wingle Journey — Making Travel Better
 
 Wingle was founded with a clear mission: **make travel better**. Not just the flight itself, but the full experience — before, during, and after. That mission has stayed constant even as the products, audiences, and business model have evolved.

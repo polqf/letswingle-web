@@ -1,3 +1,8 @@
+---
+tags:
+  - ops
+  - main-site
+---
 # TO DOs
 
 ## Completed

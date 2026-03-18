@@ -1,3 +1,9 @@
+---
+tags:
+  - strategy
+  - main-site
+  - marketing
+---
 # Roadmap and Strategy — letswingle.com
 
 ## Current State

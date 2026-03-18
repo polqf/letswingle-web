@@ -1,3 +1,10 @@
+---
+tags:
+  - product
+  - main-site
+  - brand
+  - marketing
+---
 # Wingle — Brand Guidelines (Internal)
 
 These guidelines define how Wingle should **look**, **sound**, and **behave** across marketing pages, product UI, comms, and AI-generated output.

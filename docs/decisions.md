@@ -1,3 +1,10 @@
+---
+tags:
+  - decision-log
+  - main-site
+  - marketing
+  - brand
+---
 # Decisions — letswingle.com
 
 This document records architectural and design decisions for the project, starting from inception. Each decision includes rationale and, where relevant, alternatives that were considered.

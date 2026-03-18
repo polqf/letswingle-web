@@ -1,8 +1,15 @@
+---
+tags:
+  - reference
+  - main-site
+  - marketing
+  - brand
+---
 # Tech Stack — letswingle.com
 
 ## Overview
 
-A statically-generated marketing website built with Next.js, designed to match the stack and conventions of sibling Wingle web projects (`wingle-web`, `wingle-atlas-web`). The site is primarily static content with lightweight dynamic features (contact forms, blog, internationalization).
+A statically-generated marketing website built with Next.js, designed to match the stack and conventions of sibling Wingle web projects (`wingle-web`, `wingle-atlas-web`). The site is primarily static content with lightweight dynamic features (contact forms, blog, internationalization). Related: [[wingle-dev-documentation/main/project-definition]], [[wingle-dev-documentation/wingle-web/tech-stack|Wingle Web]], [[wingle-dev-documentation/atlas-web/tech-stack|Atlas Web]].
 
 ## Languages and Runtimes
 

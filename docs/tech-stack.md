@@ -111,7 +111,7 @@ No headless CMS. Content lives in the repository as Markdown.
 |---|---|
 | Storage | Content lives in translation files (`en.ts` / `es.ts`), rendered by page components |
 | Wrapper | `LegalShell` component provides shared layout (title, subtitle, children) |
-| Pages | Terms of Service (`/legal/terms`), Privacy Policy (`/legal/privacy`), Cookie Policy (`/legal/cookies`) |
+| Pages | Terms of Service (`/legal/terms`), Privacy Policy (`/privacy`), Cookie Policy (`/legal/cookies`) |
 
 ### Static Content
 
@@ -149,7 +149,8 @@ letswingle-web/
 │   ├── about/                 # Company page
 │   ├── contact/               # General contact
 │   ├── press/                 # Press page with media logos
-│   ├── legal/                 # terms/, privacy/, cookies/
+│   ├── legal/                 # terms/, cookies/
+│   ├── privacy/               # Privacy Policy (full notice)
 │   └── api/
 │       ├── contact/           # POST handler (Resend email, rate limiting, honeypot)
 │       └── locale/            # GET handler (locale switching via cookie)

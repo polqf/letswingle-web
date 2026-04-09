@@ -71,7 +71,7 @@ export async function Footer() {
             {t('footer.legalLinks')}
           </p>
           <Link href="/legal/terms">{t('footer.terms')}</Link>
-          <Link href="/legal/privacy">{t('footer.privacy')}</Link>
+          <Link href="/privacy">{t('footer.privacy')}</Link>
           <Link href="/legal/cookies">{t('footer.cookies')}</Link>
         </div>
 

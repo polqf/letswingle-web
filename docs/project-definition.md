@@ -120,7 +120,7 @@ The site should follow this information architecture:
 - **Press** (`/press`) — Media coverage and appearances with logo grid
 - **About** (`/about`) — Company story, values
 - **Contact** (`/contact`) — General contact form
-- **Legal** — Terms (`/legal/terms`), Privacy Policy (`/legal/privacy`), Cookie Policy (`/legal/cookies`) (EN/ES)
+- **Legal** — Terms (`/legal/terms`), Privacy Policy (`/privacy`), Cookie Policy (`/legal/cookies`) (EN/ES)
 
 Products with a user-facing platform (B2C app, `winglepass.com`) get CTAs that link out. B2B offerings (Wingle Pro, Wingle Atlas) collect interest via embedded `ContactBand` sections with contact forms.
 Navigation and homepage sections list the **B2C app first**, followed by B2B offerings.

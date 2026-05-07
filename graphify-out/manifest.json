@@ -1,0 +1,470 @@
+{
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/postcss.config.mjs": {
+    "mtime": 1770404592.1092236,
+    "hash": "27808b58abfd6d09739e715b81724384"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/next-env.d.ts": {
+    "mtime": 1770404644.3230317,
+    "hash": "ba64ff7d54714a8f64db89b1003207d8"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/eslint.config.mjs": {
+    "mtime": 1770485505.627391,
+    "hash": "9d237702f5d91e47d7c3eefa2dd7ed0c"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/next.config.ts": {
+    "mtime": 1772022128.97306,
+    "hash": "4ba126288264b901f78b829efce5b742"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/robots.ts": {
+    "mtime": 1772022239.336171,
+    "hash": "1b87ca1fba833a2d59702eef6c8ff100"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/sitemap.ts": {
+    "mtime": 1775735804.1970923,
+    "hash": "c4e11386b75fb8ee026cc0c0fcf4be56"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/layout.tsx": {
+    "mtime": 1772530275.5603313,
+    "hash": "9d6c45e32453f3e9c57062e9ac17632a"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/page.tsx": {
+    "mtime": 1771606307.4967585,
+    "hash": "1793efd1d62f7bdcf0dfe7e03dfac3a8"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/contact/page.tsx": {
+    "mtime": 1772022162.1729376,
+    "hash": "a8dea1a326549608dc9740156044eaf0"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/products/pro/page.tsx": {
+    "mtime": 1772022186.1241124,
+    "hash": "7df3d65a41f1e15661e672e346a1e6f7"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/products/wingle-app/AppLinks.tsx": {
+    "mtime": 1771869709.9965074,
+    "hash": "a0094591ae8c0f12cd31c581cecf0503"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/products/wingle-app/page.tsx": {
+    "mtime": 1772022175.8511434,
+    "hash": "c78199257e9e772deab324b4961b9b90"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/products/wingle-app/faqs/page.tsx": {
+    "mtime": 1772022201.2067013,
+    "hash": "3868717ffa83c003c7608d9343179da3"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/products/atlas/page.tsx": {
+    "mtime": 1772022189.7714627,
+    "hash": "8ce9160c60b773ff3a715a1364b7361e"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/products/agencies/page.tsx": {
+    "mtime": 1772022180.9741683,
+    "hash": "85b420626c96e935203d1dde266c1b5f"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/privacy/PrivacyPolicyDocument.tsx": {
+    "mtime": 1775735837.1334417,
+    "hash": "f7618db146f8ff3be900fd6ad688812f"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/privacy/PrivacyPolicySections.tsx": {
+    "mtime": 1775735801.4398007,
+    "hash": "c709d75418efebee6e0cb2ae2b45baff"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/privacy/PrivacyPolicySections8to13.tsx": {
+    "mtime": 1775736007.1085398,
+    "hash": "53ceaaf7a82587897500b9db5a421ffd"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/privacy/page.tsx": {
+    "mtime": 1775735644.0157394,
+    "hash": "92eac4a73761d189ec2e79a99b985a77"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/press/page.tsx": {
+    "mtime": 1772022166.542245,
+    "hash": "35fd2a2f133e9485e5673b42d2e35476"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/about/page.tsx": {
+    "mtime": 1772024596.415325,
+    "hash": "9f33a6d46f1fe542fe395fc56c9ff5bc"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/blog/page.tsx": {
+    "mtime": 1772022197.7590168,
+    "hash": "7d707ab624b899934e528defdc98df4f"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/blog/entry/page.tsx": {
+    "mtime": 1770645864.5657585,
+    "hash": "ab7fe6899ccaadea60c935f96b99c976"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/blog/entry/[slug]/page.tsx": {
+    "mtime": 1772022211.1827314,
+    "hash": "faf12f352e26f27296c7e6163090380b"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/blog/components/BlogListItem.tsx": {
+    "mtime": 1770645827.0062068,
+    "hash": "2c490575bcd19d4fb9599553989252c4"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/blog/news/page.tsx": {
+    "mtime": 1770645875.533302,
+    "hash": "c7b8e73d51e7e053d65267b4c8198713"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/blog/news/[slug]/page.tsx": {
+    "mtime": 1772022216.391073,
+    "hash": "7cb400215fc1240f5c14c86dee535fa3"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/blog/lib/utils.ts": {
+    "mtime": 1770645816.4790146,
+    "hash": "1df4606c92d568981bde350ce1bc3167"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/blog/lib/content.ts": {
+    "mtime": 1770645809.034597,
+    "hash": "8a648ccadeb15473ec9729f819590de3"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/components/ui/Card.tsx": {
+    "mtime": 1770404442.8769634,
+    "hash": "790bb40124337b0c41c133520f4187f7"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/components/ui/Container.tsx": {
+    "mtime": 1770640910.9467185,
+    "hash": "a42addf794a392caf79cd324ecd8e1b1"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/components/ui/Section.tsx": {
+    "mtime": 1770404161.14055,
+    "hash": "dcb91a0316d0e8462a7af4b65eed8a68"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/components/ui/Tag.tsx": {
+    "mtime": 1770640969.5162928,
+    "hash": "f231347fbcae2a1862c505dae72bafbb"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/components/ui/SectionHeader.tsx": {
+    "mtime": 1771849580.3488536,
+    "hash": "0ada1b93512cf67a7067faf7f5dc93d6"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/components/ui/Button.tsx": {
+    "mtime": 1771845353.7396915,
+    "hash": "613d46d3e645b4c8b4a347f9e2de06f6"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/components/sections/ContactBand.tsx": {
+    "mtime": 1770641120.4276097,
+    "hash": "c06cb6af05410dda40e31ab75b67cd6b"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/components/sections/InstagramEmbed.tsx": {
+    "mtime": 1772025082.4246747,
+    "hash": "d8d797785af2b01a0cc25a7a7dc9d805"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/components/sections/InstagramPreview.tsx": {
+    "mtime": 1772026090.8632548,
+    "hash": "24be261aae3d4b603082d61238360eea"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/components/sections/LegalShell.tsx": {
+    "mtime": 1770641297.9535477,
+    "hash": "a82c909a83310d7c768fda1d0214de08"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/components/sections/home/HomeCTA.tsx": {
+    "mtime": 1770641132.9116507,
+    "hash": "2d03bcdd4848754ae9069ad2fa162197"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/components/sections/home/Hero.tsx": {
+    "mtime": 1771849753.1798396,
+    "hash": "cb513c411d335257647372edea40c773"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/components/sections/home/AtlasPreview.tsx": {
+    "mtime": 1770641082.3141458,
+    "hash": "b73e280c5e3d2cc14b9cb29ffb1d68f4"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/components/sections/home/AppPreview.tsx": {
+    "mtime": 1771869737.1463113,
+    "hash": "0824368fd6e1c49b4ddc59eaca5249fd"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/components/sections/home/PressPreview.tsx": {
+    "mtime": 1771846427.3713632,
+    "hash": "cc3c5d5a0ba9a2259f267aebcce0d007"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/components/sections/home/AgencyTiersPreview.tsx": {
+    "mtime": 1772021434.0798864,
+    "hash": "30bb98d3d0dd3fce2b761b49ddbf5ed2"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/components/sections/home/ProductPaths.tsx": {
+    "mtime": 1772021027.9098735,
+    "hash": "f401037427c16eafd6519464f5ebccac"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/components/sections/home/TrustSignals.tsx": {
+    "mtime": 1770641109.000418,
+    "hash": "4dfdccd043263efc36323304795644c5"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/components/forms/ContactForm.tsx": {
+    "mtime": 1772021029.609806,
+    "hash": "f27642255073d8a76c8924f2dd433991"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/components/layout/AnalyticsProvider.tsx": {
+    "mtime": 1772530274.7759,
+    "hash": "a237e477256279ab03c247020fd62b93"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/components/layout/CookieBanner.tsx": {
+    "mtime": 1772022291.4561584,
+    "hash": "54906c5c48644b91866719c7a51b408a"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/components/layout/Footer.tsx": {
+    "mtime": 1775735803.2103617,
+    "hash": "35209526d2dec3348928a4f372fc96e4"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/components/layout/Header.tsx": {
+    "mtime": 1771927511.708302,
+    "hash": "2ef51e994cc1b5efc26edbddc8fff198"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/components/layout/LanguageSwitcher.tsx": {
+    "mtime": 1771927505.3284705,
+    "hash": "b87c0cd563c468a06e359734e413ab70"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/components/press/PressLogoGrid.tsx": {
+    "mtime": 1771851151.9747243,
+    "hash": "6a796661c5ce353efd12ea741f626d0b"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/lib/images.ts": {
+    "mtime": 1771933941.1637058,
+    "hash": "40902122f7ee604e0c2223182f5a8ce3"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/lib/utils/cn.ts": {
+    "mtime": 1770404102.9956164,
+    "hash": "8595c2f874aa1ff8c7cc28df2999f354"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/lib/i18n/useTranslations.ts": {
+    "mtime": 1770404872.806173,
+    "hash": "e82e0b27888c416412fe3ffdef1a025d"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/lib/i18n/getTranslations.ts": {
+    "mtime": 1771606297.196764,
+    "hash": "e240e1aca6caadd83cef9f085eeeeefa"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/lib/i18n/translations/es.ts": {
+    "mtime": 1772027441.9561584,
+    "hash": "8143e93e477064a55267b21df31fc6ff"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/lib/i18n/translations/en.ts": {
+    "mtime": 1772027415.3971279,
+    "hash": "96ffadbeb687d31eb9ca6cb2ce94ee63"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/api/contact/route.ts": {
+    "mtime": 1771933930.6815505,
+    "hash": "f10f8e8f26fe604f36190a1c6f77627b"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/api/locale/route.ts": {
+    "mtime": 1771606293.280504,
+    "hash": "af1a44b1e7487fa66d30c3909d59fb09"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/legal/terms/page.tsx": {
+    "mtime": 1770641316.0684767,
+    "hash": "bd844449ba2cbc2178f803176b09bdf7"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/legal/cookies/page.tsx": {
+    "mtime": 1770641333.7939336,
+    "hash": "6974ced7b52f64fa87ca09f089b3dd88"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/CLAUDE.md": {
+    "mtime": 1778160355.9469974,
+    "hash": "8ee39dcfe68a23b3797b02648930d699"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/content/blog/posts/2024-08-14-cockpit-episode-4.md": {
+    "mtime": 1770645783.5731366,
+    "hash": "b6b910e13ffc9e2889506e2062251aa1"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/content/blog/posts/2024-09-16-cockpit-episode-5.md": {
+    "mtime": 1770645783.573704,
+    "hash": "772ed26177588af3540a55dd5d28b96a"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/content/blog/posts/2025-02-27-cockpit-episode-10.md": {
+    "mtime": 1770645783.5741882,
+    "hash": "aea8413fa0bd87477edd17fdcb98903a"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/content/blog/posts/2024-12-22-cockpit-episode-8.md": {
+    "mtime": 1770645783.574674,
+    "hash": "679eaa0658cc54a60cf5ed5d971c2976"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/content/blog/posts/2024-07-16-cockpit-episode-3.md": {
+    "mtime": 1770645783.5752459,
+    "hash": "a24a2cc37738fd8f560beec664816f64"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/content/blog/posts/2024-11-26-cockpit-episode-7.md": {
+    "mtime": 1770645783.575619,
+    "hash": "2069f03222846146b1175ec64fa2eb3c"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/content/blog/posts/2024-06-14-cockpit-episode-2.md": {
+    "mtime": 1770645783.5759299,
+    "hash": "80e8fc5dc321152e62ba68232b248c2c"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/content/blog/posts/2025-01-24-cockpit-episode-9.md": {
+    "mtime": 1770645783.576238,
+    "hash": "483fd7630ff5c9f9709731e884084541"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/content/blog/posts/2025-04-07-cockpit-episode-11.md": {
+    "mtime": 1770645783.5765262,
+    "hash": "2abf9d8a1947314fefc67ada06ae6520"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/content/blog/posts/2024-10-28-cockpit-episode-6.md": {
+    "mtime": 1770645783.5768335,
+    "hash": "20dd01b739051ab60454120c4b76046f"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/content/blog/posts/2024-05-14-cockpit-episode-1.md": {
+    "mtime": 1770645783.5771306,
+    "hash": "4169c7ac60887f300fe8525a46c0b082"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/content/blog/news/meet-people-at-the-airport.md": {
+    "mtime": 1770645783.5800805,
+    "hash": "bd02b4e4066031ce55fc3afe2260bd42"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/content/blog/news/become-a-pilot-wingles-ambassador-program.md": {
+    "mtime": 1772530325.1184175,
+    "hash": "366c02575d53e44934da0fc2db98db85"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/content/blog/news/land-and-laundry.md": {
+    "mtime": 1770645783.5810125,
+    "hash": "861b303cf199dca406f66098ca1781d5"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/content/blog/news/wingle-lands-in-south-summit.md": {
+    "mtime": 1770645783.5816555,
+    "hash": "0aacee7f5293f93ddc979593532015c1"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/content/blog/news/wingle-x-terravision.md": {
+    "mtime": 1770645783.581997,
+    "hash": "41679c2bec6ffe308562e080815855ae"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/content/blog/news/wingle-launch.md": {
+    "mtime": 1770645783.5825412,
+    "hash": "4575b0cdab32df606aeb61d520b04fe7"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/content/blog/news/wingle-pass.md": {
+    "mtime": 1770645783.582889,
+    "hash": "e22f23eafd7e0abdab8541658d38b2dc"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/content/blog/news/wingle-x-bmg-music.md": {
+    "mtime": 1770645783.583198,
+    "hash": "a8822622e7ad4c46a0820468ae2e7564"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/content/blog/news/wingle-x-iberia-express.md": {
+    "mtime": 1770645783.5835023,
+    "hash": "b4d2edabbe95bf041922a1886d57c297"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/docs/journey.md": {
+    "mtime": 1773841425.6735837,
+    "hash": "79889fb6cae97c3441f75e50932072d7"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/docs/brand-guidelines.md": {
+    "mtime": 1773841419.0749428,
+    "hash": "1b96b46941cf4abe2e35c1e2bcdc52b8"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/docs/north-star.md": {
+    "mtime": 1773841433.5206392,
+    "hash": "ea538c50987f348e74a0649ff25cdeb0"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/docs/project-definition.md": {
+    "mtime": 1775736113.4803967,
+    "hash": "7c5107d6ac4163d0e4ed7338b8867824"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/docs/constraints.md": {
+    "mtime": 1773841431.3521142,
+    "hash": "91d54fef0fd3fcf1089b53d19c66396b"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/docs/roadmap-strategy.md": {
+    "mtime": 1773841435.6738892,
+    "hash": "e54c4255e939286fa80013b72102eded"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/docs/tech-stack.md": {
+    "mtime": 1775736111.8814697,
+    "hash": "cf73c2bcfd519a321f8556ea3228a064"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/docs/pols-li-posts.md": {
+    "mtime": 1773841458.9230602,
+    "hash": "d4c2d60174fffc584c4e44589cd7e031"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/docs/what-is-wingle.md": {
+    "mtime": 1778068381.0274537,
+    "hash": "ac55e591c9763aa5e95062433968cb89"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/docs/coding-guidelines.md": {
+    "mtime": 1773841432.8045504,
+    "hash": "e92d89240a3d09bf561742c97f14e99d"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/docs/visual-identity.md": {
+    "mtime": 1773841458.315101,
+    "hash": "4745a04d9f4c10602cb9508fb940e1a3"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/docs/to-dos.md": {
+    "mtime": 1773841426.4152565,
+    "hash": "6fa22ed68689ecb596e1b8b49f1f31c5"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/docs/decisions.md": {
+    "mtime": 1773841430.134724,
+    "hash": "03322347ff94218a83aa98d6f2a8a22a"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/icon.png": {
+    "mtime": 1772533079.4431446,
+    "hash": "d5f464e155376b1db00c595846981f1c"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/app/apple-icon.png": {
+    "mtime": 1772533079.4804997,
+    "hash": "b54c28425e9b2060a7facbc78de5da47"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/public/brand/blue-symbol.png": {
+    "mtime": 1770640877.165162,
+    "hash": "f0ae07bb92a053902e0c479cf172ec11"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/public/brand/symbol.svg": {
+    "mtime": 1770640877.16635,
+    "hash": "9f7f28b30832afaeb04733df837ec2fc"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/public/brand/blue-logo.png": {
+    "mtime": 1770640877.1646638,
+    "hash": "812560f9402eca32bc89eb25982f920d"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/public/brand/logo.svg": {
+    "mtime": 1770640877.1658275,
+    "hash": "a563843e4916e2208580e6473d3540df"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/public/press/la-sexta.png": {
+    "mtime": 1771851151.9782188,
+    "hash": "79d266cbc4c64283ab12fabb4acaa83d"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/public/press/telecinco-vector-logo.png": {
+    "mtime": 1771851151.978777,
+    "hash": "e0de739bceaeaedf269a24d8b7e11746"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/public/press/conde-nast-traveler.png": {
+    "mtime": 1771851151.9774601,
+    "hash": "bc37d7d4949aab45e4961ccbe27a9057"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/public/press/la_Vanguardia-1.jpg": {
+    "mtime": 1771851151.978508,
+    "hash": "6318b665422bcdcb18eab273a50b9e42"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/public/press/el-mundo.png": {
+    "mtime": 1771851151.9779937,
+    "hash": "8c71f84acc61fc413531bd5ff4677536"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/public/press/The_Straits_Times.png": {
+    "mtime": 1771851151.9771469,
+    "hash": "7d186f82056593a18dd31fdd71d07e77"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/public/press/el-confidencial-1.jpg": {
+    "mtime": 1771851151.9777186,
+    "hash": "63561298acff6f6107da815ead21b567"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/public/press/El_Correo.jpg": {
+    "mtime": 1771851151.9768941,
+    "hash": "57aa96e6ad5525c6d3e4f832526487f5"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/public/press/Cuatro.png": {
+    "mtime": 1771851151.976569,
+    "hash": "432da505ffdd10be90ff56e2f2e9347a"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/assets/blue-symbol.png": {
+    "mtime": 1710621682.0,
+    "hash": "f0ae07bb92a053902e0c479cf172ec11"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/assets/symbol.svg": {
+    "mtime": 1711100074.0,
+    "hash": "9f7f28b30832afaeb04733df837ec2fc"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/assets/blue-logo.png": {
+    "mtime": 1710621581.0,
+    "hash": "812560f9402eca32bc89eb25982f920d"
+  },
+  "/Users/polquintana/Developer/lets-wingle/letswingle-web/assets/logo.svg": {
+    "mtime": 1711100057.0,
+    "hash": "a563843e4916e2208580e6473d3540df"
+  }
+}

@@ -1,3 +1,9 @@
+## Project tracking
+
+Roadmap/status for Claude-initiated work lives on a Notion board, not markdown docs — full
+command reference and rules in the root `lets-wingle/CLAUDE.md`'s "Project tracking" section.
+Config: `wingle-backend/docs/notion-board.json`. This repo's tag: `MarketingWeb`.
+
 ## graphify
 
 This project has a graphify knowledge graph at graphify-out/.
